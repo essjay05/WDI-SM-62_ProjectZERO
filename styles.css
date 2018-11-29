@@ -1,0 +1,316 @@
+/* ----------------- RESET THE DEFAULT PADDING/MARGINS ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    letter-spacing: .02em;
+    text-align: center;
+    color: navy;
+}
+
+/* ----------------- SETTING THE VIEWPORT ---------------- */
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+@-ms-viewport {
+    width: device-width;
+}
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+    align-items: center;
+    justify-items: center;
+}
+.portfolio {
+    align-self: center;
+    justify-self: center;
+}
+
+/* ----------------- RESPONSIVE IMAGES ---------------- */
+img {
+    max-width: 100%;
+}
+
+/*------------- TYPOGRAPHY ---------------------- */
+p {
+    font-family: "Open Sans", sans-serif;
+    text-transform: none;
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(126, 166, 168);
+    font-weight: 600;
+    transition: all .5s ease-in-out;
+}
+
+a:hover {
+    color: red;
+}
+
+/*----- OVERALL DESIGN -------*/ /*----- OVERALL DESIGN -------*/
+h1, h2, h3, h4 {
+    font-family: 'Arvo', serif;
+};
+p, a, ul, li {
+    font-family: 'Open Sans Condensed', sans-serif;
+};
+
+
+/*----- LAYOUT -------*/  /*----- LAYOUT -------*/
+
+/*----- PORTFOLIO -------*/
+/*----- PORTFOLIO -------*/
+/*----- PORTFOLIO -------*/
+
+/*----- Portfolio 1: Proj0 & Proj1 -------*/
+.port1 {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(6, [col] auto);
+    grid-template-rows: repeat(5, [row] auto);
+    /* padding: 2em;
+    margin: 2em; */
+/* 		background-color: #fff;
+    color: #444; */
+}
+
+.box {
+    background-color: grey;
+    color: #fff;
+    border-radius: 1em;
+    /* padding: 1em; */
+    font-size: 16px;
+    /* margin: 5%; */
+}
+.sub {
+    font-size: 20px;
+}
+
+/* GRID */
+/* Project Zero */
+.zeroTitle {
+    grid-column: col / span 2;
+    grid-row: row;
+}
+.zeroImg {
+    grid-column: col / span 2;
+    grid-row: row 2;
+    height: 200px;
+}
+.zeroBlurb {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+.zeroTech {
+    grid-column: 1 / 3;
+    grid-row: 4;
+}
+.zeroExtLink {
+    grid-column: 1;
+    grid-row: 5;
+}
+.zeroGitCode {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+/* Project 1 */
+
+.oneTitle {
+    grid-column: col 3 / span 2;
+    grid-row: row;
+}
+.oneImg{
+    grid-column: col 3 / span 2;
+    grid-row: row 2;
+}
+.oneBlurb {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+}
+.oneTech {
+    grid-column: 3 / span 2;
+    grid-row: 4;
+}
+
+.oneExtLink {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.oneGitCode {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+/*----- Portfolio B: Proj2 & Proj3 -------*/
+
+.port2 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, [col] auto);
+    grid-template-rows: repeat(5, [row] auto);
+    justify-self: center;
+    /* padding: 2em;
+    margin: 2em; */
+/* 		background-color: #fff;
+    color: #444; */
+}
+
+.box {
+    background-color: grey;
+    color: #fff;
+    border-radius: 1em;
+    padding: 3em;
+    font-size: 16px;
+    margin: 5%;
+}
+
+/* GRID */
+/* Project Zero */
+.twoTitle {
+    grid-column: col / span 2;
+    grid-row: row;
+}
+.twoImg {
+    grid-column: col / span 2;
+    grid-row: row 2;
+    height: 200px;
+}
+.twoBlurb {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+.twoTech {
+    grid-column: 1 / 3;
+    grid-row: 4;
+}
+.twoExtLink {
+    grid-column: 1;
+    grid-row: 5;
+}
+.twoGitCode {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+/* Project 1 */
+
+.threeTitle {
+    grid-column: col 3 / span 2;
+    grid-row: row;
+}
+.threeImg{
+    grid-column: col 3 / span 2;
+    grid-row: row 2;
+}
+.threeBlurb {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+}
+.threeTech {
+    grid-column: 3 / span 2;
+    grid-row: 4;
+}
+
+.threeExtLink {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.threeGitCode {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+
+/*----- ??? -------*/  /*----- ??? -------*/
+
+
+/* ********************* BOTTOM NAV BAR ************************/
+
+#footerBar {
+    display: block;
+    font-weight: 600;
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: rgb(126, 166, 168);
+    /* --FLEX NAV BAR 
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    position: -webkit-sticky;
+    -- */
+    position: fixed;
+    padding: 1em;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    text-align: center;
+}
+.deskNav a {
+    margin: 0 6em;
+}
+.fas, .mobile-menu, .mobile-header {
+    display: none;
+
+
+
+
+/* Place the navbar at the bottom of the page, and make it stick */
+#footerBar {
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+}
+
+/* Style the links inside the navigation bar */
+#footerBar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+#footerBar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+#footerBar a.active {
+    background-color: red;
+    color: white;
+}
+

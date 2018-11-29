@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project ZERO: Find Your Joy</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display:400,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script defer src="main.js"></script>
 </head>
@@ -14,8 +15,17 @@
 
     <header>
         <!-- CAROUSEL/HEADER-->
+        <div class="carouselbox">
+                <ol class="content">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                </ol>
+              </div>
+        
         <h1 class="tagLine">Joy-Of-All-Trades</h1>
-            <a class="carousel proj0" href="#project0-img">Project ZERO
+            <!-- <a class="carousel proj0" href="#project0-img">Project ZERO
                 <img class="proj0" src="#"/>
             </a>
             <a class="carousel proj1" href="#project1-img">Project ONE
@@ -26,15 +36,18 @@
             </a>
             <a class="carousel proj3" href="#project3-img">Project TWO
                 <img class="proj3" src="#"/>
-            </a>
-    
+            </a> -->
+        <!-- MOBILE BURGER / NAV BAR-->
+        <a class="burgerButton" href=""><i class="fas fa-bars"></i></a>
         <!-- NAV BAR-->
-        <navbar class="nav">
-            <a class="active" href="#home">Portfolio</a>
-            <a class="portfolio" href="#portfolio">Portfolio</a>
-            <a class="about" href="#about">About Me</a>
-            <a class="contact" href="#contact">Contact</a>  
-        </navbar>
+        <div id="footerBar">
+            <navbar class="nav">
+                <a class="active" href="#home">Portfolio</a>
+                <a class="portfolio" href="#portfolio">Portfolio</a>
+                <a class="about" href="#about">About Me</a>
+                <a class="contact" href="#contact">Contact</a>  
+            </navbar>
+        </div>  
     </header>
 
     <!-- MAIN SECTION --> <!-- MAIN SECTION --><!-- MAIN SECTION -->
@@ -44,41 +57,41 @@
         <!-- PORTFOLIO -->
         <div class="container">
                 <section class="portfolio">
-                    <!-- PROJECT ZERO -->
-                    <section class="proj0">
-                        <h3 class="subtitle proj0" id=>Project ZERO</h3>
-                        <img class="proj0" src="#"/>
-                        <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat tincidunt urna, et varius elit. Maecenas ultrices ultricies leo, tristique mattis mi lacinia eu. In hac habitasse platea dictumst. Pellentesque rutrum elementum arcu id gravida. Nunc et sodales risus. Cras id ultrices augue. Maecenas quis blandit turpis. Phasellus laoreet cursus massa, sit amet vulputate urna cursus in. Morbi consequat libero id congue commodo. Morbi gravida urna ante, sed rhoncus felis egestas nec. Suspendisse quis turpis.</p>
-                        <p class="techUsed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed tincidunt dolor, quis pretium neque. Vivamus porttitor egestas ante. Nullam commodo consectetur dui sed rhoncus.</p>
-                        <a class="extLink" href="#">Project 0 External Site</a>
-                        <a class="gitCode" href="#">Project 0 Git Code</a>
+                    <section class="port1">
+                        <!-- PROJECT ZERO -->
+                        <section class="box proj0">
+                            <h3><a class="box zeroTitle sub proj0" href="#">Project ZERO</a></h3>
+                            <img class="box zeroImg proj0" src="#"/>
+                            <p class="box zeroBlurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat tincidunt urna, et varius elit. Maecenas ultrices ultricies leo, tristique mattis mi lacinia eu. In hac habitasse platea dictumst. Pellentesque rutrum elementum arcu id gravida. Nunc et sodales risus. Cras id ultrices augue. Maecenas quis blandit turpis. Phasellus laoreet cursus massa, sit amet vulputate urna cursus in. Morbi consequat libero id congue commodo. Morbi gravida urna ante, sed rhoncus felis egestas nec. Suspendisse quis turpis.</p>
+                            <p class="box zeroTech">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed tincidunt dolor, quis pretium neque. Vivamus porttitor egestas ante. Nullam commodo consectetur dui sed rhoncus.</p>
+                            <h4><a class="box zeroExtLink" href="#">Project 0 External Site</a><a class="box zeroGitCode" href="#">Project 0 Git Code</a></h4>
+                        </section>
+                        <!-- PROJECT ONE -->
+                        <section class="box proj1">
+                            <h3><a class="box oneTitle sub proj1" href="#">Project ONE</a></h3>
+                            <img class="box oneImg proj1" src="#"/>
+                            <p class="box oneBlurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat tincidunt urna, et varius elit. Maecenas ultrices ultricies leo, tristique mattis mi lacinia eu. In hac habitasse platea dictumst. Pellentesque rutrum elementum arcu id gravida. Nunc et sodales risus. Cras id ultrices augue. Maecenas quis blandit turpis. Phasellus laoreet cursus massa, sit amet vulputate urna cursus in. Morbi consequat libero id congue commodo. Morbi gravida urna ante, sed rhoncus felis egestas nec. Suspendisse quis turpis.</p>
+                            <p class="box oneTech">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed tincidunt dolor, quis pretium neque. Vivamus porttitor egestas ante. Nullam commodo consectetur dui sed rhoncus.</p>
+                            <h4><a class="box oneExtLink" href="#">Project 1 External Site</a><a class="box oneGitCode" href="#">Project 1 Git Code</a></h4>
+                        </section>
                     </section>
-                    <!-- PROJECT ONE -->
-                    <section class="proj1">
-                        <h3 class="subtitle proj1">Project ONE</h3>
-                        <img class="proj1" src="#"/>
-                        <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat tincidunt urna, et varius elit. Maecenas ultrices ultricies leo, tristique mattis mi lacinia eu. In hac habitasse platea dictumst. Pellentesque rutrum elementum arcu id gravida. Nunc et sodales risus. Cras id ultrices augue. Maecenas quis blandit turpis. Phasellus laoreet cursus massa, sit amet vulputate urna cursus in. Morbi consequat libero id congue commodo. Morbi gravida urna ante, sed rhoncus felis egestas nec. Suspendisse quis turpis.</p>
-                        <p class="techUsed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed tincidunt dolor, quis pretium neque. Vivamus porttitor egestas ante. Nullam commodo consectetur dui sed rhoncus.</p>
-                        <a class="extLink" href="#">Project 0 External Site</a>
-                        <a class="gitCode" href="#">Project 0 Git Code</a>
-                    </section>
-                    <!-- PROJECT TWO -->
-                    <section class="proj2">
-                        <h3 class="subtitle proj2">Project TWO</h3>
-                        <img class="proj2" src="#"/>
-                        <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat tincidunt urna, et varius elit. Maecenas ultrices ultricies leo, tristique mattis mi lacinia eu. In hac habitasse platea dictumst. Pellentesque rutrum elementum arcu id gravida. Nunc et sodales risus. Cras id ultrices augue. Maecenas quis blandit turpis. Phasellus laoreet cursus massa, sit amet vulputate urna cursus in. Morbi consequat libero id congue commodo. Morbi gravida urna ante, sed rhoncus felis egestas nec. Suspendisse quis turpis.</p>
-                        <p class="techUsed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed tincidunt dolor, quis pretium neque. Vivamus porttitor egestas ante. Nullam commodo consectetur dui sed rhoncus.</p>
-                        <a class="extLink" href="#">Project 0 External Site</a>
-                        <a class="gitCode" href="#">Project 0 Git Code</a>
-                    </section>
-                    <!-- PROJECT THREE -->
-                    <section class="proj3">
-                        <h3 class="subtitle proj3">Project THREE</h3>
-                        <img class="proj3" src="#"/>
-                        <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat tincidunt urna, et varius elit. Maecenas ultrices ultricies leo, tristique mattis mi lacinia eu. In hac habitasse platea dictumst. Pellentesque rutrum elementum arcu id gravida. Nunc et sodales risus. Cras id ultrices augue. Maecenas quis blandit turpis. Phasellus laoreet cursus massa, sit amet vulputate urna cursus in. Morbi consequat libero id congue commodo. Morbi gravida urna ante, sed rhoncus felis egestas nec. Suspendisse quis turpis.</p>
-                        <p class="techUsed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed tincidunt dolor, quis pretium neque. Vivamus porttitor egestas ante. Nullam commodo consectetur dui sed rhoncus.</p>
-                        <a class="extLink" href="#">Project 0 External Site</a>
-                        <a class="gitCode" href="#">Project 0 Git Code</a>
+                    <section class="port2">
+                        <!-- PROJECT TWO -->
+                        <section class="box proj2">
+                            <h3><a class="box twoTitle sub proj2" href="#">Project TWO</a></h3>
+                            <img class="box twoImg proj2" src="#"/>
+                            <p class="box twoBlurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat tincidunt urna, et varius elit. Maecenas ultrices ultricies leo, tristique mattis mi lacinia eu. In hac habitasse platea dictumst. Pellentesque rutrum elementum arcu id gravida. Nunc et sodales risus. Cras id ultrices augue. Maecenas quis blandit turpis. Phasellus laoreet cursus massa, sit amet vulputate urna cursus in. Morbi consequat libero id congue commodo. Morbi gravida urna ante, sed rhoncus felis egestas nec. Suspendisse quis turpis.</p>
+                            <p class="box twoTech">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed tincidunt dolor, quis pretium neque. Vivamus porttitor egestas ante. Nullam commodo consectetur dui sed rhoncus.</p>
+                            <h4><a class="box twoExtLink" href="#">Project 2 External Site</a><a class="box twoGitCode" href="#">Project 2 Git Code</a></h4>
+                        </section>
+                        <!-- PROJECT THREE -->
+                        <section class="box proj3">
+                            <h3><a class="box threeTitle sub proj3" href="#">Project THREE</a></h3>
+                            <img class="box threeImg proj3" src="#"/>
+                            <p class="box threeBlurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat tincidunt urna, et varius elit. Maecenas ultrices ultricies leo, tristique mattis mi lacinia eu. In hac habitasse platea dictumst. Pellentesque rutrum elementum arcu id gravida. Nunc et sodales risus. Cras id ultrices augue. Maecenas quis blandit turpis. Phasellus laoreet cursus massa, sit amet vulputate urna cursus in. Morbi consequat libero id congue commodo. Morbi gravida urna ante, sed rhoncus felis egestas nec. Suspendisse quis turpis.</p>
+                            <p class="box threeTech">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed tincidunt dolor, quis pretium neque. Vivamus porttitor egestas ante. Nullam commodo consectetur dui sed rhoncus.</p>
+                            <h4><a class="box threeExtLink" href="#">Project 3 External Site</a><a class="box threeGitCode" href="#">Project 3 Git Code</a></h4>
+                        </section>
                     </section>
                 </section>
         </div>
@@ -87,9 +100,11 @@
             <section class="about">
                 <h2 class="subtitle">Define Joy</h2>
                 <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis quis ipsum nec porta. Quisque at purus ac tortor scelerisque laoreet et et sapien. Vestibulum commodo, tellus ut bibendum pulvinar, mi mi sollicitudin lectus, a rutrum dolor purus sit amet lectus. Aenean accumsan sit amet urna in ultrices. Duis in commodo massa. Praesent leo quam, commodo in maximus quis, tincidunt eget leo. Phasellus urna lacus, pellentesque et felis ac, malesuada egestas diam. Pellentesque pretium posuere.</p>
-                <a class="social" href="#linkedin">LinkedIn<i src="#linkedin"></a>
-                <a class="social" href="#gitHub">GitHub<i src="#gitHub"></a>
-                <a class="social" href="#email">Email<i src="#email"></a>
+                <h4 class="social">
+                    <a class="social" href="#linkedin">LinkedIn<i src="#linkedin"></a>
+                    <a class="social" href="#gitHub">GitHub<i src="#gitHub"></a>
+                    <a class="social" href="#email">Email<i src="#email"></a>
+                </h4>
             </section>
             <section class="skills">
                 <h2 class="subtitle">Skills</h2>
@@ -140,6 +155,11 @@
         </div>
         
     </main>
+    <!--    FOOTER      --> <!--  FOOTER      --><!--     FOOTER      -->
+    <!--    FOOTER      --> <!--  FOOTER      --><!--     FOOTER      -->
+    <footer>
+        <p class="copyright">&copy; Joy Serqui&ntilde;a 2018</p>
+    </footer>
      
 </body>
 </html>
