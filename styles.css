@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html {
@@ -80,169 +80,58 @@ p, a, ul, li {
 /*----- PORTFOLIO -------*/
 /*----- PORTFOLIO -------*/
 /*----- PORTFOLIO -------*/
-
-/*----- Portfolio 1: Proj0 & Proj1 -------*/
-.port1 {
+* {
+    margin: 0;
+    padding: 0;
+  }
+  /* PORTFOLIO WRAPPER */
+  #proj0 { grid-area: "proj0"; background: lightblue }
+  /* .zeroLink {grid-area: "zeroLink";}
+  .zeroGit {grid-area: "zeroGit";} */
+  #proj1 { grid-area: "proj1"; background: lightpink }
+  /* .oneLink {grid-area: "oneLink";}
+  .oneGit {grid-area: "oneGit";} */
+  #proj2 { grid-area: "proj2"; background: lightyellow}
+  /* .twoLink {grid-area: "twoLink";}
+  .twoGit {grid-area: "twoGit";} */
+  #proj3 { grid-area: "proj3"; background: lightgreen }
+  /* .threeLink {grid-area: "threeLink";}
+  .threeGit {grid-area: "threeGit";} */
+  
+  img, h3, h5, a {
+    margin: 1em;  
+    width: 50em;
+    text-align: center;
+    padding: .5em;
+  }
+  p {
+      text-align: justify;
+      width: 50em;
+  }
+  
+  
+  
+  .portfolio {
+    padding: 10px;
     display: grid;
+    height: 100vh;
+    width: 100%;
     grid-gap: 2em;
-    grid-template-columns: repeat(6, [col] auto);
-    grid-template-rows: repeat(5, [row] auto);
-    /* padding: 2em;
-    margin: 2em; */
-/* 		background-color: #fff;
-    color: #444; */
-}
-
-.box {
-    background-color: grey;
-    color: #fff;
-    border-radius: 1em;
-    /* padding: 1em; */
-    font-size: 16px;
-    /* margin: 5%; */
-}
-.sub {
-    font-size: 20px;
-}
-
-/* GRID */
-/* Project Zero */
-.zeroTitle {
-    grid-column: col / span 2;
-    grid-row: row;
-}
-.zeroImg {
-    grid-column: col / span 2;
-    grid-row: row 2;
-    height: 200px;
-}
-.zeroBlurb {
-    grid-column: 1 / 3;
-    grid-row: 3;
-}
-.zeroTech {
-    grid-column: 1 / 3;
-    grid-row: 4;
-}
-.zeroExtLink {
-    grid-column: 1;
-    grid-row: 5;
-}
-.zeroGitCode {
-    grid-column: 2;
-    grid-row: 5;
-}
-
-/* Project 1 */
-
-.oneTitle {
-    grid-column: col 3 / span 2;
-    grid-row: row;
-}
-.oneImg{
-    grid-column: col 3 / span 2;
-    grid-row: row 2;
-}
-.oneBlurb {
-    grid-column: 3 / span 2;
-    grid-row: 3;
-}
-.oneTech {
-    grid-column: 3 / span 2;
-    grid-row: 4;
-}
-
-.oneExtLink {
-    grid-column: 3;
-    grid-row: 5;
-}
-
-.oneGitCode {
-    grid-column: 4;
-    grid-row: 5;
-}
-
-/*----- Portfolio B: Proj2 & Proj3 -------*/
-
-.port2 {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(6, [col] auto);
-    grid-template-rows: repeat(5, [row] auto);
-    justify-self: center;
-    /* padding: 2em;
-    margin: 2em; */
-/* 		background-color: #fff;
-    color: #444; */
-}
-
-.box {
-    background-color: grey;
-    color: #fff;
-    border-radius: 1em;
-    padding: 3em;
-    font-size: 16px;
-    margin: 5%;
-}
-
-/* GRID */
-/* Project Zero */
-.twoTitle {
-    grid-column: col / span 2;
-    grid-row: row;
-}
-.twoImg {
-    grid-column: col / span 2;
-    grid-row: row 2;
-    height: 200px;
-}
-.twoBlurb {
-    grid-column: 1 / 3;
-    grid-row: 3;
-}
-.twoTech {
-    grid-column: 1 / 3;
-    grid-row: 4;
-}
-.twoExtLink {
-    grid-column: 1;
-    grid-row: 5;
-}
-.twoGitCode {
-    grid-column: 2;
-    grid-row: 5;
-}
-
-/* Project 1 */
-
-.threeTitle {
-    grid-column: col 3 / span 2;
-    grid-row: row;
-}
-.threeImg{
-    grid-column: col 3 / span 2;
-    grid-row: row 2;
-}
-.threeBlurb {
-    grid-column: 3 / span 2;
-    grid-row: 3;
-}
-.threeTech {
-    grid-column: 3 / span 2;
-    grid-row: 4;
-}
-
-.threeExtLink {
-    grid-column: 3;
-    grid-row: 5;
-}
-
-.threeGitCode {
-    grid-column: 4;
-    grid-row: 5;
-}
-
-
+    grid-template-areas:
+      "proj0 proj1"
+      "proj2 proj3";
+    align-items: center;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 2em;
+  }
+  
 /*----- ??? -------*/  /*----- ??? -------*/
 
 
