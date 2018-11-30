@@ -30,22 +30,26 @@ function showSlides(n) {
     // dots[slideIndex-1].className =+ " active";
 }
 
+
+
 // ----- QUOTE BOX MECHANICS ---- //
 // ----- QUOTE BOX MECHANICS ---- //
 // ----- QUOTE BOX MECHANICS ---- //
 
 // $(document).ready(function() {
 
-$(document).ready(function() {
-    $("#q2", "#q3").hide();
-    setInterval(function() {
-        $("#quoteBox > section:first")
+
+setInterval(function() { 
+        // console.log($('#slideshow > div:first')[0])
+        var $quoteBox = $('#quoteBox > section')
+        console.log($quoteBox[0])
+        $('#quoteBox > section:first')
         .fadeOut(1000)
         .next()
-        .fadeIn(1000);
-        appendTo("#quoteBox");
-    }, 5000);
-});
+        .fadeIn(1000)
+        .end()
+        .appendTo('#quoteBox');
+},  5000);
 
 // $('#r2', '#r3').hide();
 // setInterval(function() {
