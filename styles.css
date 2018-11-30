@@ -82,25 +82,39 @@ p {
 /*----- HEADER -------*//*----- HEADER -------*/
 /*----- HEADER -------*//*----- HEADER -------*/
  
-/* CAROUSEL  */
-* {box-sizing: border-box}
-img {
+/* HERO BOX / CAROUSEL HOLDER */
+/* * {box-sizing: border-box} */
+/* img {
     margin: 0;
     padding: 0;
-}
-body, .myslides, .carouselbox, .dot {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
     width: 100%;
-    overflow: auto;
-} 
+    height: auto;
+} */
+/* body, .myslides, .heroBox, .dot {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}  */
+.myslides {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+}
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
 /*
  /* CONTAINER */
- .carouselbox {
+ .carouselWrap {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-position: cover;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
  }
 
  /* HIDE THE IMAGES BY DEFAULT */
