@@ -29,3 +29,22 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "" ;
     // dots[slideIndex-1].className =+ " active";
 }
+
+// ----- QUOTE BOX MECHANICS ---- //
+// ----- QUOTE BOX MECHANICS ---- //
+// ----- QUOTE BOX MECHANICS ---- //
+
+// $(document).ready(function() {
+
+$('#q2', '#q3').hide();
+setInterval(function() {
+    $(".quote").fadeOut().next().fadeIn();
+}, 5000);
+
+// $('#r2', '#r3').hide();
+// setInterval(function() {
+//     $(.".ref")
+// })
+
+
+    // $(".ref").fadeOut().next().fadeIn();

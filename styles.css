@@ -265,7 +265,7 @@ p {
 #about { grid-area: "about"; background: lightblue; height: 25em }
 #skills { grid-area: "skills"; background: lightpink; height: 25em }
 #contact { grid-area: "contact"; background: lightyellow; height: 25em}
-#test { grid-area: "test"; background: lightgreen; height: 25em }
+#quoteBox { grid-area: "quoteBox"; background: lightgreen; height: 25em }
 
 .aboutContactTest {
   /* padding: 10px; */
@@ -274,9 +274,10 @@ p {
   grid-gap: 2em;
   grid-template-areas:
     "about skills"
-    "contact test";
+    "contact quoteBox";
   align-items: center;
   margin: 0 0 4em;
+  height: auto;
 }
 
 .box2 {
@@ -311,12 +312,27 @@ ul {
   list-style: none;
   font-size: 1.5em;
 }
+.quote {
+    width: 50em;
+    height: 10em;
+}
 .ref {
   text-align: right;
   margin: .5em;
+  width: 50em;
+  height: 2em;
 }
 h2 {
   padding: 1.5em 0 0;
+}
+#q1, #r1 {
+    background: pink;
+}
+#q2, #r2 {
+    background: yellow;
+}
+#q3, r3 {
+    background: red;
 }
 
 
