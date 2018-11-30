@@ -249,7 +249,19 @@ p {
       "proj2 proj3";
     align-items: center;
   }
-  
+  .aboutContactTest {
+    /* padding: 10px; */
+    display: grid;
+    width: 100%;
+    grid-gap: 2em;
+    grid-template-areas:
+      "about skills"
+      "contact quoteBox";
+    align-items: center;
+    margin: 0 0 4em;
+    height: auto;
+  }
+
   .box {
     display: flex;
     flex-direction: column;
@@ -267,18 +279,7 @@ p {
 #contact { grid-area: "contact"; background: lightyellow; height: 25em}
 #quoteBox { grid-area: "quoteBox"; background: lightgreen; height: 25em }
 
-.aboutContactTest {
-  /* padding: 10px; */
-  display: grid;
-  border: 1px solid black;
-  grid-gap: 2em;
-  grid-template-areas:
-    "about skills"
-    "contact quoteBox";
-  align-items: center;
-  margin: 0 0 4em;
-  height: auto;
-}
+
 
 .box2 {
   display: flex;
@@ -312,10 +313,7 @@ ul {
   list-style: none;
   font-size: 1.5em;
 }
-.quote {
-    width: 50em;
-    height: 10em;
-}
+
 .ref {
   text-align: right;
   margin: .5em;
@@ -325,6 +323,7 @@ ul {
 h2 {
   padding: 1.5em 0 0;
 }
+/* QUOTE POSITIONING FOR FADES IN AND OUT */
 #q1, #r1 {
     background: pink;
 }
@@ -334,6 +333,35 @@ h2 {
 #q3, r3 {
     background: red;
 }
+#quoteBox {
+    position: relative;
+    width: auto;
+    height: 25em;
+    padding: 1em;
+}
+
+#quoteBox > section {
+    position: absolute;
+    padding: 5em 0;
+}
+
+/* #q1 {  position: absolute;  margin-top:50px;}
+#q1 {  display: none;  position: absolute;  bottom:100%;  left:0;  right: 5%;  background-color:aquamarine;  padding:;}
+#q1:hover { display: block;}
+#r1  {  display: none;  position: absolute;  top:100%;  left:0;  right: 5%;  background-color:bisque;  padding:;}
+#r1:hover  {  display: block;}
+
+#q2 {  position: absolute;  margin-top:50px;}
+#q2 {  display: none;  position: absolute;  bottom:100%;  left:0;  right: 5%;  background-color:goldenrod;  padding:;}
+#q2:hover { display: block;}
+#r2 {  display: none;  position: absolute;  top:100%;  left:0;  right: 5%;  background-color:coral;  padding:;}
+#r2:hover {  display: block;}
+
+#q3 {  position: absolute;  margin-top:50px;}
+#q3 {  display: none;  position: absolute;  bottom:100%;  left:0;  right: 5%;  background-color:darksalmon;  padding:;}
+#q3:hover { display: block;}
+#r3 {  display: none;  position: absolute;  top:100%;  left:0;  right: 5%;  background-color:darkseagreen;  padding:;}
+#r3:hover {  display: block;} */
 
 
 /* LEAVE A COMMENT (SECTION) */

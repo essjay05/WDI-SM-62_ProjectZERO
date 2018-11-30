@@ -36,10 +36,16 @@ function showSlides(n) {
 
 // $(document).ready(function() {
 
-$('#q2', '#q3').hide();
-setInterval(function() {
-    $(".quote").fadeOut().next().fadeIn();
-}, 5000);
+$(document).ready(function() {
+    $("#q2", "#q3").hide();
+    setInterval(function() {
+        $("#quoteBox > section:first")
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000);
+        appendTo("#quoteBox");
+    }, 5000);
+});
 
 // $('#r2', '#r3').hide();
 // setInterval(function() {
