@@ -323,54 +323,51 @@ h2 {
 /* LEAVE A COMMENT (SECTION) */
 /* FORM CONTAINER */
 
-.userForm {
-    margin: 5% 10%; 
-}
-.userForm h3 {
-    text-align: center;
-    color: rgb(74, 110, 112);
-}
-/* FORM STYLES */
-input[name="name"] {
-    grid-area: name;
-}
+        .userForm h3 {
+            text-align: center;
+            color: rgb(74, 110, 112);
+        }
+        /* FORM STYLES */
+        input[name="name"] {
+            grid-area: name;
+        }
 
-input[name="emailUser"] {
-    grid-area: emailUser;
-}
+        input[name="emailUser"] {
+            grid-area: emailUser;
+        }
 
-textarea {
-    grid-area: comment;
-    height: 10em;
-    resize: none;
-}
+        textarea {
+            grid-area: comment;
+            height: 5em;
+            resize: none;
+        }
 
-input[name="submit"] {
-    grid-area: submit;
-}
+        input[name="submit"] {
+            grid-area: submit;
+        }
 
-.formGrid {
-    display: grid;
-    width: auto;
-    grid-template-areas:
-        'name emailUser'
-        'comment comment'
-        'submit submit';
-    grid-gap: 1em;
-    padding: 3em;
-    display: -ms-grid; /* IE 10 */
-}
+        .formGrid {
+            display: grid;
+            width: auto;
+            grid-template-areas:
+                'name emailUser'
+                'comment comment'
+                'submit submit';
+            grid-gap: 1em;
+            padding: 3em;
+            display: -ms-grid; /* IE 10 */
+        }
 
-.formGrid input, .formGrid textarea {
-    border: rgb(74, 110, 112) .25em solid;
-    font-family: 'Lato', sans-serif;
-    color: slategrey;
-    font-size: .75em;
-    padding: 1em;
-}
-.formGrid::placeholder {
-    font-weight: 900;
-}
+        .formGrid input, .formGrid textarea {
+            border: rgb(74, 110, 112) .25em solid;
+            font-family: 'Lato', sans-serif;
+            color: slategrey;
+            font-size: .75em;
+            padding: 1em;
+        }
+        .formGrid::placeholder {
+            font-weight: 900;
+        }
 
 /* FOOTER */
 footer {
