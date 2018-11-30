@@ -14,8 +14,6 @@ body {
     -webkit-font-smoothing: antialiased;
     margin: 0;
     letter-spacing: .02em;
-    text-align: center;
-    color: navy;
 }
 
 /* ----------------- SETTING THE VIEWPORT ---------------- */
@@ -26,17 +24,6 @@ body {
 @-ms-viewport {
     width: device-width;
 }
-.mainGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100vh;
-    align-items: center;
-    justify-items: center;
-}
-.portfolio {
-    align-self: center;
-    justify-self: center;
-}
 
 /* ----------------- RESPONSIVE IMAGES ---------------- */
 img {
@@ -44,22 +31,24 @@ img {
 }
 
 /*------------- TYPOGRAPHY ---------------------- */
-p {
-    font-family: "Open Sans", sans-serif;
-    text-transform: none;
-    line-height: 1.4;
-}
-
 h1, h2, h3, h4 {
     font-family: "Playfair Display", serif;
     font-weight: bold;
 }
 
+p, ul, li {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: none;
+    line-height: 1.4;
+};
+
 a {
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-    color: rgb(126, 166, 168);
+    color: inherit;
     font-weight: 600;
     transition: all .5s ease-in-out;
+    text-transform: none;
 }
 
 a:hover {
@@ -67,15 +56,38 @@ a:hover {
 }
 
 /*----- OVERALL DESIGN -------*/ /*----- OVERALL DESIGN -------*/
-h1, h2, h3, h4 {
-    font-family: 'Arvo', serif;
-};
-p, a, ul, li {
-    font-family: 'Open Sans Condensed', sans-serif;
-};
+
+
+img, h3, h5, a {
+    margin: 1em;  
+    width: 50em;
+    text-align: center;
+    padding: .5em;
+}
+
+p {
+    text-align: justify;
+    width: 50em;
+    margin-top: 1.5em;
+}
 
 
 /*----- LAYOUT -------*/  /*----- LAYOUT -------*/
+
+
+
+/*----- HEADER -------*//*----- HEADER -------*/
+/*----- HEADER -------*//*----- HEADER -------*/
+/*----- HEADER -------*//*----- HEADER -------*/
+/*----- HEADER -------*//*----- HEADER -------*/
+
+/* NAV BAR */
+.fas {
+    font-size: 32px;
+    color: white;
+}
+
+
 
 /*----- PORTFOLIO -------*/
 /*----- PORTFOLIO -------*/
@@ -83,38 +95,40 @@ p, a, ul, li {
 * {
     margin: 0;
     padding: 0;
-  }
+}
+
+.portfolio { grid-area: "portfolio"; background: grey }
+.aboutContactTest { grid-area: "aboutContactTest"; background: yellow }
+
+.mainGrid { /* MAIN DOCUMENT WRAPPER */
+    display: grid;
+    width: 100%;
+    grid-gap: 1em;
+    grid-template-areas:
+    
+      "portfolio"
+      "aboutContactTest";
+    align-items: center;
+}
+
+.container {
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 2em;
+}
   /* PORTFOLIO WRAPPER */
   #proj0 { grid-area: "proj0"; background: lightblue }
-  /* .zeroLink {grid-area: "zeroLink";}
-  .zeroGit {grid-area: "zeroGit";} */
   #proj1 { grid-area: "proj1"; background: lightpink }
-  /* .oneLink {grid-area: "oneLink";}
-  .oneGit {grid-area: "oneGit";} */
   #proj2 { grid-area: "proj2"; background: lightyellow}
-  /* .twoLink {grid-area: "twoLink";}
-  .twoGit {grid-area: "twoGit";} */
   #proj3 { grid-area: "proj3"; background: lightgreen }
-  /* .threeLink {grid-area: "threeLink";}
-  .threeGit {grid-area: "threeGit";} */
-  
-  img, h3, h5, a {
-    margin: 1em;  
-    width: 50em;
-    text-align: center;
-    padding: .5em;
-  }
-  p {
-      text-align: justify;
-      width: 50em;
-  }
-  
-  
-  
+ 
   .portfolio {
-    padding: 10px;
+    /* padding: 10px; */
     display: grid;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     grid-gap: 2em;
     grid-template-areas:
@@ -134,72 +148,96 @@ p, a, ul, li {
   
 /*----- ??? -------*/  /*----- ??? -------*/
 
+/* ABOUT / SKILLS / CONTACT / TESTIMONIALS WRAPPER */
+#about { grid-area: "about"; background: lightblue; height: 25em }
+#skills { grid-area: "skills"; background: lightpink; height: 25em }
+#contact { grid-area: "contact"; background: lightyellow; height: 25em}
+#test { grid-area: "test"; background: lightgreen; height: 25em }
+
+.aboutContactTest {
+  /* padding: 10px; */
+  display: grid;
+  border: 1px solid black;
+  grid-gap: 2em;
+  grid-template-areas:
+    "about skills"
+    "contact test";
+  align-items: center;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  margin: 1em;
+}
+
+.about, .contact {
+  margin: 1em;  
+  width: 50em;
+  text-align: left;
+  padding: 1em;
+  
+}
+
+.skills, .test {
+  margin: 1em;  
+  width: 50em;
+  text-align: center;
+  padding: 1em;
+  font-style: regular;
+}
+
+/* ABOUT/SKILLS CONTACT/TESTIMONIALS STYLING  */
+
+
+ul {
+  list-style: none;
+  font-size: 1.5em;
+}
+.ref {
+  text-align: right;
+  margin: .5em;
+}
+h2 {
+  padding: 1.5em 0 0;
+}
+
 
 /* ********************* BOTTOM NAV BAR ************************/
-
-#footerBar {
-    display: block;
-    font-weight: 600;
-    width: 100%;
-    height: 3em;
-    background-color: black;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    color: rgb(126, 166, 168);
-    /* --FLEX NAV BAR 
-    display: flex;
-    justify-content: space-around;
-    position: sticky;
-    position: -webkit-sticky;
-    -- */
-    position: fixed;
-    padding: 1em;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    text-align: center;
-}
-.deskNav a {
-    margin: 0 6em;
-}
-.fas, .mobile-menu, .mobile-header {
-    display: none;
-
-
-
-
 /* Place the navbar at the bottom of the page, and make it stick */
-#footerBar {
-    background-color: black;
-    overflow: hidden;
+.nav {
+    background-color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 2em;
+    color: teal;
+    text-align: right;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
+.copyright {
+    text-align: left;
+    color: teal;
+    font-size: 1em;
 }
 
 /* Style the links inside the navigation bar */
-#footerBar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
+
 
 /* Change the color of links on hover */
-#footerBar a:hover {
+/* #footerBar a:hover {
     background-color: #ddd;
-    color: black;
-}
+    color: yellow;
+} */
 
 /* Add a color to the active/current link */
-#footerBar a.active {
+/* #footerBar a.active {
     background-color: red;
     color: white;
-}
+} */
 

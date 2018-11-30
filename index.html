@@ -16,39 +16,17 @@
 
     <header>
         <!-- CAROUSEL/HEADER-->
-        <div class="carouselbox">
+            <div class="carouselbox">
                 <ol class="content">
                   <li>1</li>
                   <li>2</li>
                   <li>3</li>
                   <li>4</li>
                 </ol>
-              </div>
+            </div>
         
-        <h1 class="tagLine">Joy-Of-All-Trades</h1>
-            <!-- <a class="carousel proj0" href="#project0-img">Project ZERO
-                <img class="proj0" src="#"/>
-            </a>
-            <a class="carousel proj1" href="#project1-img">Project ONE
-                <img class="proj1" src="#"/>
-            </a>
-            <a class="carousel proj2" href="#project2-img">Project TWO
-                <img class="proj2" src="#"/>
-            </a>
-            <a class="carousel proj3" href="#project3-img">Project TWO
-                <img class="proj3" src="#"/>
-            </a> -->
-        <!-- MOBILE BURGER / NAV BAR-->
-        <a class="burgerButton" href=""><i class="fas fa-bars"></i></a>
-        <!-- NAV BAR-->
-        <div id="footerBar">
-            <navbar class="nav">
-                <a class="active" href="#home">Portfolio</a>
-                <a class="portfolio" href="#portfolio">Portfolio</a>
-                <a class="about" href="#about">About Me</a>
-                <a class="contact" href="#contact">Contact</a>  
-            </navbar>
-        </div>  
+            <h1 class="tagLine">Joy-Of-All-Trades</h1>
+     
     </header>
 
     <!-- MAIN SECTION --> <!-- MAIN SECTION --><!-- MAIN SECTION -->
@@ -102,32 +80,37 @@
                     </div>
                        
                 </section>
-        </div>
-        <!-- ABOUT / SKILLS-->
-        <div class="container about">
-            <section class="about">
-                <h2 class="subtitle">Define Joy</h2>
-                <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis quis ipsum nec porta. Quisque at purus ac tortor scelerisque laoreet et et sapien. Vestibulum commodo, tellus ut bibendum pulvinar, mi mi sollicitudin lectus, a rutrum dolor purus sit amet lectus. Aenean accumsan sit amet urna in ultrices. Duis in commodo massa. Praesent leo quam, commodo in maximus quis, tincidunt eget leo. Phasellus urna lacus, pellentesque et felis ac, malesuada egestas diam. Pellentesque pretium posuere.</p>
-                <h4 class="social">
-                    <a class="social" href="#linkedin">LinkedIn<i src="#linkedin"></a>
-                    <a class="social" href="#gitHub">GitHub<i src="#gitHub"></a>
-                    <a class="social" href="#email">Email<i src="#email"></a>
-                </h4>
-            </section>
-            <section class="skills">
-                <h2 class="subtitle">Skills</h2>
-                <ul class="skills">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-            </section>
-        </div>
-        <!-- CONTACT / TESTIMONIALS -->
-        <div class="container contact">
+    
+            <!-- ABOUT / SKILLS-->
+            <section class="aboutContactTest">
+                <!-- ABOUT ME -->
+                <section class="box2" id="about">
+                  <h2 class="aboutSub">Define Joy</h2>
+                  <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis quis ipsum nec porta. Quisque at purus ac tortor scelerisque laoreet et et sapien. Vestibulum commodo, tellus ut bibendum pulvinar, mi mi sollicitudin lectus, a rutrum dolor purus sit amet lectus. Aenean accumsan sit amet urna in ultrices. Duis in commodo massa. Praesent leo quam, commodo in maximus quis, tincidunt eget leo. Phasellus urna lacus, pellentesque et felis ac, malesuada egestas diam. Pellentesque pretium posuere.</p>
+                  <!-- Social Media Links -->
+                  <p class="social">
+                      <a class="social" href="#linkedin"><i class="fab fa-linkedin"></i></a>
+                      <a class="social" href="#gitHub"><i class="fab fa-github"></i></a>
+                      <a class="social" href="#email"><i class="far fa-envelope-open"></i></a>
+                  </p>
+                </section>
+                
+                <!-- SKILLS -->
+                <section class="box2" id="skills">
+                    <h2 class="subtitle">Skills</h2>
+                    <ul class="skillsList">
+                        <li><i class="fab fa-html5"></i>HTML</li>
+                        <li><i class="fab fa-css3-alt"></i>CSS</li>
+                        <li><i class="fab fa-js-square"></i>JavaScript</li>
+                        <li>jQuery</li>
+                </section>
+                
 
-            <!-- CONTACT FORM -->
-                <section class="contact form">
+                <!-- CONTACT / TESTIMONIALS -->
+                
+                <!-- CONTACT FORM -->
+                <section class="box2" id="contact">
+                    <h2> Contact Form </h2>
                     <div id="after_submit"></div>
                     <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
                         <div class="row">
@@ -142,31 +125,45 @@
                         </div>
                         <div class="row">
                             <label class="required" for="message">Your message:</label><br />
-                            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br/>
                             <span id="message_validation" class="error_message"></span>
                         </div>
                             
                         <input id="submit_button" type="submit" value="Send email" />
                     </form>
                 </section>
-                <section class="testimonials">
-                    <h2 class="subtitle">Testimonials</h2>
+                
+                <!-- TESTIMONIALS SECTION  -->
+                <section class="box2" id="test">
+                    <h2>Testimonials</h2>
                         <section class="ref">
                             <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis quis ipsum nec porta. Quisque at purus ac tortor scelerisque laoreet et et sapien. Vestibulum commodo, tellus ut bibendum pulvinar, mi mi sollicitudin lectus, a rutrum dolor purus sit amet lectus. Aenean accumsan sit amet urna in ultrices. Duis in commodo massa. Praesent leo quam, commodo in maximus quis, tincidunt eget leo. Phasellus urna lacus, pellentesque et felis ac, malesuada egestas diam. Pellentesque pretium posuere.</p>
-                            <h4 class="ref">Name of Paid Friend 1</h4>
+                            <h4 class="ref">- Name of Paid Friend 1</h4>
                         </section>
                         <section class="ref">
                                 <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis quis ipsum nec porta. Quisque at purus ac tortor scelerisque laoreet et et sapien. Vestibulum commodo, tellus ut bibendum pulvinar, mi mi sollicitudin lectus, a rutrum dolor purus sit amet lectus. Aenean accumsan sit amet urna in ultrices. Duis in commodo massa. Praesent leo quam, commodo in maximus quis, tincidunt eget leo. Phasellus urna lacus, pellentesque et felis ac, malesuada egestas diam. Pellentesque pretium posuere.</p>
-                                <h4 class="ref">Name of Paid Friend 2</h4>
+                                <h4 class="ref">- Name of Paid Friend 2</h4>
                         </section> 
                 </section>
+            
+            </section>
         </div>
         
     </main>
     <!--    FOOTER      --> <!--  FOOTER      --><!--     FOOTER      -->
     <!--    FOOTER      --> <!--  FOOTER      --><!--     FOOTER      -->
     <footer>
-        <p class="copyright">&copy; Joy Serqui&ntilde;a 2018</p>
+        <!-- MOBILE BURGER / NAV BAR-->
+        <a class="burgerButton" href=""><i class="fas fa-bars"></i></a>
+        <!-- NAV BAR-->
+        <div id="footerBar">
+            <navbar class="nav">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About Me</a>
+                <a href="#contact">Contact</a>
+                <p class="copyright">&copy; Joy Serqui&ntilde;a 2018</p>  
+            </navbar>
+        </div> 
     </footer>
      
 </body>
