@@ -145,6 +145,7 @@
                       <a class="social" href="#linkedin"><i class="fab fa-linkedin"></i></a>
                       <a class="social" href="#gitHub"><i class="fab fa-github"></i></a>
                       <a class="social" href="#email"><i class="far fa-envelope-open"></i></a>
+                      <a href="social" href="#instagram"><i class="fab fa-instagram"></i></a>
                   </p>
                 </section>
                 
@@ -155,36 +156,26 @@
                         <li><i class="fab fa-html5"></i>HTML</li>
                         <li><i class="fab fa-css3-alt"></i>CSS</li>
                         <li><i class="fab fa-js-square"></i>JavaScript</li>
-                        <li>jQuery</li>
+                        <li>jQuery</li>     
                 </section>
                 
 
                 <!-- CONTACT / TESTIMONIALS -->
-                
+                <!-- GENERAL FORM -->
                 <!-- CONTACT FORM -->
                 <section class="box2" id="contact">
                     <h2> Contact Form </h2>
-                    <div id="after_submit"></div>
-                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-                        <div class="row">
-                            <label class="required" for="name">Your name:</label><br />
-                            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-                            <span id="name_validation" class="error_message"></span>
+                   
+                    <!-- COMMENT FORM SECTION -->
+                    <div class="userForm">
+                            <h3 class="comment">LEAVE A COMMENT</h3>
+                            <form class="formGrid" action="" >
+                                <input name="name" type="text" placeholder="NAME" />
+                                <input name="emailUser" type="email" placeholder="EMAIL" />
+                                <textarea name="comment" type="email" placeholder="COMMENT"></textarea>
+                                <input name="submit" type="submit" value="SUBMIT"/>
+                            </form>
                         </div>
-                        <div class="row">
-                            <label class="required" for="email">Your email:</label><br />
-                            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-                            <span id="email_validation" class="error_message"></span>
-                        </div>
-                        <div class="row">
-                            <label class="required" for="message">Your message:</label><br />
-                            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br/>
-                            <span id="message_validation" class="error_message"></span>
-                        </div>
-                            
-                        <input id="submit_button" type="submit" value="Send email" />
-                    </form>
-                </section>
                 
                 <!-- TESTIMONIALS SECTION  -->
                 <section class="box2" id="test">
@@ -215,9 +206,17 @@
                 <a href="#">About Me</a>
                 <a href="#">Contact</a>
             </navbar>
+            <div class="icons">
+                    <nav>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </nav>
+            </div>
             <p class="copyright">&copy; Joy Serqui&ntilde;a 2018</p>
         </div> 
     </footer>
+
      
 </body>
 </html>
