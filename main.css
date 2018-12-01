@@ -29,7 +29,7 @@ a {
 }
 
 /* ---------- HERO IMAGE -------------- */
-h1 {
+#heroImg {
     background: url("https://i.imgur.com/k5aEq1W.png") no-repeat top;
     background-size: cover;
     background-position: center;
@@ -117,7 +117,6 @@ nav a {
     font-weight: 400;
     font-size: .75rem;
     margin-left: 1rem;
-    line-spacing: 0;
 }
 
 .menu {
@@ -240,26 +239,25 @@ nav a {
 
 /* MEDIA QUERIES / RESPOSINVE STYLES */
 @media (max-width: 991px) {
-    header {
-        .Joy {
-            font-size: 15rem;
-            font-family: "Permanent Marker", cursive;
-            /* font-family: "Rock Salt", cursive; */
-        }
-        .defOfJoy {
-            /* font-family: "Noto Sans", sans-serif; */
-            font-family: "Rock Salt", cursive;
-            color: white;
-            font-weight: 700;
-            font-size: 4rem;
-            margin: -2rem 0;
-            line-height: 8rem; 
-        }
-        .definition {
-            font-family: "Noto Sans", sans-serif;
-            color: white;
-            font-weight: 400;
-            margin: -6em 0;
+    .Joy {
+        font-size: 15rem;
+        font-family: "Permanent Marker", cursive;
+        /* font-family: "Rock Salt", cursive; */
+    }
+    .defOfJoy {
+        /* font-family: "Noto Sans", sans-serif; */
+        font-family: "Rock Salt", cursive;
+        color: white;
+        font-weight: 700;
+        font-size: 4rem;
+        margin: -2rem 0;
+        line-height: 8rem; 
+    }
+    .definition {
+        font-family: "Noto Sans", sans-serif;
+        color: white;
+        font-weight: 400;
+        margin: -6em 0;
     }
     footer {
         padding: 0 20px;

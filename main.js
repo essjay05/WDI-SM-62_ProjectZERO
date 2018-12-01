@@ -16,19 +16,40 @@ function currentSlide(n) {
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    // var slides = document.getElementsByClassName("tagLine");
+    var slides = ["https://i.imgur.com/k5aEq1W.png", "https://i.imgur.com/CP1dNow.jpg", "https://i.imgur.com/DOQpTGX.jpg"];
+    // $("h1").css({"background-image": "url( + heroImages[index])"});
+    // if (n > slides.length) {slideIndex = 1}
+    // if (n < 1) {slideIndex = slides.length}
+    for (var i = 0; i < slides.length; i++) {
+            setInterval(function(){
+                $("#heroImg").css({"background-image": "url(" + heroImages[index]+")"});
+                
+                if (index === heroImages.length) {
+                    index = 0;
+                } else {
+                    index=+ 1;
+                }
+            }, 2000)
+        };
+        // slides[i].style.display = "none";
     }   
     // for (i = 0; i < dots.length; i++) {
     //     dots[i].className = dots[i].className.replace("active", "");
     // }
     slides[slideIndex-1].style.display = "" ;
     // dots[slideIndex-1].className =+ " active";
-}
+
+console.log(heroBG);
+
+
+// if (index === heroImages.length) {
+//     index = 0;
+// } else {
+//     index=+ 1;
+// }
+// }, 2000)
+// };
 
 
 
@@ -51,21 +72,23 @@ setInterval(function() {
         .appendTo('#quoteBox');
 },  5000);
 
-// $('#r2', '#r3').hide();
-// setInterval(function() {
-//     $(.".ref")
-// })
 
 
-    // $(".ref").fadeOut().next().fadeIn();
+// TESTING SLIDESHOW REPLACE BACKGROUND URL for header
+var heroBG = document.getElementsByClassName("tagLine");
+console.log(heroBG);
 
+var heroImages = ["https://i.imgur.com/k5aEq1W.png", "https://i.imgur.com/CP1dNow.jpg", "https://i.imgur.com/DOQpTGX.jpg"];
 
-// Function for Burger button toggle    
-    // $("#hamburger").click(function() {
-    //     $(".menu").toggleClass("active");
-    // })
-
-    
-    $("burger").addEventListener("click", function (){
-        console.log("HI")
-    });
+var i = 0;
+function swapHeroBG() {
+    setInterval(function(){
+        $("h1").css({"background-image": "url( + heroImages[index])"});
+        
+        if (index === heroImages.length) {
+            index = 0;
+        } else {
+            index=+ 1;
+        }
+    }, 2000)
+};
