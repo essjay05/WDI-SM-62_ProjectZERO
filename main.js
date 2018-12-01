@@ -37,10 +37,10 @@ function showSlides(n) {
     // for (i = 0; i < dots.length; i++) {
     //     dots[i].className = dots[i].className.replace("active", "");
     // }
-    slides[slideIndex-1].style.display = "" ;
-    // dots[slideIndex-1].className =+ " active";
+//     slides[slideIndex-1].style.display = "" ;
+//     // dots[slideIndex-1].className =+ " active";
 
-console.log(heroBG);
+// console.log(heroBG);
 
 
 // if (index === heroImages.length) {
@@ -57,7 +57,7 @@ console.log(heroBG);
 // ----- QUOTE BOX MECHANICS ---- //
 // ----- QUOTE BOX MECHANICS ---- //
 
-// $(document).ready(function() {
+// $(document).ready(function() WORKING!!! DO NOT TOUCH!! {
 
 
 setInterval(function() { 
@@ -75,20 +75,20 @@ setInterval(function() {
 
 
 // TESTING SLIDESHOW REPLACE BACKGROUND URL for header
-var heroBG = document.getElementsByClassName("tagLine");
-console.log(heroBG);
+// var heroBG = document.getElementsByClassName("tagLine");
+// console.log(heroBG);
 
-var heroImages = ["https://i.imgur.com/k5aEq1W.png", "https://i.imgur.com/CP1dNow.jpg", "https://i.imgur.com/DOQpTGX.jpg"];
+// var heroImages = ["https://i.imgur.com/k5aEq1W.png", "https://i.imgur.com/CP1dNow.jpg", "https://i.imgur.com/DOQpTGX.jpg"];
 
-var i = 0;
-function swapHeroBG() {
-    setInterval(function(){
-        $("h1").css({"background-image": "url( + heroImages[index])"});
+// var i = 0;
+// function swapHeroBG() {
+//     setInterval(function(){
+//         $("h1").css({"background-image": "url( + heroImages[index])"});
         
-        if (index === heroImages.length) {
-            index = 0;
-        } else {
-            index=+ 1;
-        }
-    }, 2000)
-};
+//         if (index === heroImages.length) {
+//             index = 0;
+//         } else {
+//             index=+ 1;
+//         }
+//     }, 2000)
+// };
