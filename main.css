@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; 
+}
+/* -------- TYPOGRAPHY --------- */
+/*------------- TYPOGRAPHY ---------------------- */
+h1, h2, h3, h4 {
+    font-family: "Rock Salt", cursive;
+    letter-spacing: .5rem;
+    /* font-family: "Permanent Marker", cursive; */
+}
+
+p, ul, li {
+    font-family: "Noto Sans", sans-serif;
+    text-transform: none;
+};
+
+a {
+    font-family: "Rock Salt", cursive;
+    /* font-family: "Permanent Marker", cursive; */
+    text-decoration: none;
+    color: inherit;
+    transition: all .5s ease-in-out;
+}
+
+/* ---------- HERO IMAGE -------------- */
+h1 {
+    background: url("https://i.imgur.com/k5aEq1W.png") no-repeat top;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 4rem;
+    text-align: left;
+    max-width: 100%;
+    height: 95vh;
+    margin: 0;
+    padding: 5rem 5rem;
+    /* font-family: "Noto Sans", sans-serif;
+    font-family: "Rock Salt", cursive; */
+    /* font-family: "Rock Salt", cursive; */
+    font-weight: 400;
+}
+.Joy {
+    font-size: 30rem;
+    font-family: "Permanent Marker", cursive;
+    /* font-family: "Rock Salt", cursive; */
+}
+.defOfJoy {
+    /* font-family: "Noto Sans", sans-serif; */
+    font-family: "Rock Salt", cursive;
+    color: white;
+    font-weight: 700;
+    font-size: 8rem;
+    margin: -2rem 0;
+    line-height: 8rem; 
+}
+.definition {
+    font-family: "Noto Sans", sans-serif;
+    color: white;
+    font-weight: 400;
+    margin: -6em 0;
+}
+
+/* ----------------- SETTING THE VIEWPORT ---------------- */
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+@-ms-viewport {
+    width: device-width;
+}
+/* FOOTER */
+
+/* FOOTER NAV BAR */
+
+nav {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: black;
+    color: white;
+    align-items: center;
+    height: 5rem;
+    padding: 0 200px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* font-family: "Rock Salt", cursive; */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Rock Salt", cursive;
+    /* font-family: "Permanent Marker", cursive; */
+}
+
+.logo {
+    text-align: left;
+    font-family: "Rock Salt", cursive;
+    /* font-family: "Permanent Marker", cursive; */
+    font-weight: 400;
+    font-size: .75rem;
+    margin-left: 1rem;
+    line-spacing: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#burger {
+    display: none;
+    font-size: 5rem;
+    text-align: right;
+    color: white;
+}
+#burger:hover, nav a:hover {
+    cursor: pointer;
+    color: teal;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* MEDIA QUERIES / RESPOSINVE STYLES */
+@media (max-width: 1000px) {
+    #burger {
+        display: block;
+        color: white;
+    }
+    .mobile-menu {
+        display: flex;
+        justify-content: flex-end;
+
+    }    
+    .menu {
+      justify-content: flex-end;
+      display: none;
+    }
+    
+    .menu a {
+      display: none;
+    }
+}

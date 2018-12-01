@@ -61,6 +61,11 @@ setInterval(function() {
 
 
 // Function for Burger button toggle    
-    $(".menu").click(function() {
-        $('ul').toggleClass("active");
-    })
+    // $("#hamburger").click(function() {
+    //     $(".menu").toggleClass("active");
+    // })
+
+    
+    $("burger").addEventListener("click", function (){
+        console.log("HI")
+    });

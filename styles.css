@@ -10,7 +10,6 @@ html {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     margin: 0;
     letter-spacing: .02em;
@@ -58,7 +57,7 @@ a:hover {
 /*----- OVERALL DESIGN -------*/ /*----- OVERALL DESIGN -------*/
 
 
-img, h3, h5, a {
+img, h5, a {
     margin: 1em;  
     width: 50em;
     text-align: center;
@@ -302,8 +301,6 @@ p {
 }
 
 /* ABOUT/SKILLS CONTACT/TESTIMONIALS STYLING  */
-
-
 ul {
   list-style: none;
   font-size: 1.5em;
@@ -318,6 +315,7 @@ ul {
 h2 {
   padding: 1.5em 0 0;
 }
+
 /* QUOTE POSITIONING FOR FADES IN AND OUT */
 #q1, #r1 {
     background: pink;
@@ -325,7 +323,7 @@ h2 {
 #q2, #r2 {
     background: yellow;
 }
-#q3, r3 {
+#q3, #r3 {
     background: red;
 }
 #quoteBox {
@@ -393,90 +391,48 @@ h2 {
 /* FOOTER */
 
 /* FOOTER NAV BAR */
-nav ul {
-    display: block;
-    font-weight: "Open Sans", sans-serif;
-    height: 100px;
-    background-color: rgba(3, 125, 238, 1);
-    overflow: hidden;
-    text-align: right;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 200px 0;
-}
-.fas, .nav a {
-    font-size: 1em;
-    font-weight: bold;
+
+nav {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: rgba(3, 125, 238, 1);
     color: white;
-    text-align: right;
-    text-decoration: none;
-}
-.toggle {
-    width: 10%;
-    padding: 1em;
-    text-align: right;
-    box-sizing: border-box;
-    color: #fff;
-    font-size: 1em;
-    display: none;
+    align-items: center;
     height: 100px;
-    bottom: 0;
-    right: 0;
-    position: fixed;
-}
-@media (max-width: 500px) {
-    .toggle {
-        display: block;
-    }
-    nav ul {
-        width: 100%;
-        display: none;
-    }
-    nav ul li {
-        display: block;
-        text-align: center;
-    }
-    .active {
-        display:block;
-    }
-};
-/* .copyright {
-    text-align: left;
-    font-size: 10px;
-    padding: 1em;
-    display: block;
-    color: white;
-    width: 100%;
-    background: none;
-
-} */
-
-.lines, .mobile-menu, .mobile-header {
-    display: none;
 }
 
-/* nav ul {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
-} */
-
-nav li {
-    list-style: none;
-    display: inline-block;
-    padding: 20px;
-}
 nav a {
-    color: inherit;
+    color: white;
+    text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: none;
-    color: red;
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
-nav i:hover {
-    text-decoration: none;
-    color: red;
+
+#burger {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* MEDIA QUERIES / RESPOSINVE STYLES */
+@media only screen and (max-width: 900px) {
+    #burger {
+      display: initial;
+    }
+    
+    .menu {
+      justify-content: flex-end;
+    }
+    
+    .menu a {
+      display: none;
+    }
 }
