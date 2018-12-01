@@ -393,26 +393,42 @@ h2 {
 /* FOOTER */
 
 /* FOOTER NAV BAR */
-nav ul {
-    display: block;
-    font-weight: "Open Sans", sans-serif;
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(3, 125, 238, 1);
+    color: white;
+    align-items: center;
+    padding: 0px 50px;
     height: 100px;
-    background-color: rgba(3, 125, 238, 1);
-    overflow: hidden;
-    text-align: right;
-    bottom: 0;
     position: fixed;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 200px 0;
+    bottom: 0;
 }
-.fas, .nav a {
+
+.nav-title {
+    color: white;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-weight: "Open Sans", sans-serif;
+    width: 100%;
+}
+
+.fas, .menu a {
     font-size: 1em;
     font-weight: bold;
     color: white;
     text-align: right;
     text-decoration: none;
 }
+
 .toggle {
     width: 10%;
     padding: 1em;
@@ -426,10 +442,30 @@ nav ul {
     right: 0;
     position: fixed;
 }
-@media (max-width: 500px) {
+
+.lines, .mobile-menu, .mobile-header {
+    display: none;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+
+/* RESPOSINVE STYLES */
+/* @media only screen and (max-width: 700) {
+    .menu {
+        display: none !important;
+    }
     .toggle {
         display: block;
     }
+
     nav ul {
         width: 100%;
         display: none;
@@ -441,42 +477,4 @@ nav ul {
     .active {
         display:block;
     }
-};
-/* .copyright {
-    text-align: left;
-    font-size: 10px;
-    padding: 1em;
-    display: block;
-    color: white;
-    width: 100%;
-    background: none;
-
-} */
-
-.lines, .mobile-menu, .mobile-header {
-    display: none;
-}
-
-/* nav ul {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0;
-} */
-
-nav li {
-    list-style: none;
-    display: inline-block;
-    padding: 20px;
-}
-nav a {
-    color: inherit;
-}
-
-nav a:hover {
-    text-decoration: none;
-    color: red;
-}
-nav i:hover {
-    text-decoration: none;
-    color: red;
-}
+}; */
