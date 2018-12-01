@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project ZERO: Find Your Joy</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Playfair+Display:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script defer src="main.js"></script>
@@ -90,7 +90,7 @@
     <main class="mainGrid">
         <!-- PORTFOLIO -->
         <div class="container">
-                <section class="portfolio">
+                <section class="portfolio" id="portfolioID">
                     <!-- PORTFOLIO SECTION 1  -->
                     <!--   Project ZERO -->
                     <div class="box" id="proj0">
@@ -204,25 +204,29 @@
     </main>
     <!--    FOOTER      --> <!--  FOOTER      --><!--     FOOTER      -->
     <!--    FOOTER      --> <!--  FOOTER      --><!--     FOOTER      -->
-    <footer>
+    
         <!-- MOBILE BURGER / NAV BAR-->
-        <a class="burgerButton" href=""><i class="fas fa-bars"></i></a>
+    <footer>
+        <div id="footerBar"></div>
         <!-- NAV BAR-->
-        <div id="footerBar">
-            <navbar class="nav"> 
-                <a href="#">Portfolio</a>
-                <a href="#">About Me</a>
-                <a href="#">Contact</a>
-            </navbar>
-            <div class="icons">
-                    <nav>
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </nav>
-            </div>
+            <nav class="nav"> 
+                <ul>
+                    <li><a href="index.html#porfolioID">PORTFOLIO</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                <nav class="toggle">
+                    <a class="burgerButton" href=""><i class="fas fa-bars menu"></i></a>
+                </nav>
+                </ul>
+            </nav>
             <p class="copyright">&copy; Joy Serqui&ntilde;a 2018</p>
         </div> 
+    
+        <!-- MONUMENT NAV BAR REFERENCE -->
+
+    <!-- MOBILE MENU & HEADER -->
+        <div class="mobile-menu">
+        </div>
     </footer>
 
      

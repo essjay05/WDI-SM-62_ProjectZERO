@@ -58,3 +58,9 @@ setInterval(function() {
 
 
     // $(".ref").fadeOut().next().fadeIn();
+
+
+// Function for Burger button toggle    
+    $(".menu").click(function() {
+        $('ul').toggleClass("active");
+    })

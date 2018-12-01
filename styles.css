@@ -39,7 +39,6 @@ h1, h2, h3, h4 {
 p, ul, li {
     font-family: 'Open Sans', sans-serif;
     text-transform: none;
-    line-height: 1.4;
 };
 
 a {
@@ -187,18 +186,14 @@ p {
 
 /* HEADER DESIGN ON TOP OF CAROUSEL */
 .tagline {
-    color: white;
+    color: red;
     font-family: "Playfair Display", serif;
     font-size: 10em;
     text-align: left;
     float: left;
     padding: 10em;
 }
-/* NAV BAR */
-.fas {
-    font-size: 32px;
-    color: white;
-}
+
 
 
 
@@ -233,10 +228,10 @@ p {
     margin: 0;
 }
   /* PORTFOLIO WRAPPER */
-  #proj0 { grid-area: "proj0"; background: lightblue }
-  #proj1 { grid-area: "proj1"; background: lightpink }
-  #proj2 { grid-area: "proj2"; background: lightyellow}
-  #proj3 { grid-area: "proj3"; background: lightgreen }
+  #proj0 { grid-area: "proj0"}
+  #proj1 { grid-area: "proj1"}
+  #proj2 { grid-area: "proj2"}
+  #proj3 { grid-area: "proj3"}
  
   .portfolio {
     /* padding: 10px; */
@@ -258,7 +253,7 @@ p {
       "about skills"
       "contact quoteBox";
     align-items: center;
-    margin: 0 0 4em;
+    /* margin: 0 0 4em; */
     height: auto;
   }
 
@@ -287,7 +282,7 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  margin: 1em;
+  margin: 2em;
 }
 
 .about, .contact {
@@ -345,24 +340,6 @@ h2 {
     padding: 5em 0;
 }
 
-/* #q1 {  position: absolute;  margin-top:50px;}
-#q1 {  display: none;  position: absolute;  bottom:100%;  left:0;  right: 5%;  background-color:aquamarine;  padding:;}
-#q1:hover { display: block;}
-#r1  {  display: none;  position: absolute;  top:100%;  left:0;  right: 5%;  background-color:bisque;  padding:;}
-#r1:hover  {  display: block;}
-
-#q2 {  position: absolute;  margin-top:50px;}
-#q2 {  display: none;  position: absolute;  bottom:100%;  left:0;  right: 5%;  background-color:goldenrod;  padding:;}
-#q2:hover { display: block;}
-#r2 {  display: none;  position: absolute;  top:100%;  left:0;  right: 5%;  background-color:coral;  padding:;}
-#r2:hover {  display: block;}
-
-#q3 {  position: absolute;  margin-top:50px;}
-#q3 {  display: none;  position: absolute;  bottom:100%;  left:0;  right: 5%;  background-color:darksalmon;  padding:;}
-#q3:hover { display: block;}
-#r3 {  display: none;  position: absolute;  top:100%;  left:0;  right: 5%;  background-color:darkseagreen;  padding:;}
-#r3:hover {  display: block;} */
-
 
 /* LEAVE A COMMENT (SECTION) */
 /* FORM CONTAINER */
@@ -403,7 +380,7 @@ h2 {
         }
 
         .formGrid input, .formGrid textarea {
-            border: rgb(74, 110, 112) .25em solid;
+            border: teal .15em solid;
             font-family: 'Lato', sans-serif;
             color: slategrey;
             font-size: .75em;
@@ -414,113 +391,92 @@ h2 {
         }
 
 /* FOOTER */
-footer {
-    margin-top: 3em;
-    text-align: center;
-    color:  rgb(74, 110, 112);
-    background: rgb(198, 240, 242);
-    font-family: 'Raleway', sans-serif;
-}
-.icons {
-    display: flex;
-    display: -webkit-flexbox;
-    display: -ms-flexbox;
-    justify-content: center;
-    align-items: center;
-    height: 4em;
-    font-size: 1.5em;
-}
-i {
-    margin: 0em 1em;
-}
-footer p {
-    padding: 1.5em;
-    border-top: .15em solid rgb(74, 110, 112);
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
-    font-size: 1em;
-}
 
-/* FOOTER FORM */
-br {
+/* FOOTER NAV BAR */
+nav ul {
+    display: block;
+    font-weight: "Open Sans", sans-serif;
+    height: 100px;
+    background-color: rgba(3, 125, 238, 1);
+    overflow: hidden;
+    text-align: right;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 200px 0;
+}
+.fas, .nav a {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+}
+.toggle {
+    width: 10%;
+    padding: 1em;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 1em;
+    display: none;
+    height: 100px;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+@media (max-width: 500px) {
+    .toggle {
+        display: block;
+    }
+    nav ul {
+        width: 100%;
+        display: none;
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+    .active {
+        display:block;
+    }
+};
+/* .copyright {
+    text-align: left;
+    font-size: 10px;
+    padding: 1em;
+    display: block;
+    color: white;
+    width: 100%;
+    background: none;
+
+} */
+
+.lines, .mobile-menu, .mobile-header {
     display: none;
 }
-input[name="emailAddress"], input[name="KIT"] {
-    text-align: center;
-    padding: 1em;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: .75em;
-    color: slategray;
-    margin: 0em .5em 2.5em;
-}
-input[name="emailAddress"] {
-    border: none;
-    width: 30em;
-}
-input[name="KIT"] {
-    width: 15em;
-    color: slategray;
-    border: .25em solid slategray;
-    background: transparent;
-}
-input[name="KIT"]:hover {
-    animation-delay: .05ms;
-    background: slategray;
-    color: rgb(198, 240, 242);
-    cursor: pointer;
-}
-a:hover, li a:hover {
-    color: red;
-}
 
+/* nav ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+} */
 
-
-/* ********************* BOTTOM NAV BAR ************************/
-/* Place the navbar at the bottom of the page, and make it stick */
-.nav {
-    font-family: "Open Sans", sans-serif;
-    background: white;
-    position: fixed;
-    bottom: .5px;
-    width: 100%;
-    color: teal;
-    display: flex;
-    flex-direction: row-reverse;
-    align-content: flex-start;
-    justify-items: right;
-    font-weight: bold;
-    font-size: 1.25em;
-    margin: 1.5em 0 0;
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
 }
-.nav a {
-    text-decoration: none;
+nav a {
     color: inherit;
 }
 
-
-.copyright {
-    text-align: right;
-    color: teal;
-    font-size: 1.25em;
-    padding: 1.5em;
-    bottom: 0;
-    position: fixed;
-    float: left;
-    width: 100%;
+nav a:hover {
+    text-decoration: none;
+    color: red;
 }
-
-/* Style the links inside the navigation bar */
-
-
-/* Change the color of links on hover */
-/* #footerBar a:hover {
-    background-color: lightgrey;
+nav i:hover {
+    text-decoration: none;
+    color: red;
 }
-
-/* Add a color to the active/current link */
-/* #footerBar a.active {
-    background-color: red;
-    color: white;
-} */
-
