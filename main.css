@@ -61,12 +61,15 @@ a {
     /* font-family: "Rock Salt", cursive; */  
 }
 .Joy {
-    font-size: 10rem;
+    font-size: 8rem;
     font-family: "Permanent Marker", cursive;
-    margin: 0 4rem;
+    margin: 8rem 4rem;
     color: #d4d4dc;
     opacity: .8;
     /* font-family: "Rock Salt", cursive; */
+}
+.noun {
+    font-size: 3rem;
 }
 .defOfJoy {
     font-family: "Rock Salt", cursive;
@@ -272,12 +275,12 @@ nav {
 .box2 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   border: 1px #393f4d solid;
   transition: border-top 0.5s ease;
   padding: 2em;
-  margin: 2em 2em 5rem;
+  margin: 2em;
   color: rgba(1, 255, 230, 0.763);
 }
 
@@ -311,14 +314,15 @@ nav {
  /* HIDE THE IMAGES BY DEFAULT */
 
 /* ABOUT SECTION */
-.social a {
+.social a, .portLink a {
     color: #d4d4dc;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     margin: 0 2rem;
 }
-.social a:hover {
+.social a:hover, .portLink a:hover {
     color: rgba(1, 255, 230, 0.763);
+    transition: all .5s ease-in-out;
 }
 .mySlides img {
     width: 15rem;
@@ -452,6 +456,9 @@ nav {
 .qFade h4{
     color:rgba(1, 255, 230, 0.763);
     font-size: .75rem;
+}
+#quoteBox h2{
+    position: absolute;
 }
 
 #quoteBox {
