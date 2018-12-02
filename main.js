@@ -1,6 +1,24 @@
 
 // ---- CAROUSEL SLIDE CONTROLS --- //
+// DEFINING VARIABLES FOR CAROUSEL //
+var heroBG = document.getElementsByTagName("slide");
+    console.log(heroBG);
 
+var heroSlides = ["https://i.imgur.com/k5aEq1W.png", "https://i.imgur.com/CP1dNow.jpg", "https://i.imgur.com/DOQpTGX.jpg"];
+    console.log(heroSlides);
+    console.log(heroSlides[0]);
+
+var bgImg = "background-image";
+    console.log(bgImg);
+
+var i = 0;
+    console.log(i);
+
+var newSlideUrl = "url(" + heroSlides[i]+")";
+    console.log(newSlideUrl);
+
+
+ 
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -22,15 +40,15 @@ function showSlides(n) {
     // if (n > slides.length) {slideIndex = 1}
     // if (n < 1) {slideIndex = slides.length}
     for (var i = 0; i < slides.length; i++) {
-            setInterval(function(){
-                $("#heroImg").css({"background-image": "url(" + heroImages[index]+")"});
-                
-                if (index === heroImages.length) {
-                    index = 0;
+            setInterval(function swapSlide(i){
+                swapSlide = heroBG.css({bgImg: newSlideUrl});
+                if (i === heroSlides.length) {
+                    i = 0;
                 } else {
-                    index=+ 1;
+                    i=+ 1;
                 }
-            }, 2000)
+            }, 5000)
+            console.log("it's working up to here")
         };
         // slides[i].style.display = "none";
     }   
@@ -75,10 +93,8 @@ setInterval(function() {
 
 
 // TESTING SLIDESHOW REPLACE BACKGROUND URL for header
-// var heroBG = document.getElementsByClassName("tagLine");
-// console.log(heroBG);
 
-// var heroImages = ["https://i.imgur.com/k5aEq1W.png", "https://i.imgur.com/CP1dNow.jpg", "https://i.imgur.com/DOQpTGX.jpg"];
+
 
 // var i = 0;
 // function swapHeroBG() {

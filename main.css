@@ -9,10 +9,17 @@ html {
 }
 /* -------- TYPOGRAPHY --------- */
 /*------------- TYPOGRAPHY ---------------------- */
-h1, h2, h3, h4 {
+h1, h2, h4 {
     font-family: "Rock Salt", cursive;
     letter-spacing: .5rem;
     /* font-family: "Permanent Marker", cursive; */
+}
+.box h3 a {
+    font-family: "Permanent Marker", cursive;
+    font-size: 5rem;
+    color: white;
+    text-decoration: none;
+    letter-spacing: .5rem;
 }
 
 p, ul, li {
@@ -26,24 +33,28 @@ a {
     text-decoration: none;
     color: inherit;
     transition: all .5s ease-in-out;
+
 }
 
 /* ---------- HERO IMAGE -------------- */
 #heroImg {
+    /* BACKGROUND INFO / PARAMETERS */
     background: url("https://i.imgur.com/k5aEq1W.png") no-repeat top;
     background-size: cover;
     background-position: center;
-    color: white;
-    font-size: 4rem;
-    text-align: left;
     max-width: 100%;
     height: 95vh;
     margin: 0;
     padding: 5rem 5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    /* FONT PARAMETERS */
+    color: white;
+    font-size: 4rem;
+    text-align: left;
+    font-weight: 400;
     /* font-family: "Noto Sans", sans-serif;
     font-family: "Rock Salt", cursive; */
-    /* font-family: "Rock Salt", cursive; */
-    font-weight: 400;
+    /* font-family: "Rock Salt", cursive; */  
 }
 .Joy {
     font-size: 30rem;
@@ -56,7 +67,7 @@ a {
     color: white;
     font-weight: 700;
     font-size: 8rem;
-    margin: -2rem 0;
+    /* margin: -1rem 0; */
     line-height: 8rem; 
 }
 .definition {
@@ -146,35 +157,45 @@ nav a {
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 
-.myslides {
+/* .myslides {
     width: 100%;
     height: auto;
     margin: 0;
     padding: 0;
+    bottom: 1rem;
 
-}
-.mySlides img {
+
+} */
+/* .mySlides img {
     width: 100%;
-    height: auto;
-}
+    height: 100vh;
+} */
 /*
  /* CONTAINER */
- .carouselWrap {
-    position: relative;
-    /* overflow: hidden; */
-    background-position: cover;
-    overflow: hidden;
-    height: auto;
-    width: 100%;
- }
+ /* For CAROUSEL CONTAINER/HEADER CONTAINER PARAMETERS SEE 
+ HEADER: #heroImg above ^^ */
 
+ /* SLIDE PARAMETERS TO MATCH #heroImg above ^^ in Header  */
+#heroImg > div {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 95vh;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+ 
  /* HIDE THE IMAGES BY DEFAULT */
- /* .myslides {
+ .fade  {
     display: none;
     background-size: cover;
     background-position: center;
     background-repeat: none;
- } */
+ }
 
 /* CAPTION TEXT */
 .slideText {
@@ -183,10 +204,10 @@ nav a {
     justify-content: center;
     align-items: center;
     color: #f2f2f2;
-    font-size: 2em;
+    font-size: .5rem;
     padding: 1em 2em;
     position: absolute;
-    bottom: 3em;
+    bottom: 2rem;
     width: 100%;
     text-align: center;
 }
@@ -204,25 +225,28 @@ nav a {
  /* DOTS AND BULLETS INDICATORS */
  .dot {
      cursor: pointer;
-     height: 1em;
-     width: 1em;
-     margin: 2em 2em;
+     height: 1.5rem;
+     width: 1.5rem;
+     margin: 1.5rem;
      background-color: #bbb;
      border-radius: 50%;
      display: inline-block;
      transition: background-color 0.6s ease;
  }
 
- .active, .dot:hover {
+ .active,  {
      background-color: rgba(1, 255, 230, 0.763);
+ }
+ .dot:hover {
+     background-color: teal;
  }
 
  /* FADING ANIMATION */
  .fade {
      -webkit-animation-name: fade;
-     -webkit-animation-duration: 1.5s;
+     -webkit-animation-duration: 2s;
      animation-name: fade;
-     animation-duration: 1.5s;
+     animation-duration: 2s;
  }
 
  @-webkit-keyframes fade {
@@ -234,7 +258,190 @@ nav a {
      from {opacity: .4}
      to {opacity: 1}
  }
+/* MAIN CONTENT CSS GRIDS */
+.portfolio { grid-area: "portfolio"; background: grey }
+.aboutContactTest { grid-area: "aboutContactTest"; background: yellow }
 
+.mainGrid { /* MAIN DOCUMENT WRAPPER */
+    display: grid;
+    width: 100%;
+    grid-gap: 1em;
+    grid-template-areas:
+    
+      "portfolio"
+      "aboutContactTest";
+    align-items: center;
+}
+
+.container {
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+  /* PORTFOLIO WRAPPER */
+  #proj0 { grid-area: "proj0"}
+  #proj1 { grid-area: "proj1"}
+  #proj2 { grid-area: "proj2"}
+  #proj3 { grid-area: "proj3"}
+ 
+  .portfolio {
+    /* padding: 10px; */
+    display: grid;
+    /* height: 100vh; */
+    width: 100%;
+    grid-gap: 2em;
+    grid-template-areas:
+      "proj0 proj1"
+      "proj2 proj3";
+    align-items: center;
+  }
+  .aboutContactTest {
+    /* padding: 10px; */
+    display: grid;
+    width: 100%;
+    grid-gap: 2em;
+    grid-template-areas:
+      "about skills"
+      "contact quoteBox";
+    align-items: center;
+    /* margin: 0 0 4em; */
+    height: auto;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 2em;
+  }
+  
+/*----- ??? -------*/  /*----- ??? -------*/
+
+/* ABOUT / SKILLS / CONTACT / TESTIMONIALS WRAPPER */
+#about { grid-area: "about"; background: lightblue; height: 25em }
+#skills { grid-area: "skills"; background: lightpink; height: 25em }
+#contact { grid-area: "contact"; background: lightyellow; height: 25em}
+#quoteBox { grid-area: "quoteBox"; background: lightgreen; height: 25em }
+
+
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  margin: 2em;
+}
+
+.about, .contact {
+  margin: 1em;  
+  width: 50em;
+  text-align: left;
+  padding: 1em;
+  
+}
+
+.skills, .test {
+  margin: 1em;  
+  width: 50em;
+  text-align: center;
+  padding: 1em;
+  font-style: regular;
+}
+
+/* ABOUT/SKILLS CONTACT/TESTIMONIALS STYLING  */
+ul {
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.ref {
+  text-align: right;
+  margin: .5em;
+  width: 50em;
+  height: 2em;
+}
+h2 {
+  padding: 1.5em 0 0;
+}
+
+/* QUOTE POSITIONING FOR FADES IN AND OUT */
+#q1, #r1 {
+    background: pink;
+}
+#q2, #r2 {
+    background: yellow;
+}
+#q3, #r3 {
+    background: red;
+}
+#quoteBox {
+    position: relative;
+    width: auto;
+    height: 25em;
+    padding: 1em;
+}
+
+#quoteBox > section {
+    position: absolute;
+    padding: 5em 0;
+}
+
+
+/* LEAVE A COMMENT (SECTION) */
+/* FORM CONTAINER */
+
+        .userForm h3 {
+            text-align: center;
+            color: rgba(1, 255, 230, 0.763);
+        }
+        /* FORM STYLES */
+        input[name="name"] {
+            grid-area: name;
+        }
+
+        input[name="emailUser"] {
+            grid-area: emailUser;
+        }
+
+        textarea {
+            grid-area: comment;
+            height: 5em;
+            resize: none;
+        }
+
+        input[name="submit"] {
+            grid-area: submit;
+        }
+
+        .formGrid {
+            display: grid;
+            width: auto;
+            grid-template-areas:
+                'name emailUser'
+                'comment comment'
+                'submit submit';
+            grid-gap: 1em;
+            padding: 3em;
+            display: -ms-grid; /* IE 10 */
+        }
+
+        .formGrid input, .formGrid textarea {
+            border: teal .15em solid;
+            font-family: 'Lato', sans-serif;
+            color: 
+            font-size: .75em;
+            padding: 1em;
+        }
+        .formGrid::placeholder {
+            font-weight: 900;
+        }
 
 
 /* MEDIA QUERIES / RESPOSINVE STYLES */
