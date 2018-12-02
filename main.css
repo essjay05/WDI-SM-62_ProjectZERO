@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; 
+}
+/* -------- TYPOGRAPHY --------- */
+/*------------- TYPOGRAPHY ---------------------- */
+h1, h2, h4 {
+    font-family: "Rock Salt", cursive;
+    letter-spacing: .5rem;
+    /* font-family: "Permanent Marker", cursive; */
+}
+.box h3 a {
+    font-family: "Permanent Marker", cursive;
+    font-size: 5rem;
+    color: white;
+    text-decoration: none;
+    letter-spacing: .5rem;
+}
+
+p, ul, li {
+    font-family: "Noto Sans", sans-serif;
+    text-transform: none;
+};
+
+a {
+    font-family: "Rock Salt", cursive;
+    /* font-family: "Permanent Marker", cursive; */
+    text-decoration: none;
+    color: inherit;
+    transition: all .5s ease-in-out;
+
+}
+
+/* ---------- HERO IMAGE -------------- */
+#heroImg {
+    /* BACKGROUND INFO / PARAMETERS */
+    background: url("https://i.imgur.com/k5aEq1W.png") no-repeat top;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 95vh;
+    margin: 0;
+    padding: 5rem 5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    /* FONT PARAMETERS */
+    color: white;
+    font-size: 4rem;
+    text-align: left;
+    font-weight: 400;
+    /* font-family: "Noto Sans", sans-serif;
+    font-family: "Rock Salt", cursive; */
+    /* font-family: "Rock Salt", cursive; */  
+}
+.Joy {
+    font-size: 30rem;
+    font-family: "Permanent Marker", cursive;
+    /* font-family: "Rock Salt", cursive; */
+}
+.defOfJoy {
+    /* font-family: "Noto Sans", sans-serif; */
+    font-family: "Rock Salt", cursive;
+    color: white;
+    font-weight: 700;
+    font-size: 8rem;
+    /* margin: -1rem 0; */
+    line-height: 8rem; 
+}
+.definition {
+    font-family: "Noto Sans", sans-serif;
+    color: white;
+    font-size: 6rem;
+    margin: -6em 0;
+}
+
+a:hover {
+    color:  rgba(1, 255, 230, 0.763);
+    border-bottom:  rgba(1, 255, 230, 0.763);
+}
+
+/* ----------------- SETTING THE VIEWPORT ---------------- */
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+@-ms-viewport {
+    width: device-width;
+}
+
+
+/* FOOTER */
+
+/* ------------FOOTER NAV BAR--------------- */
+/* ------------FOOTER NAV BAR--------------- */ 
+/* ------------FOOTER NAV BAR--------------- */
+
+nav {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: black;
+    color: white;
+    align-items: center;
+    height: 5rem;
+    padding: 0 200px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* font-family: "Rock Salt", cursive; */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Rock Salt", cursive;
+    /* font-family: "Permanent Marker", cursive; */
+}
+
+.logo {
+    text-align: left;
+    font-family: "Rock Salt", cursive;
+    /* font-family: "Permanent Marker", cursive; */
+    font-weight: 400;
+    font-size: .75rem;
+    margin-left: 1rem;
+}
+
+.menu {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#burger {
+    display: none;
+    font-size: 5rem;
+    text-align: right;
+    color: white;
+}
+#burger:hover, nav a:hover {
+    cursor: pointer;
+    color: rgba(1, 255, 230, 0.763);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+/* ---------------SLIDESHOW / CAROUSEL---------- */
+/* ---------------SLIDESHOW / CAROUSEL---------- */
+/* ---------------SLIDESHOW / CAROUSEL---------- */
+
+/* .myslides {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    bottom: 1rem;
+
+
+} */
+/* .mySlides img {
+    width: 100%;
+    height: 100vh;
+} */
+/*
+ /* CONTAINER */
+ /* For CAROUSEL CONTAINER/HEADER CONTAINER PARAMETERS SEE 
+ HEADER: #heroImg above ^^ */
+
+ /* SLIDE PARAMETERS TO MATCH #heroImg above ^^ in Header  */
+#heroImg > div {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 95vh;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+ 
+ /* HIDE THE IMAGES BY DEFAULT */
+ .fade  {
+    display: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+ }
+
+/* CAPTION TEXT */
+/* .slideText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    font-size: .5rem;
+    padding: 1em 2em;
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    text-align: center;
+} */
+
+/* NUMBER TEXT (1/4 etc) */
+/* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+} */
+
+ /* DOTS AND BULLETS INDICATORS */
+ .dot {
+     cursor: pointer;
+     height: 1.5rem;
+     width: 1.5rem;
+     margin: 1.5rem;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
+
+ .active,  {
+     background-color: rgba(1, 255, 230, 0.763);
+ }
+ .dot:hover {
+     background-color: teal;
+ }
+
+ /* FADING ANIMATION */
+ .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 2s;
+     animation-name: fade;
+     animation-duration: 2s;
+ }
+
+ @-webkit-keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+ }
+
+ @keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+ }
+/* MAIN CONTENT CSS GRIDS */
+.portfolio { grid-area: "portfolio"; background: grey }
+.aboutContactTest { grid-area: "aboutContactTest"; background: yellow }
+
+.mainGrid { /* MAIN DOCUMENT WRAPPER */
+    display: grid;
+    width: 100%;
+    grid-gap: 1em;
+    grid-template-areas:
+    
+      "portfolio"
+      "aboutContactTest";
+    align-items: center;
+}
+
+.container {
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+  /* PORTFOLIO WRAPPER */
+  #proj0 { grid-area: "proj0"}
+  #proj1 { grid-area: "proj1"}
+  #proj2 { grid-area: "proj2"}
+  #proj3 { grid-area: "proj3"}
+ 
+  .portfolio {
+    /* padding: 10px; */
+    display: grid;
+    /* height: 100vh; */
+    width: 100%;
+    grid-gap: 2em;
+    grid-template-areas:
+      "proj0 proj1"
+      "proj2 proj3";
+    align-items: center;
+  }
+  .aboutContactTest {
+    /* padding: 10px; */
+    display: grid;
+    width: 100%;
+    grid-gap: 2em;
+    grid-template-areas:
+      "about skills"
+      "contact quoteBox";
+    align-items: center;
+    /* margin: 0 0 4em; */
+    height: auto;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 2em;
+  }
+  
+/*----- ??? -------*/  /*----- ??? -------*/
+
+/* ABOUT / SKILLS / CONTACT / TESTIMONIALS WRAPPER */
+#about { grid-area: "about"; background: lightblue; height: 25em }
+#skills { grid-area: "skills"; background: lightpink; height: 25em }
+#contact { grid-area: "contact"; background: lightyellow; height: 25em}
+#quoteBox { grid-area: "quoteBox"; background: lightgreen; height: 25em }
+
+
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  margin: 2em;
+}
+
+.about, .contact {
+  margin: 1em;  
+  width: 50em;
+  text-align: left;
+  padding: 1em;
+  
+}
+
+.skills, .test {
+  margin: 1em;  
+  width: 50em;
+  text-align: center;
+  padding: 1em;
+  font-style: regular;
+}
+
+/* ABOUT/SKILLS CONTACT/TESTIMONIALS STYLING  */
+ul {
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.ref {
+  text-align: right;
+  margin: .5em;
+  width: 50em;
+  height: 2em;
+}
+h2 {
+  padding: 1.5em 0 0;
+}
+
+/* QUOTE POSITIONING FOR FADES IN AND OUT */
+#q1, #r1 {
+    background: pink;
+}
+#q2, #r2 {
+    background: yellow;
+}
+#q3, #r3 {
+    background: red;
+}
+#quoteBox {
+    position: relative;
+    width: auto;
+    height: 25em;
+    padding: 1em;
+}
+
+#quoteBox > section {
+    position: absolute;
+    padding: 5em 0;
+}
+
+
+/* LEAVE A COMMENT (SECTION) */
+/* FORM CONTAINER */
+
+        .userForm h3 {
+            text-align: center;
+            color: rgba(1, 255, 230, 0.763);
+        }
+        /* FORM STYLES */
+        input[name="name"] {
+            grid-area: name;
+        }
+
+        input[name="emailUser"] {
+            grid-area: emailUser;
+        }
+
+        textarea {
+            grid-area: comment;
+            height: 5em;
+            resize: none;
+        }
+
+        input[name="submit"] {
+            grid-area: submit;
+        }
+
+        .formGrid {
+            display: grid;
+            width: auto;
+            grid-template-areas:
+                'name emailUser'
+                'comment comment'
+                'submit submit';
+            grid-gap: 1em;
+            padding: 3em;
+            display: -ms-grid; /* IE 10 */
+        }
+
+        .formGrid input, .formGrid textarea {
+            border: teal .15em solid;
+            font-family: 'Lato', sans-serif;
+            color: 
+            font-size: .75em;
+            padding: 1em;
+        }
+        .formGrid::placeholder {
+            font-weight: 900;
+        }
+
+
+/* MEDIA QUERIES / RESPOSINVE STYLES */
+@media (max-width: 991px) {
+    .Joy {
+        font-size: 15rem;
+        font-family: "Permanent Marker", cursive;
+        /* font-family: "Rock Salt", cursive; */
+    }
+    .defOfJoy {
+        /* font-family: "Noto Sans", sans-serif; */
+        font-family: "Rock Salt", cursive;
+        color: white;
+        font-weight: 700;
+        font-size: 4rem;
+        margin: -2rem 0;
+        line-height: 8rem; 
+    }
+    .definition {
+        font-family: "Noto Sans", sans-serif;
+        color: white;
+        font-weight: 400;
+        margin: -6em 0;
+    }
+    footer {
+        padding: 0 20px;
+    }
+    footer nav {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh-50px);
+        background: black;
+        bottom: 50px;
+        right: -100%;
+        transition: 0.5s;
+    }
+    /* header nav .active */
+   
+    header nav a {
+        border-bottom: rgba(1, 255, 230, 0.763);
+    }
+    #burger {
+        display: block;
+        color: white;
+    }
+    #burger:hover {
+        color: rgba(1, 255, 230, 0.763);
+        border-bottom: rgba(1, 255, 230, 0.763);
+    }
+    .mobile-menu {
+        display: flex;
+        justify-content: flex-end;
+    }    
+    .mobile-menu a:hover{
+        color: rgba(1, 255, 230, 0.763);
+        border-bottom: rgba(1, 255, 230, 0.763);
+    }
+    .menu {
+      justify-content: flex-end;
+      display: none;
+    }
+    
+    .menu a {
+      display: none;
+    }
+}
