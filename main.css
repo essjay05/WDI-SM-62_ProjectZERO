@@ -6,7 +6,7 @@
 
 html {
     font-size: 16px;
-    background: #393f4d;
+    background: #1d1e22;
 }
 /* -------- TYPOGRAPHY --------- */
 /*------------- TYPOGRAPHY ---------------------- */
@@ -16,11 +16,12 @@ h1, h2, h4 {
     /* font-family: "Permanent Marker", cursive; */
 }
 .box h3 a {
-    font-family: "Permanent Marker", cursive;
+    font-family: "Rock Salt", cursive;
     font-size: 1rem;
     color: #d4d4dc;
     text-decoration: none;
-    letter-spacing: .5rem;
+    letter-spacing: .25rem;
+    margin: 0 0 10rem;
 }
 
 p, ul, li, h5 {
@@ -29,6 +30,8 @@ p, ul, li, h5 {
     line-height: 1.5rem;
     letter-spacing: .05rem;
     font-weight: 200;
+    margin: .5rem 0;
+    color: #d4d4dc;
 };
 
 a {
@@ -119,6 +122,7 @@ nav {
     padding: 0;
     margin: 0;
     z-index: 1;
+    opacity: .95;
 }
 
 .menu {
@@ -135,13 +139,15 @@ nav {
     line-height: 4rem;
     font-size: .75rem;
 }
-.menu a:hover {
+.current, .menu a:hover {
     cursor: pointer;
     border-top: 3px solid rgba(1, 255, 230, 0.763);
     transition: border-top 0.5s ease;
     /* color: rgba(1, 255, 230, 0.763); */
 }
-
+.menu .current {
+    background-color: rgba(1, 255, 230, 0.2);
+}
 .burger {
     margin: 0 30px 0 0;
     font-size: 2rem;
@@ -166,75 +172,6 @@ nav {
 }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-/* ------------HEADER NAV BAR--------------- */
-/* ------------HEADER NAV BAR--------------- */ 
-/* ------------HEADER NAV BAR--------------- */
-
-nav {
-    display: grid;
-    grid-template-columns: 4fr .25fr  2fr;
-    background: rgba(0, 0, 0, .75);
-    color: white;
-    align-items: center;
-    height: 4rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    line-height: 2rem;
-    font-family: "Rock Salt", cursive;
-    letter-spacing: .25rem;
-    font-size: 1rem;
-    padding: 0;
-    margin: 0;
-
-}
-
-.menu {
-    margin: 0 1rem 0 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: space-between;
-}
-.menu a {
-    text-decoration: none;
-    color: white;
-    margin: 0 2rem;
-    line-height: 4rem;
-    font-size: .75rem;
-}
-.menu a:hover {
-    cursor: pointer;
-    border-top: 3px solid rgba(1, 255, 230, 0.763);
-    transition: border-top 0.5s ease;
-    /* color: rgba(1, 255, 230, 0.763); */
-}
-
-.burger {
-    margin: 0 30px 0 0;
-    font-size: 2rem;
-    line-height: 4rem;
-    color: transparent;
-}
-.checkbox {
-    display: none;
-}
-
-.logo {
-    text-align: left;
-    font-family: "Rock Salt", cursive;
-    /* font-family: "Permanent Marker", cursive; */
-    font-size: .5rem;
-    margin: 0 0 0 5em;
-    letter-spacing: .25rem;
-}
-
-=======
->>>>>>> navBar
-=======
 
 /* MAIN CONTENT CSS GRIDS */
 .portfolio { grid-area: "portfolio"; background:#393f4d};
@@ -243,7 +180,7 @@ nav {
 .mainGrid { /* MAIN DOCUMENT WRAPPER */
     display: grid;
     width: 100%;
-    grid-gap: em;
+    grid-gap: 2em;
     grid-template-areas:
       "portfolio"
       "aboutContactTest";
@@ -265,9 +202,7 @@ nav {
   #proj3 { grid-area: "proj3"}
  
   .portfolio {
-    /* padding: 10px; */
     display: grid;
-    /* height: 100vh; */
     width: 100%;
     grid-gap: 2em;
     grid-template-areas:
@@ -281,16 +216,16 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    padding: 2em;
     margin: 2em;
-    border: 1px #393f4d solid;
+    border: 1px #1d1e22 solid;
     transition: border-top 0.5s ease;
     color: rgba(1, 255, 230, 0.763);
   }
   .portLink {
       display: flex;
       flex-direction: row;
-      justify-content: space between;
+      justify-content: space-evenly;
   }
   .portfolio img {
     width: 100%;
@@ -301,8 +236,8 @@ nav {
   .portfolio p, .portfolio a, .portfolio h5, .quote p, .ref h4 {
     width: 100%;
     height: auto;
-    margin: .5rem;
-    padding: .5rem;
+    /* margin: .5rem;
+    padding: .5rem; */
   }
 
   .portfolio a, .about a, .portfolio h5 {
@@ -315,7 +250,6 @@ nav {
 
   /* SECOND MAIN SECTION: ABOUT / SKILLS / TESTIMONIALS / CONTACT */
   .aboutContactTest {
-    /* padding: 10px; */
     display: grid;
     width: 100%;
     grid-gap: 2em;
@@ -327,116 +261,71 @@ nav {
     height: auto;
   }
 
-  
 /*----- ??? -------*/  /*----- ??? -------*/
 
 /* ABOUT / SKILLS / CONTACT / TESTIMONIALS WRAPPER */
 #about { grid-area: "about"; height: 25em }
 #skills { grid-area: "skills"; height: 25em }
-#contact { grid-area: "contact"; height: 25em}
 #quoteBox { grid-area: "quoteBox"; height: 25em }
+#contact { grid-area: "contact"; height: 25em}
 
 .box2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px #1d1e22 solid;
+  border: 1px #393f4d solid;
   transition: border-top 0.5s ease;
-  padding: 1em;
-  margin: 2em;
+  padding: 2em;
+  margin: 2em 2em 5rem;
   color: rgba(1, 255, 230, 0.763);
 }
 
-.about, .test {
-  margin: 1em;  
+.about, .test {  
   width: 100%;
   text-align: left;
-  padding: 2em;
-  
 }
-/* .about p {
-    width: 100%;
-    height: auto;
-} */
 
-.skills, .contact {
-  margin: 1em;  
+.skills, .contact { 
   width: 100%;
   text-align: center;
-  padding: 1em;
   font-style: regular;
 }
 
 /* ABOUT/SKILLS CONTACT/TESTIMONIALS STYLING  */
-.skills img {
-    max-width: 25rem;
-    height: auto;
-    margin: 1rem;
-    image-resolution: 250px;
-}
-ul {
-  list-style: none;
-  font-size: 1.5em;
-}
 
 .ref {
   text-align: right;
-  margin: .5em;
-  width: 50em;
   height: 2em;
+  padding-top: 2rem;
 }
-h2 {
-  padding: 1.5em 0 0;
-}
->>>>>>> ft_portfolioGrid
+
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 
-<<<<<<< HEAD
-/* .myslides {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    bottom: 1rem;
-
-
-} */
-/* .mySlides img {
-    width: 100%;
-    height: 100vh;
-} */
-/*
- /* CONTAINER */
- /* For CAROUSEL CONTAINER/HEADER CONTAINER PARAMETERS SEE 
- HEADER: #heroImg above ^^ */
-
- /* SLIDE PARAMETERS TO MATCH #heroImg above ^^ in Header  */
-#heroImg > div {
-    position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 95vh;
-    margin: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+#skills, .about {
+    height: 35rem;
 }
- 
- /* HIDE THE IMAGES BY DEFAULT */
- .fade  {
-=======
 
  /* HIDE THE IMAGES BY DEFAULT */
 
+/* ABOUT SECTION */
+.social a {
+    color: #d4d4dc;
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 0 2rem;
+}
+.social a:hover {
+    color: rgba(1, 255, 230, 0.763);
+}
 .mySlides img {
-    width: 150rem;
-    height: auto;
+    width: 15rem;
+    min-height: 10rem;
     background-repeat: none;
+    background-position: center;
+    background-size: cover;
 }
 .fade {
     display: none;
@@ -444,68 +333,82 @@ h2 {
 
  /* CONTAINER */
 .carouselWrap {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: center;
-    position: absolute;
+    justify-content: center; */
+    position: relative;
     overflow: hidden;
     background-position: cover;
-    overflow: hidden;
-    width: 10rem;
+    max-width: 15rem;
+    margin: auto;
  }
 
 
 /* HIDE THE IMAGES BY DEFAULT */
 .myslides {
->>>>>>> ft_portfolioGrid
     display: none;
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
  }
 
-CAPTION TEXT */
-.slideText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #f2f2f2;
-    font-size: .5rem;
-    padding: 1em 2em;
+/* Next & previous buttons */
+/* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -6rem;
+    padding: 5rem;
+    color: #d4d4dc;
+    font-weight: bold;
+    font-size: 5rem;
+    transition: 0.6s ease;
+    border-radius: 0 2rem 2rem 0;
+    user-select: none;
+} */
+/* Position "next button" to the right */
+/* .next {
+    right: 0;
+    border-radius: 2rem 0 0 2rem;
+} */
+
+/* On hover add black bg color for a bit see thru */
+.text {
+    color: #d4d4dc;
+    font-size: 5rem;
+    padding: 2rem 4rem;
     position: absolute;
     bottom: 2rem;
-<<<<<<< HEAD
     width: 100%;
-=======
-    width: 45%;
->>>>>>> ft_portfolioGrid
+}
+.slideText, .numbertext {
     text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    color: #d4d4dc;
+    font-size: 1rem;
 }
 
 /* NUMBER TEXT (1/4 etc) */
 /* .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+    color: #d4d4dc;
+    font-size: 4rem;
+    padding: 2rem 4rem;
     position: absolute;
-    top: 3em;
-    left: 3em;
+    top: 2rem;
+    left: 2rem;
 } */
 
  /* DOTS AND BULLETS INDICATORS */
  .dot {
      cursor: pointer;
-     height: 1.5rem;
-     width: 1.5rem;
-     margin: 1.5rem;
-     background-color: #bbb;
+     height: .5rem;
+     width: .5rem;
+     margin: 1rem 1rem;
+     background-color: #d4d4dc;
      border-radius: 50%;
      display: inline-block;
      transition: background-color 0.6s ease;
  }
 
- .active,  {
+ .active  {
      background-color: rgba(1, 255, 230, 0.763);
  }
  .dot:hover {
@@ -529,222 +432,43 @@ CAPTION TEXT */
      from {opacity: .4}
      to {opacity: 1}
  }
-/* MAIN CONTENT CSS GRIDS */
-.portfolio { grid-area: "portfolio"; background: grey }
-.aboutContactTest { grid-area: "aboutContactTest"; background: yellow }
-
-.mainGrid { /* MAIN DOCUMENT WRAPPER */
-    display: grid;
-    width: 100%;
-    grid-gap: 1em;
-    grid-template-areas:
-    
-      "portfolio"
-      "aboutContactTest";
-    align-items: center;
-}
-
-.container {
-    display: block;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-  /* PORTFOLIO WRAPPER */
-#proj0 { grid-area: "proj0"}
-#proj1 { grid-area: "proj1"}
-#proj2 { grid-area: "proj2"}
-#proj3 { grid-area: "proj3"}
-
-.portfolio {
-/* padding: 10px; */
-display: grid;
-/* height: 100vh; */
-width: 100%;
-grid-gap: 2em;
-grid-template-areas:
-    "proj0 proj1"
-    "proj2 proj3";
-align-items: center;
-}
-.aboutContactTest {
-/* padding: 10px; */
-display: grid;
-width: 100%;
-grid-gap: 2em;
-grid-template-areas:
-    "about skills"
-    "contact quoteBox";
-align-items: center;
-/* margin: 0 0 4em; */
-height: auto;
-}
-
-.box {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-padding: 1em;
-margin: 2em;
-}
-  
-/*----- ??? -------*/  /*----- ??? -------*/
-
-/* ABOUT / SKILLS / CONTACT / TESTIMONIALS WRAPPER */
-#about { grid-area: "about"; background: lightblue; height: 25em }
-#skills { grid-area: "skills"; background: lightpink; height: 25em }
-#contact { grid-area: "contact"; background: lightyellow; height: 25em}
-#quoteBox { grid-area: "quoteBox"; background: lightgreen; height: 25em }
-
-
-
-.box2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-  margin: 2em;
-}
-
-.about, .contact {
-  margin: 1em;  
-  width: 50em;
-  text-align: left;
-  padding: 1em;
-  
-}
-
-.skills, .test {
-  margin: 1em;  
-  width: 50em;
-  text-align: center;
-  padding: 1em;
-  font-style: regular;
-}
-
-/* ABOUT/SKILLS CONTACT/TESTIMONIALS STYLING  */
-ul {
-  list-style: none;
-  font-size: 1.5em;
-}
-
-.ref {
-  text-align: right;
-  margin: .5em;
-  width: 50em;
-  height: 2em;
-}
-h2 {
-  padding: 1.5em 0 0;
-}
 
 /* QUOTE POSITIONING FOR FADES IN AND OUT */
-#q1, #r1 {
-    background: pink;
-}
-#q2, #r2 {
-    background: yellow;
-}
-#q3, #r3 {
-    background: red;
-}
-#quoteBox {
-    position: relative;
-    width: auto;
-    height: 25em;
-    padding: 1em;
-}
-
-#quoteBox > section {
-    position: absolute;
-    padding: 5em 0;
-}
-
-
-/* LEAVE A COMMENT (SECTION) */
-/* FORM CONTAINER */
-
-.userForm h3 {
-    text-align: center;
-    color: rgba(1, 255, 230, 0.763);
-}
-/* FORM STYLES */
-input[name="name"] {
-    grid-area: name;
-}
-
-input[name="emailUser"] {
-    grid-area: emailUser;
-}
-
-textarea {
-    grid-area: comment;
-    height: 5em;
-    resize: none;
-}
-
-input[name="submit"] {
-    grid-area: submit;
-}
-
-.formGrid {
-    display: grid;
-    width: auto;
-    grid-template-areas:
-        'name emailUser'
-        'comment comment'
-        'submit submit';
-    grid-gap: 1em;
-    padding: 3em;
-    display: -ms-grid; /* IE 10 */
-}
-
-.formGrid input, .formGrid textarea {
-    border: teal .15em solid;
-    font-family: 'Lato', sans-serif;
-    color: 
-    font-size: .75em;
-    padding: 1em;
-}
-.formGrid::placeholder {
-    font-weight: 900;
-}
-
-
-
-/* QUOTE POSITIONING FOR FADES IN AND OUT */
+/* #quote1, #quote2, #quote3 {
+    display: none;
+} */
 .qFade p, .qFade h4 {
-    width: 25rem;
-    height: auto;
+    width: 100%;
+    min-height: 12rem;
+}
+.qFade p {
+    padding: 3rem 0;
+    font-family: "Nato Sans", sans-serif;
+    font-size: 1.25rem;
+    color:  #d4d4dc;
+    min-height: 12rem;
+    line-height: 3rem;
+}
+.qFade h4{
+    color:rgba(1, 255, 230, 0.763);
+    font-size: .75rem;
 }
 
-#q1, #r1 {
-    background: pink;
-}
-#q2, #r2 {
-    background: yellow;
-}
-#q3, #r3 {
-    background: red;
-}
 #quoteBox {
     position: relative;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 30rem;
 }
 
 #quoteBox > section {
     position: absolute;
-    padding: 5em;
+    padding: 2rem;
 }
 
 
 
-<<<<<<< HEAD
-=======
 /* LEAVE A COMMENT (SECTION) */
 /* FORM CONTAINER */
 
@@ -796,7 +520,6 @@ input[name="submit"] {
 
 
 /* MEDIA QUERIES / RESPOSINVE STYLES */
->>>>>>> ft_portfolioGrid
 @media only screen and (max-width: 800px) {
     /* ---HEADER IMAGE--- */
     h1 {
@@ -813,7 +536,7 @@ input[name="submit"] {
         font-size: 6rem;
         font-family: "Permanent Marker", cursive;
     }
-
+    
     .defOfJoy {
         font-size: 1rem;
         margin: 0 0 0 2rem;
@@ -854,28 +577,19 @@ input[name="submit"] {
         position: absolute;
         background: rgba(0, 0, 0, .75);
         display: none; /*should appear upon burger click*/
-        }
-        
+      }
+      
     .menu a {
         margin: 0;
     }
 
     .burger {
-<<<<<<< HEAD
-        color: white;
-        font-size: 2.5rem;
-        display: block;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-=======
       color: #d4d4dc;
       font-size: 2.5rem;
       display: block;
       position: absolute;
       bottom: 0;
       right: 0;
->>>>>>> ft_portfolioGrid
     }
 
     .burger:hover, .menu a:hover {
@@ -884,7 +598,7 @@ input[name="submit"] {
         transition: color 0.5s ease;
         border-top: none;
     }
-
+    
     .logo {
         font-size: .5em;
         margin: 0 4em;
@@ -904,7 +618,11 @@ input[name="submit"] {
           "proj3";
         align-items: center;
       }
-    
+    .blurb {
+        font-family:"Noto-Sans", sans-serif;
+        color: #d4d4dc;
+        margin: 1rem;
+    }
     /* ABOUT - SKILLS - QUOTES - CONTACT / SECTION 2 */
     .aboutContactTest {
         display: grid;
@@ -918,6 +636,24 @@ input[name="submit"] {
         align-items: center;
         height: auto;
       }
+    .social a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: #d4d4dc;
+        margin: 0 2rem;
+    }
+    .social a:hover {
+        cursor: pointer;
+        color: rgba(1, 255, 230, 0.763);
+    }
+    #quoteBox {
+        height: 50rem;
+    }
+
+    #quoteBox p, #quoteBox h4 {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
 
     /* CONTACT FORM SUBMISSION */
     .formGrid {
@@ -934,8 +670,3 @@ input[name="submit"] {
     }
 
 }
-
-
-
-
-
