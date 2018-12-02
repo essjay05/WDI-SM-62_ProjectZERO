@@ -5,19 +5,30 @@
 }
 
 html {
-    font-size: 16px; 
+    font-size: 16px;
+    background: #393f4d;
 }
 /* -------- TYPOGRAPHY --------- */
 /*------------- TYPOGRAPHY ---------------------- */
-h1, h2, h3, h4 {
+h1, h2, h4 {
     font-family: "Rock Salt", cursive;
     letter-spacing: .75rem;
     /* font-family: "Permanent Marker", cursive; */
 }
+.box h3 a {
+    font-family: "Permanent Marker", cursive;
+    font-size: 1rem;
+    color: #d4d4dc;
+    text-decoration: none;
+    letter-spacing: .5rem;
+}
 
-p, ul, li {
+p, ul, li, h5 {
     font-family: "Noto Sans", sans-serif;
     text-transform: none;
+    line-height: 1.5rem;
+    letter-spacing: .05rem;
+    font-weight: 200;
 };
 
 a {
@@ -29,41 +40,47 @@ a {
 }
 
 /* ---------- HERO IMAGE -------------- */
-h1 {
+#heroImg {
+    /* BACKGROUND INFO / PARAMETERS */
     background: url("https://i.imgur.com/k5aEq1W.png") no-repeat top;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: #d4d4dc;
     text-align: left;
     max-width: 100%;
     height: 100vh;
     margin: 0;
-    padding: .5rem 5rem;
+    opacity: 1;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); */
+    /* FONT PARAMETERS */
     /* font-family: "Noto Sans", sans-serif;
     font-family: "Rock Salt", cursive; */
-    /* font-family: "Rock Salt", cursive; */
-    font-weight: 400;
+    /* font-family: "Rock Salt", cursive; */  
 }
 .Joy {
     font-size: 10rem;
     font-family: "Permanent Marker", cursive;
-    margin: 0;
+    margin: 0 4rem;
+    color: #d4d4dc;
+    opacity: .8;
     /* font-family: "Rock Salt", cursive; */
 }
 .defOfJoy {
     font-family: "Rock Salt", cursive;
-    color: white;
+    color: #d4d4dc;
     font-size: 2rem;
-    margin: 0;
+    margin: 0 4rem;
     line-height: 2rem;
+    opacity: .8;
 }
 .definition {
     font-family: "Rock Salt", cursive;
-    color: white;
+    color: #d4d4dc;
     font-size: 1rem;
-    margin: 0;
+    margin: 0 4rem;
     display: inline-block;
     line-height: 2.5rem;
+    opacity: .8;
 }
 
 
@@ -87,8 +104,9 @@ h1 {
 nav {
     display: grid;
     grid-template-columns: 4fr .25fr  2fr;
-    background: rgba(0, 0, 0, .75);
-    color: white;
+    background: #1d1e22;
+    /* opacity: .95; */
+    color: #d4d4dc;
     align-items: center;
     height: 4rem;
     position: fixed;
@@ -100,7 +118,7 @@ nav {
     font-size: 1rem;
     padding: 0;
     margin: 0;
-
+    z-index: 1;
 }
 
 .menu {
@@ -112,7 +130,7 @@ nav {
 }
 .menu a {
     text-decoration: none;
-    color: white;
+    color: #d4d4dc;
     margin: 0 2rem;
     line-height: 4rem;
     font-size: .75rem;
@@ -148,6 +166,7 @@ nav {
 }
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 /* ------------HEADER NAV BAR--------------- */
@@ -215,10 +234,167 @@ nav {
 
 =======
 >>>>>>> navBar
+=======
+
+/* MAIN CONTENT CSS GRIDS */
+.portfolio { grid-area: "portfolio"; background:#393f4d};
+.aboutContactTest { grid-area: "aboutContactTest"; background: #1d1e22};
+
+.mainGrid { /* MAIN DOCUMENT WRAPPER */
+    display: grid;
+    width: 100%;
+    grid-gap: em;
+    grid-template-areas:
+      "portfolio"
+      "aboutContactTest";
+    align-items: center;
+}
+
+.container {
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+  /* PORTFOLIO WRAPPER */
+  #proj0 { grid-area: "proj0"}
+  #proj1 { grid-area: "proj1"}
+  #proj2 { grid-area: "proj2"}
+  #proj3 { grid-area: "proj3"}
+ 
+  .portfolio {
+    /* padding: 10px; */
+    display: grid;
+    /* height: 100vh; */
+    width: 100%;
+    grid-gap: 2em;
+    grid-template-areas:
+      "proj0 proj1"
+      "proj2 proj3";
+    align-items: center;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 2em;
+    border: 1px #393f4d solid;
+    transition: border-top 0.5s ease;
+    color: rgba(1, 255, 230, 0.763);
+  }
+  .portLink {
+      display: flex;
+      flex-direction: row;
+      justify-content: space between;
+  }
+  .portfolio img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    opacity: .85;
+  }
+  .portfolio p, .portfolio a, .portfolio h5, .quote p, .ref h4 {
+    width: 100%;
+    height: auto;
+    margin: .5rem;
+    padding: .5rem;
+  }
+
+  .portfolio a, .about a, .portfolio h5 {
+    color: inherit;
+    text-decoration: none;
+    font-family: "Nato Sans", sans-serif;
+    text-align: center;
+  }
+    
+
+  /* SECOND MAIN SECTION: ABOUT / SKILLS / TESTIMONIALS / CONTACT */
+  .aboutContactTest {
+    /* padding: 10px; */
+    display: grid;
+    width: 100%;
+    grid-gap: 2em;
+    grid-template-areas:
+      "about skills"
+      "quoteBox contact";
+    align-items: center;
+    /* margin: 0 0 4em; */
+    height: auto;
+  }
+
+  
+/*----- ??? -------*/  /*----- ??? -------*/
+
+/* ABOUT / SKILLS / CONTACT / TESTIMONIALS WRAPPER */
+#about { grid-area: "about"; height: 25em }
+#skills { grid-area: "skills"; height: 25em }
+#contact { grid-area: "contact"; height: 25em}
+#quoteBox { grid-area: "quoteBox"; height: 25em }
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px #1d1e22 solid;
+  transition: border-top 0.5s ease;
+  padding: 1em;
+  margin: 2em;
+  color: rgba(1, 255, 230, 0.763);
+}
+
+.about, .test {
+  margin: 1em;  
+  width: 100%;
+  text-align: left;
+  padding: 2em;
+  
+}
+/* .about p {
+    width: 100%;
+    height: auto;
+} */
+
+.skills, .contact {
+  margin: 1em;  
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  font-style: regular;
+}
+
+/* ABOUT/SKILLS CONTACT/TESTIMONIALS STYLING  */
+.skills img {
+    max-width: 25rem;
+    height: auto;
+    margin: 1rem;
+    image-resolution: 250px;
+}
+ul {
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.ref {
+  text-align: right;
+  margin: .5em;
+  width: 50em;
+  height: 2em;
+}
+h2 {
+  padding: 1.5em 0 0;
+}
+>>>>>>> ft_portfolioGrid
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 
+<<<<<<< HEAD
 /* .myslides {
     width: 100%;
     height: auto;
@@ -253,14 +429,43 @@ nav {
  
  /* HIDE THE IMAGES BY DEFAULT */
  .fade  {
+=======
+
+ /* HIDE THE IMAGES BY DEFAULT */
+
+.mySlides img {
+    width: 150rem;
+    height: auto;
+    background-repeat: none;
+}
+.fade {
+    display: none;
+}
+
+ /* CONTAINER */
+.carouselWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    background-position: cover;
+    overflow: hidden;
+    width: 10rem;
+ }
+
+
+/* HIDE THE IMAGES BY DEFAULT */
+.myslides {
+>>>>>>> ft_portfolioGrid
     display: none;
     background-size: cover;
     background-position: center;
     background-repeat: none;
  }
 
-/* CAPTION TEXT */
-/* .slideText {
+CAPTION TEXT */
+.slideText {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -270,9 +475,13 @@ nav {
     padding: 1em 2em;
     position: absolute;
     bottom: 2rem;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 45%;
+>>>>>>> ft_portfolioGrid
     text-align: center;
-} */
+}
 
 /* NUMBER TEXT (1/4 etc) */
 /* .numbertext {
@@ -507,8 +716,87 @@ input[name="submit"] {
 
 
 
+/* QUOTE POSITIONING FOR FADES IN AND OUT */
+.qFade p, .qFade h4 {
+    width: 25rem;
+    height: auto;
+}
+
+#q1, #r1 {
+    background: pink;
+}
+#q2, #r2 {
+    background: yellow;
+}
+#q3, #r3 {
+    background: red;
+}
+#quoteBox {
+    position: relative;
+    width: 100%;
+}
+
+#quoteBox > section {
+    position: absolute;
+    padding: 5em;
+}
 
 
+
+<<<<<<< HEAD
+=======
+/* LEAVE A COMMENT (SECTION) */
+/* FORM CONTAINER */
+
+        .userForm h3 {
+            text-align: center;
+            color: rgba(1, 255, 230, 0.763);
+        }
+        /* FORM STYLES */
+        input[name="name"] {
+            grid-area: name;
+        }
+
+        input[name="emailUser"] {
+            grid-area: emailUser;
+        }
+
+        textarea {
+            grid-area: comment;
+            height: 5em;
+            resize: none;
+        }
+
+        input[name="submit"] {
+            grid-area: submit;
+        }
+
+        .formGrid {
+            display: grid;
+            width: auto;
+            grid-template-areas:
+                'name emailUser'
+                'comment comment'
+                'submit submit';
+            grid-gap: 1em;
+            padding: 3em;
+            display: -ms-grid; /* IE 10 */
+        }
+
+        .formGrid input, .formGrid textarea {
+            border: rgba(1, 255, 230, 0.763) .15em solid;
+            font-family: "Nato Sans", sans-serif;
+            color: grey;
+            font-size: .75em;
+            padding: 1em;
+        }
+        .formGrid::placeholder {
+            font-weight: 900;
+        }
+
+
+/* MEDIA QUERIES / RESPOSINVE STYLES */
+>>>>>>> ft_portfolioGrid
 @media only screen and (max-width: 800px) {
     /* ---HEADER IMAGE--- */
     h1 {
@@ -521,20 +809,21 @@ input[name="submit"] {
     }    
 
     .Joy {
-        margin: 20rem 0 0 0;
+        margin: 20rem 0 0 2rem;
         font-size: 6rem;
         font-family: "Permanent Marker", cursive;
     }
 
     .defOfJoy {
         font-size: 1rem;
-        margin: 0;
+        margin: 0 0 0 2rem;
         padding: 0;
         line-height: 2rem;
     }
     .definition {
         line-height: 1.5rem;
         font-size: .75rem;
+        margin: 0 0 0 4rem;
     }
 
     /* --- MOBILE NAVBAR / BURGER TOGGLE--- */
@@ -572,12 +861,21 @@ input[name="submit"] {
     }
 
     .burger {
+<<<<<<< HEAD
         color: white;
         font-size: 2.5rem;
         display: block;
         position: absolute;
         bottom: 0;
         right: 0;
+=======
+      color: #d4d4dc;
+      font-size: 2.5rem;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+>>>>>>> ft_portfolioGrid
     }
 
     .burger:hover, .menu a:hover {
@@ -591,6 +889,50 @@ input[name="submit"] {
         font-size: .5em;
         margin: 0 4em;
     }
+
+    /* MAKE ALL SIDE BY SIDE SECTIONS STACK ON TOP OF EACH OTHER FLEX/GRID */
+    
+    /* PORTFOLIO / SECTION 1 */
+    .portfolio {
+        display: grid;
+        width: 100%;
+        grid-gap: 2em;
+        grid-template-areas:
+          "proj0" 
+          "proj1"
+          "proj2" 
+          "proj3";
+        align-items: center;
+      }
+    
+    /* ABOUT - SKILLS - QUOTES - CONTACT / SECTION 2 */
+    .aboutContactTest {
+        display: grid;
+        width: 100%;
+        grid-gap: 2em;
+        grid-template-areas:
+          "about" 
+          "skills"
+          "quoteBox" 
+          "contact";
+        align-items: center;
+        height: auto;
+      }
+
+    /* CONTACT FORM SUBMISSION */
+    .formGrid {
+        display: grid;
+        width: auto;
+        grid-template-areas:
+            "name name"
+            "emailUser emailUser"
+            "comment comment"
+            "submit submit";
+        grid-gap: 1em;
+        padding: 3em;
+        display: -ms-grid; /* IE 10 */
+    }
+
 }
 
 

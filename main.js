@@ -1,6 +1,24 @@
 
 // ---- CAROUSEL SLIDE CONTROLS --- //
+// DEFINING VARIABLES FOR CAROUSEL //
+var heroBG = document.getElementsByTagName("slide");
+    console.log(heroBG);
 
+var heroSlides = ["https://i.imgur.com/k5aEq1W.png", "https://i.imgur.com/CP1dNow.jpg", "https://i.imgur.com/DOQpTGX.jpg"];
+    console.log(heroSlides);
+    console.log(heroSlides[0]);
+
+var bgImg = "background-image";
+    console.log(bgImg);
+
+var i = 0;
+    console.log(i);
+
+var newSlideUrl = "url(" + heroSlides[i]+")";
+    console.log(newSlideUrl);
+
+
+ 
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -14,28 +32,55 @@ function currentSlide(n) {
     showSlides(slideIndex =n);
 }
 
+
+
+
+
+
+
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    // var slides = document.getElementsByClassName("tagLine");
+    var slides = ["https://i.imgur.com/k5aEq1W.png", "https://i.imgur.com/CP1dNow.jpg", "https://i.imgur.com/DOQpTGX.jpg"];
+    // $("h1").css({"background-image": "url( + heroImages[index])"});
+    // if (n > slides.length) {slideIndex = 1}
+    // if (n < 1) {slideIndex = slides.length}
+    for (var i = 0; i < slides.length; i++) {
+            setInterval(function swapSlide(i){
+                swapSlide = heroBG.css({bgImg: newSlideUrl});
+                if (i === heroSlides.length) {
+                    i = 0;
+                } else {
+                    i=+ 1;
+                }
+            }, 5000)
+            console.log("it's working up to here")
+        };
+        // slides[i].style.display = "none";
     }   
     // for (i = 0; i < dots.length; i++) {
     //     dots[i].className = dots[i].className.replace("active", "");
     // }
-    slides[slideIndex-1].style.display = "" ;
-    // dots[slideIndex-1].className =+ " active";
-}
+//     slides[slideIndex-1].style.display = "" ;
+//     // dots[slideIndex-1].className =+ " active";
+
+// console.log(heroBG);
+
+
+// if (index === heroImages.length) {
+//     index = 0;
+// } else {
+//     index=+ 1;
+// }
+// }, 2000)
+// };
 
 
 // ----- QUOTE BOX MECHANICS ---- //
 // ----- QUOTE BOX MECHANICS ---- //
 // ----- QUOTE BOX MECHANICS ---- //
 
-// $(document).ready(function() {
+// $(document).ready(function() WORKING!!! DO NOT TOUCH!! {
 
 
 setInterval(function() { 
@@ -50,21 +95,67 @@ setInterval(function() {
         .appendTo('#quoteBox');
 },  5000);
 
-// $('#r2', '#r3').hide();
-// setInterval(function() {
-//     $(.".ref")
-// })
 
 
-    // $(".ref").fadeOut().next().fadeIn();
+// TESTING SLIDESHOW REPLACE BACKGROUND URL for header
 
 
-// Function for Burger button toggle    
-    // $("#hamburger").click(function() {
-    //     $(".menu").toggleClass("active");
-    // })
 
-    
-    $("burger").addEventListener("click", function (){
-        console.log("HI")
-    });
+// var i = 0;
+// function swapHeroBG() {
+//     setInterval(function(){
+//         $("h1").css({"background-image": "url( + heroImages[index])"});
+        
+//         if (index === heroImages.length) {
+//             index = 0;
+//         } else {
+//             index=+ 1;
+//         }
+//     }, 2000)
+// };
+
+
+// SLIDESHOW DYNAMICS //
+
+//NEXT/PREVIOUS CONTROLS~
+plusSlides = (n) => {
+    clearInterval(myTimer);
+    this.showSlides(slideIndex += n);
+    if (n = -1){
+        myTimer = setInterval(() => {this.plusSlides(n+2);}, 4000);
+    } else {
+        myTimer = setInterval(() => {this.plusSlides(n+1);}, 4000);
+    }
+}
+
+showSlides = (n) => {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for ( i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
+componentDidMount = () => {
+    this.showSlides(slideIndex);
+    myTimer = setInterval(() => {this.plusSlides(1);}, 4000);
+}
+
+//Controls the current slide and resets interval if needed
+currentSlide = n => {
+    clearInterval(myTimer);
+    this.showSlides(slideIndex = n);
+    if (n = -1) {
+        myTimer = setInterval(() => {this.plusSlides(n + 2);}, 4000);
+    } else {
+        myTimer = setInterval(() => {this.plusSlides(n + 1);}, 4000);
+    }
+}
