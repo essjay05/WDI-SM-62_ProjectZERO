@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<title>Joy S. GA DASH Blog Theme</title>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://i.imgur.com/DOQpTGX.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 55px;
+      font-family: rockwell;
+    }
+    img {
+      margin: 15px 0px 0px 0px;
+      border: 3px solid black;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 15px;
+      background: rgba(0,0,0,0.5);
+      font-family: rockwell;
+      font-size: 20px;
+    }
+    li {
+      display: inline;
+      padding: 0px 25px 0px 25px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      font-family: rockwell;
+      font-size: 16px;
+      color: #029;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 10px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+    button {
+        padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/ZSxLmop.jpg?1">
+    <h1>JOY_ESS Photo Blog</h1>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/joy-serquina">LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/joy_ess/">IG Photos</a></li>
+      <li><a href="https://www.instagram.com/joyous365/">365 DPC 2016</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>UnF*ck Yourself Street Art</h2>
+    <img src="https://i.imgur.com/I0fNxw8m.jpg">
+    <p>Came across this inspirational quote while wandering around the DTLA Arts District.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>MFA Foundry Photographer</h2>
+    <img src="https://i.imgur.com/0D2GbKim.jpg">
+    <p>Canon selfie... lol</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Lesbi-Stereotypes</h2>
+    <img src="https://i.imgur.com/hYIN7dOm.jpg">
+    <p>Realized during my latest trip to Home Depot that I embodied a walking stereotype :p.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Thanks for your feedback!");
+    });
+  </script>
+</body>
