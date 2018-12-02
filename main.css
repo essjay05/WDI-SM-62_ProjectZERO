@@ -9,18 +9,12 @@ html {
 }
 /* -------- TYPOGRAPHY --------- */
 /*------------- TYPOGRAPHY ---------------------- */
-h1, h2, h4 {
+h1, h2, h3, h4 {
     font-family: "Rock Salt", cursive;
-    letter-spacing: .5rem;
+    letter-spacing: .75rem;
     /* font-family: "Permanent Marker", cursive; */
 }
-.box h3 a {
-    font-family: "Permanent Marker", cursive;
-    font-size: 5rem;
-    color: white;
-    text-decoration: none;
-    letter-spacing: .5rem;
-}
+
 p, ul, li {
     font-family: "Noto Sans", sans-serif;
     text-transform: none;
@@ -154,40 +148,69 @@ nav {
 }
 
 
-/* nav a {
+
+/* ------------HEADER NAV BAR--------------- */
+/* ------------HEADER NAV BAR--------------- */ 
+/* ------------HEADER NAV BAR--------------- */
+
+nav {
+    display: grid;
+    grid-template-columns: 4fr .25fr  2fr;
+    background: rgba(0, 0, 0, .75);
     color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
+    align-items: center;
+    height: 4rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 2rem;
     font-family: "Rock Salt", cursive;
-    line-height: 5rem;
-    margin: 0 2rem;
-    font-family: "Permanent Marker", cursive;
-}*/
+    letter-spacing: .25rem;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
 
+}
 
-/*
 .menu {
-    display: flex;  
+    margin: 0 1rem 0 0;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: space-between;
 }
-
-#burger {
-    display: none;
-    font-size: 5rem;
-    text-align: right;
+.menu a {
+    text-decoration: none;
     color: white;
+    margin: 0 2rem;
+    line-height: 4rem;
+    font-size: .75rem;
 }
-#burger:hover, nav a:hover {
+.menu a:hover {
     cursor: pointer;
-    color: rgba(1, 255, 230, 0.763);
+    border-top: 3px solid rgba(1, 255, 230, 0.763);
+    transition: border-top 0.5s ease;
+    /* color: rgba(1, 255, 230, 0.763); */
 }
 
-.mobile-menu {
+.burger {
+    margin: 0 30px 0 0;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: transparent;
+}
+.checkbox {
     display: none;
 }
 
+.logo {
+    text-align: left;
+    font-family: "Rock Salt", cursive;
+    /* font-family: "Permanent Marker", cursive; */
+    font-size: .5rem;
+    margin: 0 0 0 5em;
+    letter-spacing: .25rem;
+}
 
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
@@ -480,68 +503,91 @@ h2 {
         }
 
 
-/* MEDIA QUERIES / RESPOSINVE STYLES */
-@media (max-width: 991px) {
-    .Joy {
-        font-size: 15rem;
-        font-family: "Permanent Marker", cursive;
-        /* font-family: "Rock Salt", cursive; */
-    }
-    .defOfJoy {
-        /* font-family: "Noto Sans", sans-serif; */
-        font-family: "Rock Salt", cursive;
-        color: white;
-        font-weight: 700;
-        font-size: 4rem;
-        margin: -2rem 0;
-        line-height: 8rem; 
-    }
-    .definition {
-        font-family: "Noto Sans", sans-serif;
-        color: white;
-        font-weight: 400;
-        margin: -6em 0;
-    }
-    footer {
-        padding: 0 20px;
-    }
-    footer nav {
-        display: none;
-        position: absolute;
+
+
+
+/* MEDIA QUERIES / RESPONSIVE STYLES */
+@media only screen and (max-width: 800px) {
+    /* ---HEADER IMAGE--- */
+    h1 {
+        font-size: .5rem;
+        background-size: cover;
         width: 100%;
-        height: calc(100vh-50px);
-        background: black;
-        bottom: 50px;
-        right: -100%;
-        transition: 0.5s;
-    }
-    /* header nav .active */
-   
-    header nav a {
-        border-bottom: rgba(1, 255, 230, 0.763);
-    }
-    #burger {
+        height: 100vh;
         display: block;
-        color: white;
-    }
-    #burger:hover {
-        color: rgba(1, 255, 230, 0.763);
-        border-bottom: rgba(1, 255, 230, 0.763);
-    }
-    .mobile-menu {
-        display: flex;
-        justify-content: flex-end;
+        line-height: 3.5rem;
     }    
-    .mobile-menu a:hover{
-        color: rgba(1, 255, 230, 0.763);
-        border-bottom: rgba(1, 255, 230, 0.763);
-    }
-    .menu {
-      justify-content: flex-end;
-      display: none;
+
+    .Joy {
+        margin: 20rem 0 0 0;
+        font-size: 6rem;
+        font-family: "Permanent Marker", cursive;
     }
     
+    .defOfJoy {
+        font-size: 1rem;
+        margin: 10rem 2rem;
+        padding: 0;
+        line-height: 2rem;
+    }
+    .definition {
+        line-height: 1.5rem;
+        font-size: .75rem;
+    }
+
+    /* --- MOBILE NAVBAR / BURGER TOGGLE--- */
+    label {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        margin: 0 2rem;
+    }
+
+    .checkbox {
+        display: none;
+    }
+
+    #toggle:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: last baseline;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        margin: 0 0 20rem 0;
+        padding: 0;
+        box-shadow: 0px 1px 1px rgba(1, 255, 230, 0.2);
+        position: absolute;
+        background: rgba(0, 0, 0, .75);
+        display: none; /*should appear upon burger click*/
+      }
+      
     .menu a {
-      display: none;
+        margin: 0;
+    }
+
+    .burger {
+      color: white;
+      font-size: 2.5rem;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .burger:hover, .menu a:hover {
+        cursor: pointer;
+        color: rgba(1, 255, 230, 0.763);
+        transition: color 0.5s ease;
+        border-top: none;
+    }
+    
+    .logo {
+        font-size: .5em;
+        margin: 0 4em;
     }
 }
+
