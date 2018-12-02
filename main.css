@@ -16,7 +16,7 @@ h1, h2, h4 {
 }
 .box h3 a {
     font-family: "Permanent Marker", cursive;
-    font-size: 5rem;
+    font-size: 1rem;
     color: white;
     text-decoration: none;
     letter-spacing: .5rem;
@@ -156,25 +156,152 @@ nav {
 }
 
 
-/* ---------------SLIDESHOW / CAROUSEL---------- */
-/* ---------------SLIDESHOW / CAROUSEL---------- */
-/* ---------------SLIDESHOW / CAROUSEL---------- */
 
-.mySlides {
-    width: 100rem;
-    height: 50rem;
-    margin: 0;
+/* MAIN CONTENT CSS GRIDS */
+.portfolio { grid-area: "portfolio"; background: grey }
+.aboutContactTest { grid-area: "aboutContactTest"; background: yellow }
+
+.mainGrid { /* MAIN DOCUMENT WRAPPER */
+    display: grid;
+    width: 100%;
+    grid-gap: em;
+    grid-template-areas:
+    
+      "portfolio"
+      "aboutContactTest";
+    align-items: center;
+}
+
+.container {
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
-    bottom: 1rem;
+    margin: 0;
+}
+  /* PORTFOLIO WRAPPER */
+  #proj0 { grid-area: "proj0"}
+  #proj1 { grid-area: "proj1"}
+  #proj2 { grid-area: "proj2"}
+  #proj3 { grid-area: "proj3"}
+ 
+  .portfolio {
+    /* padding: 10px; */
+    display: grid;
+    /* height: 100vh; */
+    width: 100%;
+    grid-gap: 2em;
+    grid-template-areas:
+      "proj0 proj1"
+      "proj2 proj3";
+    align-items: center;
+  }
 
 
-} 
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin: 2em;
+  }
+  .portfolio img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .portfolio p {
+    width: 100%;
+    height: auto;
+  }
+  .aboutContactTest {
+    /* padding: 10px; */
+    display: grid;
+    width: 100%;
+    grid-gap: 2em;
+    grid-template-areas:
+      "about skills"
+      "quoteBox contact";
+    align-items: center;
+    /* margin: 0 0 4em; */
+    height: auto;
+  }
+
+  
+/*----- ??? -------*/  /*----- ??? -------*/
+
+/* ABOUT / SKILLS / CONTACT / TESTIMONIALS WRAPPER */
+#about { grid-area: "about"; background: lightblue; height: 25em }
+#skills { grid-area: "skills"; background: lightpink; height: 25em }
+#contact { grid-area: "contact"; background: lightyellow; height: 25em}
+#quoteBox { grid-area: "quoteBox"; background: lightgreen; height: 25em }
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  margin: 2em;
+}
+
+.about, .test {
+  margin: 1em;  
+  width: 100%;
+  text-align: left;
+  padding: 2em;
+  
+}
+.about p {
+    width: 100%;
+    height: auto;
+}
+
+.skills, .contact {
+  margin: 1em;  
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  font-style: regular;
+}
+
+/* ABOUT/SKILLS CONTACT/TESTIMONIALS STYLING  */
+.skills img {
+    max-width: 25rem;
+    height: auto;
+    margin: 1rem;
+    image-resolution: 250px;
+}
+ul {
+  list-style: none;
+  font-size: 1.5em;
+}
+
+.ref {
+  text-align: right;
+  margin: .5em;
+  width: 50em;
+  height: 2em;
+}
+h2 {
+  padding: 1.5em 0 0;
+}
+/* ---------------SLIDESHOW / CAROUSEL---------- */
+/* ---------------SLIDESHOW / CAROUSEL---------- */
+/* ---------------SLIDESHOW / CAROUSEL---------- */
+
+
  /* HIDE THE IMAGES BY DEFAULT */
 
-.capture {
-    width: 100rem;
-    height: 50rem;
+.mySlides img {
+    width: 150rem;
+    height: auto;
     background-repeat: none;
+}
+.fade {
+    display: none;
 }
 
  /* CONTAINER */
@@ -186,9 +313,10 @@ nav {
     overflow: hidden;
     background-position: cover;
     overflow: hidden;
-    height: 100rem;
-    width: 200rem;
+    height: 90vh;
+    width: auto;;
  }
+
 
 /* HIDE THE IMAGES BY DEFAULT */
 .myslides {
@@ -198,8 +326,8 @@ nav {
     background-repeat: none;
  }
 
-/* CAPTION TEXT */
-/* .slideText {
+CAPTION TEXT */
+.slideText {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -209,9 +337,9 @@ nav {
     padding: 1em 2em;
     position: absolute;
     bottom: 2rem;
-    width: 100%;
+    width: 45%;
     text-align: center;
-} */
+}
 
 /* NUMBER TEXT (1/4 etc) */
 .numbertext {
@@ -259,118 +387,13 @@ nav {
      from {opacity: .4}
      to {opacity: 1}
  }
-/* MAIN CONTENT CSS GRIDS */
-.portfolio { grid-area: "portfolio"; background: grey }
-.aboutContactTest { grid-area: "aboutContactTest"; background: yellow }
-
-.mainGrid { /* MAIN DOCUMENT WRAPPER */
-    display: grid;
-    width: 100%;
-    grid-gap: 1em;
-    grid-template-areas:
-    
-      "portfolio"
-      "aboutContactTest";
-    align-items: center;
-}
-
-.container {
-    display: block;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-  /* PORTFOLIO WRAPPER */
-  #proj0 { grid-area: "proj0"}
-  #proj1 { grid-area: "proj1"}
-  #proj2 { grid-area: "proj2"}
-  #proj3 { grid-area: "proj3"}
- 
-  .portfolio {
-    /* padding: 10px; */
-    display: grid;
-    /* height: 100vh; */
-    width: 100%;
-    grid-gap: 2em;
-    grid-template-areas:
-      "proj0 proj1"
-      "proj2 proj3";
-    align-items: center;
-  }
-  .aboutContactTest {
-    /* padding: 10px; */
-    display: grid;
-    width: 100%;
-    grid-gap: 2em;
-    grid-template-areas:
-      "about skills"
-      "contact quoteBox";
-    align-items: center;
-    /* margin: 0 0 4em; */
-    height: auto;
-  }
-
-  .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-    margin: 2em;
-  }
-  
-/*----- ??? -------*/  /*----- ??? -------*/
-
-/* ABOUT / SKILLS / CONTACT / TESTIMONIALS WRAPPER */
-#about { grid-area: "about"; background: lightblue; height: 25em }
-#skills { grid-area: "skills"; background: lightpink; height: 25em }
-#contact { grid-area: "contact"; background: lightyellow; height: 25em}
-#quoteBox { grid-area: "quoteBox"; background: lightgreen; height: 25em }
-
-.box2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-  margin: 2em;
-}
-
-.about, .contact {
-  margin: 1em;  
-  width: 50em;
-  text-align: left;
-  padding: 1em;
-  
-}
-
-.skills, .test {
-  margin: 1em;  
-  width: 50em;
-  text-align: center;
-  padding: 1em;
-  font-style: regular;
-}
-
-/* ABOUT/SKILLS CONTACT/TESTIMONIALS STYLING  */
-ul {
-  list-style: none;
-  font-size: 1.5em;
-}
-
-.ref {
-  text-align: right;
-  margin: .5em;
-  width: 50em;
-  height: 2em;
-}
-h2 {
-  padding: 1.5em 0 0;
-}
 
 /* QUOTE POSITIONING FOR FADES IN AND OUT */
+.qFade p, .qFade h4 {
+    width: 25rem;
+    height: auto;
+}
+
 #q1, #r1 {
     background: pink;
 }
@@ -382,9 +405,7 @@ h2 {
 }
 #quoteBox {
     position: relative;
-    width: auto;
-    height: 25em;
-    padding: 1em;
+    width: 100%;
 }
 
 #quoteBox > section {
