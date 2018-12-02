@@ -9,7 +9,6 @@ html {
 }
 /* -------- TYPOGRAPHY --------- */
 /*------------- TYPOGRAPHY ---------------------- */
-<<<<<<< HEAD
 h1, h2, h4 {
     font-family: "Rock Salt", cursive;
     letter-spacing: .5rem;
@@ -22,14 +21,6 @@ h1, h2, h4 {
     text-decoration: none;
     letter-spacing: .5rem;
 }
-=======
-h1, h2, h3, h4 {
-    font-family: "Rock Salt", cursive;
-    letter-spacing: .75rem;
-    /* font-family: "Permanent Marker", cursive; */
-}
->>>>>>> navBar
-
 p, ul, li {
     font-family: "Noto Sans", sans-serif;
     text-transform: none;
@@ -41,56 +32,6 @@ a {
     text-decoration: none;
     color: inherit;
     transition: all .5s ease-in-out;
-<<<<<<< HEAD
-
-}
-
-/* ---------- HERO IMAGE -------------- */
-#heroImg {
-    /* BACKGROUND INFO / PARAMETERS */
-    background: url("https://i.imgur.com/k5aEq1W.png") no-repeat top;
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    height: 95vh;
-    margin: 0;
-    padding: 5rem 5rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    /* FONT PARAMETERS */
-    color: white;
-    font-size: 4rem;
-    text-align: left;
-    font-weight: 400;
-    /* font-family: "Noto Sans", sans-serif;
-    font-family: "Rock Salt", cursive; */
-    /* font-family: "Rock Salt", cursive; */  
-}
-.Joy {
-    font-size: 30rem;
-    font-family: "Permanent Marker", cursive;
-    /* font-family: "Rock Salt", cursive; */
-}
-.defOfJoy {
-    /* font-family: "Noto Sans", sans-serif; */
-    font-family: "Rock Salt", cursive;
-    color: white;
-    font-weight: 700;
-    font-size: 8rem;
-    /* margin: -1rem 0; */
-    line-height: 8rem; 
-}
-.definition {
-    font-family: "Noto Sans", sans-serif;
-    color: white;
-    font-size: 6rem;
-    margin: -6em 0;
-}
-
-a:hover {
-    color:  rgba(1, 255, 230, 0.763);
-    border-bottom:  rgba(1, 255, 230, 0.763);
-}
-=======
 }
 
 /* ---------- HERO IMAGE -------------- */
@@ -132,7 +73,6 @@ h1 {
 }
 
 
->>>>>>> navBar
 
 /* ----------------- SETTING THE VIEWPORT ---------------- */
 @viewport {
@@ -146,34 +86,6 @@ h1 {
 
 /* FOOTER */
 
-<<<<<<< HEAD
-/* ------------FOOTER NAV BAR--------------- */
-/* ------------FOOTER NAV BAR--------------- */ 
-/* ------------FOOTER NAV BAR--------------- */
-
-nav {
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    background: black;
-    color: white;
-    align-items: center;
-    height: 5rem;
-    padding: 0 200px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    /* font-family: "Rock Salt", cursive; */
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-family: "Rock Salt", cursive;
-    /* font-family: "Permanent Marker", cursive; */
-}
-=======
 /* ------------HEADER NAV BAR--------------- */
 /* ------------HEADER NAV BAR--------------- */ 
 /* ------------HEADER NAV BAR--------------- */
@@ -231,19 +143,11 @@ nav {
     display: block;
 } */
 
->>>>>>> navBar
 
 .logo {
     text-align: left;
     font-family: "Rock Salt", cursive;
     /* font-family: "Permanent Marker", cursive; */
-<<<<<<< HEAD
-    font-weight: 400;
-    font-size: .75rem;
-    margin-left: 1rem;
-}
-
-=======
     font-size: .5rem;
     margin: 0 0 0 5em;
     letter-spacing: .25rem;
@@ -262,14 +166,12 @@ nav {
 
 
 /*
->>>>>>> navBar
 .menu {
     display: flex;  
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
 }
-<<<<<<< HEAD
 
 #burger {
     display: none;
@@ -278,46 +180,19 @@ nav {
     color: white;
 }
 #burger:hover, nav a:hover {
-=======
-label {
-    display: inline-block;
-    font-size: 6rem;
-    text-align: right;
-    color: white;
-    top: 0;
-    right: 0;
-    margin: 0;
-}
-input {
-    display: none;
-}
-
-label:hover, #burger:hover, nav a:hover {
->>>>>>> navBar
     cursor: pointer;
     color: rgba(1, 255, 230, 0.763);
 }
 
-<<<<<<< HEAD
 .mobile-menu {
     display: none;
 }
-=======
-
-
-.mobile-menu {
-    display: 
-    flex-direction: column-reverse;
-    justify-content: center;
-}  */
->>>>>>> navBar
 
 
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 
-<<<<<<< HEAD
 /* .myslides {
     width: 100%;
     height: auto;
@@ -352,36 +227,6 @@ label:hover, #burger:hover, nav a:hover {
  
  /* HIDE THE IMAGES BY DEFAULT */
  .fade  {
-=======
-.mySlides {
-    width: 100rem;
-    height: 50rem;
-    margin: 0;
-    padding: 0;
-
-}
-.capture {
-    width: 100rem;
-    height: 50rem;
-    background-repeat: none;
-}
-/*
- /* CONTAINER */
-.carouselWrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: absolute;
-    overflow: hidden;
-    background-position: cover;
-    overflow: hidden;
-    height: 100rem;
-    width: 200rem;
- }
-
-/* HIDE THE IMAGES BY DEFAULT */
-.myslides {
->>>>>>> navBar
     display: none;
     background-size: cover;
     background-position: center;
@@ -395,24 +240,15 @@ label:hover, #burger:hover, nav a:hover {
     justify-content: center;
     align-items: center;
     color: #f2f2f2;
-<<<<<<< HEAD
     font-size: .5rem;
     padding: 1em 2em;
     position: absolute;
     bottom: 2rem;
     width: 100%;
-=======
-    font-size: 1rem;
-    padding: 1rem 2rem;
-    position: absolute;
-    bottom: 2rem;
-    width: 75%;
->>>>>>> navBar
     text-align: center;
 } */
 
 /* NUMBER TEXT (1/4 etc) */
-<<<<<<< HEAD
 /* .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -421,60 +257,32 @@ label:hover, #burger:hover, nav a:hover {
     top: 3em;
     left: 3em;
 } */
-=======
-.numbertext {
-    color: #f2f2f2;
-    font-size: 16px;
-    padding: 1rem 2rem;
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
-}
->>>>>>> navBar
 
  /* DOTS AND BULLETS INDICATORS */
  .dot {
      cursor: pointer;
-<<<<<<< HEAD
      height: 1.5rem;
      width: 1.5rem;
      margin: 1.5rem;
-=======
-     height: 1rem;
-     width: 1rem;
-     margin: 2rem 2rem;
->>>>>>> navBar
      background-color: #bbb;
      border-radius: 50%;
      display: inline-block;
      transition: background-color 0.6s ease;
  }
 
-<<<<<<< HEAD
  .active,  {
      background-color: rgba(1, 255, 230, 0.763);
  }
  .dot:hover {
      background-color: teal;
  }
-=======
- .active, .dot:hover {
-     background-color: rgba(1, 255, 230, 0.763);
- }
->>>>>>> navBar
 
  /* FADING ANIMATION */
  .fade {
      -webkit-animation-name: fade;
-<<<<<<< HEAD
      -webkit-animation-duration: 2s;
      animation-name: fade;
      animation-duration: 2s;
-=======
-     -webkit-animation-duration: 1.5s;
-     animation-name: fade;
-     animation-duration: 1.5s;
->>>>>>> navBar
  }
 
  @-webkit-keyframes fade {
@@ -486,7 +294,6 @@ label:hover, #burger:hover, nav a:hover {
      from {opacity: .4}
      to {opacity: 1}
  }
-<<<<<<< HEAD
 /* MAIN CONTENT CSS GRIDS */
 .portfolio { grid-area: "portfolio"; background: grey }
 .aboutContactTest { grid-area: "aboutContactTest"; background: yellow }
@@ -738,93 +545,3 @@ h2 {
       display: none;
     }
 }
-=======
-
-
-
-/* MEDIA QUERIES / RESPONSIVE STYLES */
-@media only screen and (max-width: 800px) {
-    /* ---HEADER IMAGE--- */
-    h1 {
-        font-size: .5rem;
-        background-size: cover;
-        width: 100%;
-        height: 100vh;
-        display: block;
-        line-height: 3.5rem;
-    }    
-
-    .Joy {
-        margin: 20rem 0 0 0;
-        font-size: 6rem;
-        font-family: "Permanent Marker", cursive;
-    }
-    
-    .defOfJoy {
-        font-size: 1rem;
-        margin: 0;
-        padding: 0;
-        line-height: 2rem;
-    }
-    .definition {
-        line-height: 1.5rem;
-        font-size: .75rem;
-    }
-
-    /* --- MOBILE NAVBAR / BURGER TOGGLE--- */
-    label {
-        display: block;
-        cursor: pointer;
-        position: fixed;
-        margin: 0 2rem;
-    }
-
-    .checkbox {
-        display: none;
-    }
-
-    #toggle:checked ~ .menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: last baseline;
-    }
-
-    .menu {
-        text-align: center;
-        width: 100%;
-        z-index: 1;
-        margin: 0 0 20rem 0;
-        padding: 0;
-        box-shadow: 0px 1px 1px rgba(1, 255, 230, 0.2);
-        position: absolute;
-        background: rgba(0, 0, 0, .75);
-        display: none; /*should appear upon burger click*/
-      }
-      
-    .menu a {
-        margin: 0;
-    }
-
-    .burger {
-      color: white;
-      font-size: 2.5rem;
-      display: block;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-
-    .burger:hover, .menu a:hover {
-        cursor: pointer;
-        color: rgba(1, 255, 230, 0.763);
-        transition: color 0.5s ease;
-        border-top: none;
-    }
-    
-    .logo {
-        font-size: .5em;
-        margin: 0 4em;
-    }
-}
-
->>>>>>> navBar

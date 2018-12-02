@@ -31,7 +31,6 @@ function showSlides(n) {
 }
 
 
-
 // ----- QUOTE BOX MECHANICS ---- //
 // ----- QUOTE BOX MECHANICS ---- //
 // ----- QUOTE BOX MECHANICS ---- //
