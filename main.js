@@ -46,7 +46,7 @@ var slides, dots;
                 dots[i].className = dots[i].className.replace(" active", "");
             }
             slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
+            // dots[slideIndex-1].className += " active";
             }
     
 
@@ -135,7 +135,7 @@ setInterval(function() {
         var $quoteBox = $('#quoteBox > section')
         console.log($quoteBox[0])
         $('#quoteBox > section:first')
-        .fadeOut(250)
+        .fadeOut(1000)
         .next()
         .fadeIn(1000)
         .end()
