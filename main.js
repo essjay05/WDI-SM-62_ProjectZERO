@@ -1,5 +1,36 @@
 
 // ---- CAROUSEL SLIDE CONTROLS --- //
+// DOTS and corresponding slides //
+
+var dot1 = document.getElementsByClassName(".dot1");
+var dot2 = document.getElementsByClassName(".dot2");
+var dot3 = document.getElementsByClassName(".dot3");
+var dots = [dot1, dot2, dot3]
+console.log(dots);
+
+
+
+var ctrlDot = {
+    dot1: heroSlides[0],
+    dot2: heroSlides[1],
+    dot3: heroSlides[2]
+};
+
+var switchSlide = function () {
+    for (var i = 0; i < dots.length; i++)
+    dots[i].click(function() {
+        $(this).css("background-image", heroSlides[i]);
+    });
+}
+    
+    
+    
+//     for (var i = 0; i < dots.length; i++) {
+//         setInterval(function swapSlide(i){
+//             swapSlide = heroBG.css({bgImg: newSlideUrl});
+// }
+// // }
+
 // DEFINING VARIABLES FOR CAROUSEL //
 var heroBG = document.getElementsByTagName("slide");
     console.log(heroBG);
@@ -14,7 +45,7 @@ var bgImg = "background-image";
 var i = 0;
     console.log(i);
 
-var newSlideUrl = "url(" + heroSlides[i]+")";
+var newSlideUrl = ("url(" + heroSlides[i]+")");
     console.log(newSlideUrl);
 
 
@@ -40,18 +71,20 @@ function showSlides(n) {
     // if (n > slides.length) {slideIndex = 1}
     // if (n < 1) {slideIndex = slides.length}
     for (var i = 0; i < slides.length; i++) {
-            setInterval(function swapSlide(i){
-                swapSlide = heroBG.css({bgImg: newSlideUrl});
-                if (i === heroSlides.length) {
-                    i = 0;
+        dots[i].click(function swapSlide(i) {
+            // setInterval(function swapSlide(i){
+                swapSlide = heroBG.css({bgImg: newSlideUrl[i]});
+                if (i === heroSlides[0]) {
+                    heroBG.css(bgImg: newSlideUrl[0])
+                } else if (i === heroSlides[1]) {
+                    heroBG.css(bgImg: newSlideUrl[1])
                 } else {
-                    i=+ 1;
-                }
-            }, 5000)
-            console.log("it's working up to here")
+                    heroBG.css(bgImg: newSlideUrl[2]);
+            console.log("it's working up to here");
         };
         // slides[i].style.display = "none";
     }   
+
     // for (i = 0; i < dots.length; i++) {
     //     dots[i].className = dots[i].className.replace("active", "");
     // }
