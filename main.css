@@ -42,25 +42,13 @@ a {
     background: url("https://i.imgur.com/k5aEq1W.png") no-repeat top;
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
-=======
     color: white;
     text-align: left;
->>>>>>> navBar
     max-width: 100%;
     height: 100vh;
     margin: 0;
-<<<<<<< HEAD
-    padding: 5rem 5rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); */
     /* FONT PARAMETERS */
-    color: white;
-    font-size: 4rem;
-    text-align: left;
-    font-weight: 400;
-=======
-    padding: .5rem 5rem;
->>>>>>> navBar
     /* font-family: "Noto Sans", sans-serif;
     font-family: "Rock Salt", cursive; */
     /* font-family: "Rock Salt", cursive; */  
@@ -68,28 +56,21 @@ a {
 .Joy {
     font-size: 10rem;
     font-family: "Permanent Marker", cursive;
-    margin: 0;
+    margin: 0 4rem;
     /* font-family: "Rock Salt", cursive; */
 }
 .defOfJoy {
     font-family: "Rock Salt", cursive;
     color: white;
-<<<<<<< HEAD
-    font-weight: 700;
-    font-size: 8rem;
-    /* margin: -1rem 0; */
-    line-height: 8rem; 
-=======
     font-size: 2rem;
-    margin: 0;
+    margin: 0 4rem;
     line-height: 2rem;
->>>>>>> navBar
 }
 .definition {
     font-family: "Rock Salt", cursive;
     color: white;
     font-size: 1rem;
-    margin: 0;
+    margin: 0 4rem;
     display: inline-block;
     line-height: 2.5rem;
 }
@@ -128,17 +109,6 @@ nav {
     font-size: 1rem;
     padding: 0;
     margin: 0;
-
-<<<<<<< HEAD
-.logo {
-    text-align: left;
-    font-family: "Rock Salt", cursive;
-    /* font-family: "Permanent Marker", cursive; */
-    font-weight: 400;
-    font-size: .75rem;
-    margin-left: 1rem;
-=======
->>>>>>> navBar
 }
 
 .menu {
@@ -190,55 +160,23 @@ nav {
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 
-<<<<<<< HEAD
-/* .myslides {
-    width: 100%;
-    height: auto;
-=======
 .mySlides {
     width: 100rem;
     height: 50rem;
->>>>>>> navBar
     margin: 0;
     padding: 0;
     bottom: 1rem;
 
-<<<<<<< HEAD
 
-} */
-/* .mySlides img {
-    width: 100%;
-    height: 100vh;
-} */
-/*
- /* CONTAINER */
- /* For CAROUSEL CONTAINER/HEADER CONTAINER PARAMETERS SEE 
- HEADER: #heroImg above ^^ */
-
- /* SLIDE PARAMETERS TO MATCH #heroImg above ^^ in Header  */
-#heroImg > div {
-    position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 95vh;
-    margin: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
- 
+} 
  /* HIDE THE IMAGES BY DEFAULT */
- .fade  {
-=======
-}
+
 .capture {
     width: 100rem;
     height: 50rem;
     background-repeat: none;
 }
-/*
+
  /* CONTAINER */
 .carouselWrap {
     display: flex;
@@ -254,7 +192,6 @@ nav {
 
 /* HIDE THE IMAGES BY DEFAULT */
 .myslides {
->>>>>>> navBar
     display: none;
     background-size: cover;
     background-position: center;
@@ -268,19 +205,11 @@ nav {
     justify-content: center;
     align-items: center;
     color: #f2f2f2;
-<<<<<<< HEAD
     font-size: .5rem;
     padding: 1em 2em;
     position: absolute;
     bottom: 2rem;
     width: 100%;
-=======
-    font-size: 1rem;
-    padding: 1rem 2rem;
-    position: absolute;
-    bottom: 2rem;
-    width: 75%;
->>>>>>> navBar
     text-align: center;
 } */
 
@@ -297,15 +226,9 @@ nav {
  /* DOTS AND BULLETS INDICATORS */
  .dot {
      cursor: pointer;
-<<<<<<< HEAD
-     height: 1.5rem;
-     width: 1.5rem;
-     margin: 1.5rem;
-=======
      height: 1rem;
      width: 1rem;
      margin: 2rem 2rem;
->>>>>>> navBar
      background-color: #bbb;
      border-radius: 50%;
      display: inline-block;
@@ -405,9 +328,6 @@ nav {
 #skills { grid-area: "skills"; background: lightpink; height: 25em }
 #contact { grid-area: "contact"; background: lightyellow; height: 25em}
 #quoteBox { grid-area: "quoteBox"; background: lightgreen; height: 25em }
-
-<<<<<<< HEAD
-
 
 .box2 {
   display: flex;
@@ -524,41 +444,11 @@ h2 {
 
 
 /* MEDIA QUERIES / RESPOSINVE STYLES */
-@media (max-width: 991px) {
-    .Joy {
-        font-size: 15rem;
-        font-family: "Permanent Marker", cursive;
-        /* font-family: "Rock Salt", cursive; */
-    }
-    .defOfJoy {
-        /* font-family: "Noto Sans", sans-serif; */
-        font-family: "Rock Salt", cursive;
-        color: white;
-        font-weight: 700;
-        font-size: 4rem;
-        margin: -2rem 0;
-        line-height: 8rem; 
-    }
-    .definition {
-        font-family: "Noto Sans", sans-serif;
-        color: white;
-        font-weight: 400;
-        margin: -6em 0;
-    }
-    footer {
-        padding: 0 20px;
-    }
-    footer nav {
-        display: none;
-        position: absolute;
-=======
-/* MEDIA QUERIES / RESPONSIVE STYLES */
 @media only screen and (max-width: 800px) {
     /* ---HEADER IMAGE--- */
     h1 {
         font-size: .5rem;
         background-size: cover;
->>>>>>> navBar
         width: 100%;
         height: 100vh;
         display: block;
@@ -566,20 +456,21 @@ h2 {
     }    
 
     .Joy {
-        margin: 20rem 0 0 0;
+        margin: 20rem 0 0 2rem;
         font-size: 6rem;
         font-family: "Permanent Marker", cursive;
     }
     
     .defOfJoy {
         font-size: 1rem;
-        margin: 0;
+        margin: 0 0 0 2rem;
         padding: 0;
         line-height: 2rem;
     }
     .definition {
         line-height: 1.5rem;
         font-size: .75rem;
+        margin: 0 0 0 4rem;
     }
 
     /* --- MOBILE NAVBAR / BURGER TOGGLE--- */
