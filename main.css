@@ -148,51 +148,6 @@ nav {
 }
 
 
-/* nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-family: "Rock Salt", cursive;
-    line-height: 5rem;
-    margin: 0 2rem;
-    font-family: "Permanent Marker", cursive;
-}*/
-
-
-/*
-.menu {
-    display: flex;  
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-}
-label {
-    display: inline-block;
-    font-size: 6rem;
-    text-align: right;
-    color: white;
-    top: 0;
-    right: 0;
-    margin: 0;
-}
-input {
-    display: none;
-}
-
-label:hover, #burger:hover, nav a:hover {
-    cursor: pointer;
-    color: rgba(1, 255, 230, 0.763);
-}
-
-
-
-.mobile-menu {
-    display: 
-    flex-direction: column-reverse;
-    justify-content: center;
-}  */
-
-
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
@@ -376,4 +331,5 @@ label:hover, #burger:hover, nav a:hover {
         margin: 0 4em;
     }
 }
+
 
