@@ -6,7 +6,7 @@
 
 html {
     font-size: 16px;
-    background: #393f4d;
+    background: #1d1e22;
 }
 /* -------- TYPOGRAPHY --------- */
 /*------------- TYPOGRAPHY ---------------------- */
@@ -16,11 +16,12 @@ h1, h2, h4 {
     /* font-family: "Permanent Marker", cursive; */
 }
 .box h3 a {
-    font-family: "Permanent Marker", cursive;
+    font-family: "Rock Salt", cursive;
     font-size: 1rem;
     color: #d4d4dc;
     text-decoration: none;
-    letter-spacing: .5rem;
+    letter-spacing: .25rem;
+    margin: 0 0 10rem;
 }
 
 p, ul, li, h5 {
@@ -119,6 +120,7 @@ nav {
     padding: 0;
     margin: 0;
     z-index: 1;
+    opacity: .95;
 }
 
 .menu {
@@ -212,9 +214,9 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    padding: 2em;
     margin: 2em;
-    border: 1px #393f4d solid;
+    border: 1px #1d1e22 solid;
     transition: border-top 0.5s ease;
     color: rgba(1, 255, 230, 0.763);
   }
@@ -272,30 +274,21 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px #1d1e22 solid;
+  border: 1px #393f4d solid;
   transition: border-top 0.5s ease;
-  padding: 1em;
+  padding: 2em;
   margin: 2em;
   color: rgba(1, 255, 230, 0.763);
 }
 
-.about, .test {
-  margin: 1em;  
+.about, .test {  
   width: 100%;
   text-align: left;
-  padding: 2em;
-  
 }
-/* .about p {
-    width: 100%;
-    height: auto;
-} */
 
-.skills, .contact {
-  margin: 1em;  
+.skills, .contact { 
   width: 100%;
   text-align: center;
-  padding: 1em;
   font-style: regular;
 }
 
@@ -303,7 +296,6 @@ nav {
 .skills img {
     max-width: 25rem;
     height: auto;
-    margin: 1rem;
     image-resolution: 250px;
 }
 ul {
@@ -313,13 +305,10 @@ ul {
 
 .ref {
   text-align: right;
-  margin: .5em;
   width: 50em;
   height: 2em;
 }
-h2 {
-  padding: 1.5em 0 0;
-}
+
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
