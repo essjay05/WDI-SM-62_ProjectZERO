@@ -63,6 +63,12 @@ function currentSlide(n) {
     showSlides(slideIndex =n);
 }
 
+
+
+
+
+
+
 function showSlides(n) {
     var i;
     // var slides = document.getElementsByClassName("tagLine");
@@ -141,3 +147,49 @@ setInterval(function() {
 //         }
 //     }, 2000)
 // };
+
+
+// SLIDESHOW DYNAMICS //
+
+//NEXT/PREVIOUS CONTROLS~
+plusSlides = (n) => {
+    clearInterval(myTimer);
+    this.showSlides(slideIndex += n);
+    if (n = -1){
+        myTimer = setInterval(() => {this.plusSlides(n+2);}, 4000);
+    } else {
+        myTimer = setInterval(() => {this.plusSlides(n+1);}, 4000);
+    }
+}
+
+showSlides = (n) => {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for ( i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
+componentDidMount = () => {
+    this.showSlides(slideIndex);
+    myTimer = setInterval(() => {this.plusSlides(1);}, 4000);
+}
+
+//Controls the current slide and resets interval if needed
+currentSlide = n => {
+    clearInterval(myTimer);
+    this.showSlides(slideIndex = n);
+    if (n = -1) {
+        myTimer = setInterval(() => {this.plusSlides(n + 2);}, 4000);
+    } else {
+        myTimer = setInterval(() => {this.plusSlides(n + 1);}, 4000);
+    }
+}
