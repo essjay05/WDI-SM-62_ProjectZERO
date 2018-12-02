@@ -344,43 +344,43 @@ nav {
     margin: 0;
 }
   /* PORTFOLIO WRAPPER */
-  #proj0 { grid-area: "proj0"}
-  #proj1 { grid-area: "proj1"}
-  #proj2 { grid-area: "proj2"}
-  #proj3 { grid-area: "proj3"}
- 
-  .portfolio {
-    /* padding: 10px; */
-    display: grid;
-    /* height: 100vh; */
-    width: 100%;
-    grid-gap: 2em;
-    grid-template-areas:
-      "proj0 proj1"
-      "proj2 proj3";
-    align-items: center;
-  }
-  .aboutContactTest {
-    /* padding: 10px; */
-    display: grid;
-    width: 100%;
-    grid-gap: 2em;
-    grid-template-areas:
-      "about skills"
-      "contact quoteBox";
-    align-items: center;
-    /* margin: 0 0 4em; */
-    height: auto;
-  }
+#proj0 { grid-area: "proj0"}
+#proj1 { grid-area: "proj1"}
+#proj2 { grid-area: "proj2"}
+#proj3 { grid-area: "proj3"}
 
-  .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-    margin: 2em;
-  }
+.portfolio {
+/* padding: 10px; */
+display: grid;
+/* height: 100vh; */
+width: 100%;
+grid-gap: 2em;
+grid-template-areas:
+    "proj0 proj1"
+    "proj2 proj3";
+align-items: center;
+}
+.aboutContactTest {
+/* padding: 10px; */
+display: grid;
+width: 100%;
+grid-gap: 2em;
+grid-template-areas:
+    "about skills"
+    "contact quoteBox";
+align-items: center;
+/* margin: 0 0 4em; */
+height: auto;
+}
+
+.box {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 1em;
+margin: 2em;
+}
   
 /*----- ??? -------*/  /*----- ??? -------*/
 
@@ -459,57 +459,56 @@ h2 {
 /* LEAVE A COMMENT (SECTION) */
 /* FORM CONTAINER */
 
-        .userForm h3 {
-            text-align: center;
-            color: rgba(1, 255, 230, 0.763);
-        }
-        /* FORM STYLES */
-        input[name="name"] {
-            grid-area: name;
-        }
+.userForm h3 {
+    text-align: center;
+    color: rgba(1, 255, 230, 0.763);
+}
+/* FORM STYLES */
+input[name="name"] {
+    grid-area: name;
+}
 
-        input[name="emailUser"] {
-            grid-area: emailUser;
-        }
+input[name="emailUser"] {
+    grid-area: emailUser;
+}
 
-        textarea {
-            grid-area: comment;
-            height: 5em;
-            resize: none;
-        }
+textarea {
+    grid-area: comment;
+    height: 5em;
+    resize: none;
+}
 
-        input[name="submit"] {
-            grid-area: submit;
-        }
+input[name="submit"] {
+    grid-area: submit;
+}
 
-        .formGrid {
-            display: grid;
-            width: auto;
-            grid-template-areas:
-                'name emailUser'
-                'comment comment'
-                'submit submit';
-            grid-gap: 1em;
-            padding: 3em;
-            display: -ms-grid; /* IE 10 */
-        }
+.formGrid {
+    display: grid;
+    width: auto;
+    grid-template-areas:
+        'name emailUser'
+        'comment comment'
+        'submit submit';
+    grid-gap: 1em;
+    padding: 3em;
+    display: -ms-grid; /* IE 10 */
+}
 
-        .formGrid input, .formGrid textarea {
-            border: teal .15em solid;
-            font-family: 'Lato', sans-serif;
-            color: 
-            font-size: .75em;
-            padding: 1em;
-        }
-        .formGrid::placeholder {
-            font-weight: 900;
-        }
-
-
+.formGrid input, .formGrid textarea {
+    border: teal .15em solid;
+    font-family: 'Lato', sans-serif;
+    color: 
+    font-size: .75em;
+    padding: 1em;
+}
+.formGrid::placeholder {
+    font-weight: 900;
+}
 
 
 
-/* MEDIA QUERIES / RESPONSIVE STYLES */
+
+
 @media only screen and (max-width: 800px) {
     /* ---HEADER IMAGE--- */
     h1 {
@@ -526,10 +525,10 @@ h2 {
         font-size: 6rem;
         font-family: "Permanent Marker", cursive;
     }
-    
+
     .defOfJoy {
         font-size: 1rem;
-        margin: 10rem 2rem;
+        margin: 0;
         padding: 0;
         line-height: 2rem;
     }
@@ -566,19 +565,19 @@ h2 {
         position: absolute;
         background: rgba(0, 0, 0, .75);
         display: none; /*should appear upon burger click*/
-      }
-      
+        }
+        
     .menu a {
         margin: 0;
     }
 
     .burger {
-      color: white;
-      font-size: 2.5rem;
-      display: block;
-      position: absolute;
-      bottom: 0;
-      right: 0;
+        color: white;
+        font-size: 2.5rem;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 
     .burger:hover, .menu a:hover {
@@ -587,11 +586,14 @@ h2 {
         transition: color 0.5s ease;
         border-top: none;
     }
-    
+
     .logo {
         font-size: .5em;
         margin: 0 4em;
     }
 }
+
+
+
 
 
