@@ -148,6 +148,7 @@ nav {
 }
 
 
+<<<<<<< HEAD
 
 /* ------------HEADER NAV BAR--------------- */
 /* ------------HEADER NAV BAR--------------- */ 
@@ -212,6 +213,8 @@ nav {
     letter-spacing: .25rem;
 }
 
+=======
+>>>>>>> navBar
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
@@ -590,4 +593,5 @@ h2 {
         margin: 0 4em;
     }
 }
+
 
