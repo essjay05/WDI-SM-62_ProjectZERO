@@ -11,7 +11,7 @@ html {
 /*------------- TYPOGRAPHY ---------------------- */
 h1, h2, h4 {
     font-family: "Rock Salt", cursive;
-    letter-spacing: .5rem;
+    letter-spacing: .75rem;
     /* font-family: "Permanent Marker", cursive; */
 }
 .box h3 a {
@@ -42,9 +42,15 @@ a {
     background: url("https://i.imgur.com/k5aEq1W.png") no-repeat top;
     background-size: cover;
     background-position: center;
+<<<<<<< HEAD
+=======
+    color: white;
+    text-align: left;
+>>>>>>> navBar
     max-width: 100%;
-    height: 95vh;
+    height: 100vh;
     margin: 0;
+<<<<<<< HEAD
     padding: 5rem 5rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     /* FONT PARAMETERS */
@@ -52,35 +58,43 @@ a {
     font-size: 4rem;
     text-align: left;
     font-weight: 400;
+=======
+    padding: .5rem 5rem;
+>>>>>>> navBar
     /* font-family: "Noto Sans", sans-serif;
     font-family: "Rock Salt", cursive; */
     /* font-family: "Rock Salt", cursive; */  
 }
 .Joy {
-    font-size: 30rem;
+    font-size: 10rem;
     font-family: "Permanent Marker", cursive;
+    margin: 0;
     /* font-family: "Rock Salt", cursive; */
 }
 .defOfJoy {
-    /* font-family: "Noto Sans", sans-serif; */
     font-family: "Rock Salt", cursive;
     color: white;
+<<<<<<< HEAD
     font-weight: 700;
     font-size: 8rem;
     /* margin: -1rem 0; */
     line-height: 8rem; 
+=======
+    font-size: 2rem;
+    margin: 0;
+    line-height: 2rem;
+>>>>>>> navBar
 }
 .definition {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Rock Salt", cursive;
     color: white;
-    font-size: 6rem;
-    margin: -6em 0;
+    font-size: 1rem;
+    margin: 0;
+    display: inline-block;
+    line-height: 2.5rem;
 }
 
-a:hover {
-    color:  rgba(1, 255, 230, 0.763);
-    border-bottom:  rgba(1, 255, 230, 0.763);
-}
+
 
 /* ----------------- SETTING THE VIEWPORT ---------------- */
 @viewport {
@@ -94,33 +108,28 @@ a:hover {
 
 /* FOOTER */
 
-/* ------------FOOTER NAV BAR--------------- */
-/* ------------FOOTER NAV BAR--------------- */ 
-/* ------------FOOTER NAV BAR--------------- */
+/* ------------HEADER NAV BAR--------------- */
+/* ------------HEADER NAV BAR--------------- */ 
+/* ------------HEADER NAV BAR--------------- */
 
 nav {
-    margin-top: 10px;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    background: black;
+    grid-template-columns: 4fr .25fr  2fr;
+    background: rgba(0, 0, 0, .75);
     color: white;
     align-items: center;
-    height: 5rem;
-    padding: 0 200px;
+    height: 4rem;
     position: fixed;
     bottom: 0;
     width: 100%;
-    /* font-family: "Rock Salt", cursive; */
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
+    line-height: 2rem;
     font-family: "Rock Salt", cursive;
-    /* font-family: "Permanent Marker", cursive; */
-}
+    letter-spacing: .25rem;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
 
+<<<<<<< HEAD
 .logo {
     text-align: left;
     font-family: "Rock Salt", cursive;
@@ -128,42 +137,73 @@ nav a {
     font-weight: 400;
     font-size: .75rem;
     margin-left: 1rem;
+=======
+>>>>>>> navBar
 }
 
 .menu {
-    display: flex;  
+    margin: 0 1rem 0 0;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: space-between;
 }
-
-#burger {
-    display: none;
-    font-size: 5rem;
-    text-align: right;
+.menu a {
+    text-decoration: none;
     color: white;
+    margin: 0 2rem;
+    line-height: 4rem;
+    font-size: .75rem;
 }
-#burger:hover, nav a:hover {
+.menu a:hover {
     cursor: pointer;
-    color: rgba(1, 255, 230, 0.763);
+    border-top: 3px solid rgba(1, 255, 230, 0.763);
+    transition: border-top 0.5s ease;
+    /* color: rgba(1, 255, 230, 0.763); */
 }
 
-.mobile-menu {
+.burger {
+    margin: 0 30px 0 0;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: transparent;
+}
+.checkbox {
     display: none;
 }
+/* .mobile-menu {
+    display: block;
+} */
+
+
+.logo {
+    text-align: left;
+    font-family: "Rock Salt", cursive;
+    /* font-family: "Permanent Marker", cursive; */
+    font-size: .5rem;
+    margin: 0 0 0 5em;
+    letter-spacing: .25rem;
+}
 
 
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 
+<<<<<<< HEAD
 /* .myslides {
     width: 100%;
     height: auto;
+=======
+.mySlides {
+    width: 100rem;
+    height: 50rem;
+>>>>>>> navBar
     margin: 0;
     padding: 0;
     bottom: 1rem;
 
+<<<<<<< HEAD
 
 } */
 /* .mySlides img {
@@ -191,6 +231,30 @@ nav a {
  
  /* HIDE THE IMAGES BY DEFAULT */
  .fade  {
+=======
+}
+.capture {
+    width: 100rem;
+    height: 50rem;
+    background-repeat: none;
+}
+/*
+ /* CONTAINER */
+.carouselWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    background-position: cover;
+    overflow: hidden;
+    height: 100rem;
+    width: 200rem;
+ }
+
+/* HIDE THE IMAGES BY DEFAULT */
+.myslides {
+>>>>>>> navBar
     display: none;
     background-size: cover;
     background-position: center;
@@ -198,36 +262,50 @@ nav a {
  }
 
 /* CAPTION TEXT */
-.slideText {
+/* .slideText {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #f2f2f2;
+<<<<<<< HEAD
     font-size: .5rem;
     padding: 1em 2em;
     position: absolute;
     bottom: 2rem;
     width: 100%;
+=======
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    position: absolute;
+    bottom: 2rem;
+    width: 75%;
+>>>>>>> navBar
     text-align: center;
-}
+} */
 
 /* NUMBER TEXT (1/4 etc) */
 .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 16px;
+    padding: 1rem 2rem;
     position: absolute;
-    top: 3em;
-    left: 3em;
+    top: 3rem;
+    left: 3rem;
 }
 
  /* DOTS AND BULLETS INDICATORS */
  .dot {
      cursor: pointer;
+<<<<<<< HEAD
      height: 1.5rem;
      width: 1.5rem;
      margin: 1.5rem;
+=======
+     height: 1rem;
+     width: 1rem;
+     margin: 2rem 2rem;
+>>>>>>> navBar
      background-color: #bbb;
      border-radius: 50%;
      display: inline-block;
@@ -328,6 +406,7 @@ nav a {
 #contact { grid-area: "contact"; background: lightyellow; height: 25em}
 #quoteBox { grid-area: "quoteBox"; background: lightgreen; height: 25em }
 
+<<<<<<< HEAD
 
 
 .box2 {
@@ -472,40 +551,91 @@ h2 {
     footer nav {
         display: none;
         position: absolute;
+=======
+/* MEDIA QUERIES / RESPONSIVE STYLES */
+@media only screen and (max-width: 800px) {
+    /* ---HEADER IMAGE--- */
+    h1 {
+        font-size: .5rem;
+        background-size: cover;
+>>>>>>> navBar
         width: 100%;
-        height: calc(100vh-50px);
-        background: black;
-        bottom: 50px;
-        right: -100%;
-        transition: 0.5s;
-    }
-    /* header nav .active */
-   
-    header nav a {
-        border-bottom: rgba(1, 255, 230, 0.763);
-    }
-    #burger {
+        height: 100vh;
         display: block;
-        color: white;
-    }
-    #burger:hover {
-        color: rgba(1, 255, 230, 0.763);
-        border-bottom: rgba(1, 255, 230, 0.763);
-    }
-    .mobile-menu {
-        display: flex;
-        justify-content: flex-end;
+        line-height: 3.5rem;
     }    
-    .mobile-menu a:hover{
-        color: rgba(1, 255, 230, 0.763);
-        border-bottom: rgba(1, 255, 230, 0.763);
-    }
-    .menu {
-      justify-content: flex-end;
-      display: none;
+
+    .Joy {
+        margin: 20rem 0 0 0;
+        font-size: 6rem;
+        font-family: "Permanent Marker", cursive;
     }
     
+    .defOfJoy {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        line-height: 2rem;
+    }
+    .definition {
+        line-height: 1.5rem;
+        font-size: .75rem;
+    }
+
+    /* --- MOBILE NAVBAR / BURGER TOGGLE--- */
+    label {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        margin: 0 2rem;
+    }
+
+    .checkbox {
+        display: none;
+    }
+
+    #toggle:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: last baseline;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        margin: 0 0 20rem 0;
+        padding: 0;
+        box-shadow: 0px 1px 1px rgba(1, 255, 230, 0.2);
+        position: absolute;
+        background: rgba(0, 0, 0, .75);
+        display: none; /*should appear upon burger click*/
+      }
+      
     .menu a {
-      display: none;
+        margin: 0;
+    }
+
+    .burger {
+      color: white;
+      font-size: 2.5rem;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .burger:hover, .menu a:hover {
+        cursor: pointer;
+        color: rgba(1, 255, 230, 0.763);
+        transition: color 0.5s ease;
+        border-top: none;
+    }
+    
+    .logo {
+        font-size: .5em;
+        margin: 0 4em;
     }
 }
+
+
