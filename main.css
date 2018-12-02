@@ -5,7 +5,8 @@
 }
 
 html {
-    font-size: 16px; 
+    font-size: 16px;
+    background: #393f4d;
 }
 /* -------- TYPOGRAPHY --------- */
 /*------------- TYPOGRAPHY ---------------------- */
@@ -17,14 +18,17 @@ h1, h2, h4 {
 .box h3 a {
     font-family: "Permanent Marker", cursive;
     font-size: 1rem;
-    color: white;
+    color: #d4d4dc;
     text-decoration: none;
     letter-spacing: .5rem;
 }
 
-p, ul, li {
+p, ul, li, h5 {
     font-family: "Noto Sans", sans-serif;
     text-transform: none;
+    line-height: 1.5rem;
+    letter-spacing: .05rem;
+    font-weight: 200;
 };
 
 a {
@@ -33,7 +37,6 @@ a {
     text-decoration: none;
     color: inherit;
     transition: all .5s ease-in-out;
-
 }
 
 /* ---------- HERO IMAGE -------------- */
@@ -42,11 +45,12 @@ a {
     background: url("https://i.imgur.com/k5aEq1W.png") no-repeat top;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: #d4d4dc;
     text-align: left;
     max-width: 100%;
     height: 100vh;
     margin: 0;
+    opacity: 1;
     /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); */
     /* FONT PARAMETERS */
     /* font-family: "Noto Sans", sans-serif;
@@ -57,22 +61,26 @@ a {
     font-size: 10rem;
     font-family: "Permanent Marker", cursive;
     margin: 0 4rem;
+    color: #d4d4dc;
+    opacity: .8;
     /* font-family: "Rock Salt", cursive; */
 }
 .defOfJoy {
     font-family: "Rock Salt", cursive;
-    color: white;
+    color: #d4d4dc;
     font-size: 2rem;
     margin: 0 4rem;
     line-height: 2rem;
+    opacity: .8;
 }
 .definition {
     font-family: "Rock Salt", cursive;
-    color: white;
+    color: #d4d4dc;
     font-size: 1rem;
     margin: 0 4rem;
     display: inline-block;
     line-height: 2.5rem;
+    opacity: .8;
 }
 
 
@@ -96,8 +104,9 @@ a {
 nav {
     display: grid;
     grid-template-columns: 4fr .25fr  2fr;
-    background: rgba(0, 0, 0, .75);
-    color: white;
+    background: #1d1e22;
+    /* opacity: .95; */
+    color: #d4d4dc;
     align-items: center;
     height: 4rem;
     position: fixed;
@@ -109,6 +118,7 @@ nav {
     font-size: 1rem;
     padding: 0;
     margin: 0;
+    z-index: 1;
 }
 
 .menu {
@@ -120,7 +130,7 @@ nav {
 }
 .menu a {
     text-decoration: none;
-    color: white;
+    color: #d4d4dc;
     margin: 0 2rem;
     line-height: 4rem;
     font-size: .75rem;
@@ -158,15 +168,14 @@ nav {
 
 
 /* MAIN CONTENT CSS GRIDS */
-.portfolio { grid-area: "portfolio"; background: grey }
-.aboutContactTest { grid-area: "aboutContactTest"; background: yellow }
+.portfolio { grid-area: "portfolio"; background:#393f4d};
+.aboutContactTest { grid-area: "aboutContactTest"; background: #1d1e22};
 
 .mainGrid { /* MAIN DOCUMENT WRAPPER */
     display: grid;
     width: 100%;
     grid-gap: em;
     grid-template-areas:
-    
       "portfolio"
       "aboutContactTest";
     align-items: center;
@@ -198,7 +207,6 @@ nav {
     align-items: center;
   }
 
-
   .box {
     display: flex;
     flex-direction: column;
@@ -206,16 +214,37 @@ nav {
     align-items: center;
     padding: 1em;
     margin: 2em;
+    border: 1px #393f4d solid;
+    transition: border-top 0.5s ease;
+    color: rgba(1, 255, 230, 0.763);
+  }
+  .portLink {
+      display: flex;
+      flex-direction: row;
+      justify-content: space between;
   }
   .portfolio img {
     width: 100%;
     height: auto;
     overflow: hidden;
+    opacity: .85;
   }
-  .portfolio p {
+  .portfolio p, .portfolio a, .portfolio h5, .quote p, .ref h4 {
     width: 100%;
     height: auto;
+    margin: .5rem;
+    padding: .5rem;
   }
+
+  .portfolio a, .about a, .portfolio h5 {
+    color: inherit;
+    text-decoration: none;
+    font-family: "Nato Sans", sans-serif;
+    text-align: center;
+  }
+    
+
+  /* SECOND MAIN SECTION: ABOUT / SKILLS / TESTIMONIALS / CONTACT */
   .aboutContactTest {
     /* padding: 10px; */
     display: grid;
@@ -233,18 +262,21 @@ nav {
 /*----- ??? -------*/  /*----- ??? -------*/
 
 /* ABOUT / SKILLS / CONTACT / TESTIMONIALS WRAPPER */
-#about { grid-area: "about"; background: lightblue; height: 25em }
-#skills { grid-area: "skills"; background: lightpink; height: 25em }
-#contact { grid-area: "contact"; background: lightyellow; height: 25em}
-#quoteBox { grid-area: "quoteBox"; background: lightgreen; height: 25em }
+#about { grid-area: "about"; height: 25em }
+#skills { grid-area: "skills"; height: 25em }
+#contact { grid-area: "contact"; height: 25em}
+#quoteBox { grid-area: "quoteBox"; height: 25em }
 
 .box2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border: 1px #1d1e22 solid;
+  transition: border-top 0.5s ease;
   padding: 1em;
   margin: 2em;
+  color: rgba(1, 255, 230, 0.763);
 }
 
 .about, .test {
@@ -254,10 +286,10 @@ nav {
   padding: 2em;
   
 }
-.about p {
+/* .about p {
     width: 100%;
     height: auto;
-}
+} */
 
 .skills, .contact {
   margin: 1em;  
@@ -313,8 +345,7 @@ h2 {
     overflow: hidden;
     background-position: cover;
     overflow: hidden;
-    height: 90vh;
-    width: auto;;
+    width: 10rem;
  }
 
 
@@ -410,8 +441,9 @@ CAPTION TEXT */
 
 #quoteBox > section {
     position: absolute;
-    padding: 5em 0;
+    padding: 5em;
 }
+
 
 
 /* LEAVE A COMMENT (SECTION) */
@@ -453,9 +485,9 @@ CAPTION TEXT */
         }
 
         .formGrid input, .formGrid textarea {
-            border: teal .15em solid;
-            font-family: 'Lato', sans-serif;
-            color: 
+            border: rgba(1, 255, 230, 0.763) .15em solid;
+            font-family: "Nato Sans", sans-serif;
+            color: grey;
             font-size: .75em;
             padding: 1em;
         }
@@ -529,7 +561,7 @@ CAPTION TEXT */
     }
 
     .burger {
-      color: white;
+      color: #d4d4dc;
       font-size: 2.5rem;
       display: block;
       position: absolute;
@@ -548,6 +580,50 @@ CAPTION TEXT */
         font-size: .5em;
         margin: 0 4em;
     }
+
+    /* MAKE ALL SIDE BY SIDE SECTIONS STACK ON TOP OF EACH OTHER FLEX/GRID */
+    
+    /* PORTFOLIO / SECTION 1 */
+    .portfolio {
+        display: grid;
+        width: 100%;
+        grid-gap: 2em;
+        grid-template-areas:
+          "proj0" 
+          "proj1"
+          "proj2" 
+          "proj3";
+        align-items: center;
+      }
+    
+    /* ABOUT - SKILLS - QUOTES - CONTACT / SECTION 2 */
+    .aboutContactTest {
+        display: grid;
+        width: 100%;
+        grid-gap: 2em;
+        grid-template-areas:
+          "about" 
+          "skills"
+          "quoteBox" 
+          "contact";
+        align-items: center;
+        height: auto;
+      }
+
+    /* CONTACT FORM SUBMISSION */
+    .formGrid {
+        display: grid;
+        width: auto;
+        grid-template-areas:
+            "name name"
+            "emailUser emailUser"
+            "comment comment"
+            "submit submit";
+        grid-gap: 1em;
+        padding: 3em;
+        display: -ms-grid; /* IE 10 */
+    }
+
 }
 
 
