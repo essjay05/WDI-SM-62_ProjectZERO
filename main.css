@@ -1,0 +1,672 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    background: #1d1e22;
+}
+/* -------- TYPOGRAPHY --------- */
+/*------------- TYPOGRAPHY ---------------------- */
+h1, h2, h4 {
+    font-family: "Rock Salt", cursive;
+    letter-spacing: .75rem;
+    /* font-family: "Permanent Marker", cursive; */
+}
+.box h3 a {
+    font-family: "Rock Salt", cursive;
+    font-size: 1rem;
+    color: #d4d4dc;
+    text-decoration: none;
+    letter-spacing: .25rem;
+    margin: 0 0 10rem;
+}
+
+p, ul, li, h5 {
+    font-family: "Noto Sans", sans-serif;
+    text-transform: none;
+    line-height: 1.5rem;
+    letter-spacing: .05rem;
+    font-weight: 200;
+    margin: .5rem 0;
+    color: #d4d4dc;
+};
+
+a {
+    font-family: "Rock Salt", cursive;
+    /* font-family: "Permanent Marker", cursive; */
+    text-decoration: none;
+    color: inherit;
+    transition: all .5s ease-in-out;
+}
+
+/* ---------- HERO IMAGE -------------- */
+#heroImg {
+    /* BACKGROUND INFO / PARAMETERS */
+    background: url("https://i.imgur.com/k5aEq1W.png") no-repeat top;
+    background-size: cover;
+    background-position: center;
+    color: #d4d4dc;
+    text-align: left;
+    max-width: 100%;
+    height: 100vh;
+    margin: 0;
+    opacity: 1;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); */
+    /* FONT PARAMETERS */
+    /* font-family: "Noto Sans", sans-serif;
+    font-family: "Rock Salt", cursive; */
+    /* font-family: "Rock Salt", cursive; */  
+}
+.Joy {
+    font-size: 10rem;
+    font-family: "Permanent Marker", cursive;
+    margin: 0 4rem;
+    color: #d4d4dc;
+    opacity: .8;
+    /* font-family: "Rock Salt", cursive; */
+}
+.defOfJoy {
+    font-family: "Rock Salt", cursive;
+    color: #d4d4dc;
+    font-size: 2rem;
+    margin: 0 4rem;
+    line-height: 2rem;
+    opacity: .8;
+}
+.definition {
+    font-family: "Rock Salt", cursive;
+    color: #d4d4dc;
+    font-size: 1rem;
+    margin: 0 4rem;
+    display: inline-block;
+    line-height: 2.5rem;
+    opacity: .8;
+}
+
+
+
+/* ----------------- SETTING THE VIEWPORT ---------------- */
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+@-ms-viewport {
+    width: device-width;
+}
+
+
+/* FOOTER */
+
+/* ------------HEADER NAV BAR--------------- */
+/* ------------HEADER NAV BAR--------------- */ 
+/* ------------HEADER NAV BAR--------------- */
+
+nav {
+    display: grid;
+    grid-template-columns: 4fr .25fr  2fr;
+    background: #1d1e22;
+    /* opacity: .95; */
+    color: #d4d4dc;
+    align-items: center;
+    height: 4rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 2rem;
+    font-family: "Rock Salt", cursive;
+    letter-spacing: .25rem;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    opacity: .95;
+}
+
+.menu {
+    margin: 0 1rem 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: space-between;
+}
+.menu a {
+    text-decoration: none;
+    color: #d4d4dc;
+    margin: 0 2rem;
+    line-height: 4rem;
+    font-size: .75rem;
+}
+.current, .menu a:hover {
+    cursor: pointer;
+    border-top: 3px solid rgba(1, 255, 230, 0.763);
+    transition: border-top 0.5s ease;
+    /* color: rgba(1, 255, 230, 0.763); */
+}
+.menu .current {
+    background-color: rgba(1, 255, 230, 0.2);
+}
+.burger {
+    margin: 0 30px 0 0;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: transparent;
+}
+.checkbox {
+    display: none;
+}
+/* .mobile-menu {
+    display: block;
+} */
+
+
+.logo {
+    text-align: left;
+    font-family: "Rock Salt", cursive;
+    /* font-family: "Permanent Marker", cursive; */
+    font-size: .5rem;
+    margin: 0 0 0 5em;
+    letter-spacing: .25rem;
+}
+
+
+
+/* MAIN CONTENT CSS GRIDS */
+.portfolio { grid-area: "portfolio"; background:#393f4d};
+.aboutContactTest { grid-area: "aboutContactTest"; background: #1d1e22};
+
+.mainGrid { /* MAIN DOCUMENT WRAPPER */
+    display: grid;
+    width: 100%;
+    grid-gap: 2em;
+    grid-template-areas:
+      "portfolio"
+      "aboutContactTest";
+    align-items: center;
+}
+
+.container {
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+  /* PORTFOLIO WRAPPER */
+  #proj0 { grid-area: "proj0"}
+  #proj1 { grid-area: "proj1"}
+  #proj2 { grid-area: "proj2"}
+  #proj3 { grid-area: "proj3"}
+ 
+  .portfolio {
+    display: grid;
+    width: 100%;
+    grid-gap: 2em;
+    grid-template-areas:
+      "proj0 proj1"
+      "proj2 proj3";
+    align-items: center;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    margin: 2em;
+    border: 1px #1d1e22 solid;
+    transition: border-top 0.5s ease;
+    color: rgba(1, 255, 230, 0.763);
+  }
+  .portLink {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+  .portfolio img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    opacity: .85;
+  }
+  .portfolio p, .portfolio a, .portfolio h5, .quote p, .ref h4 {
+    width: 100%;
+    height: auto;
+    /* margin: .5rem;
+    padding: .5rem; */
+  }
+
+  .portfolio a, .about a, .portfolio h5 {
+    color: inherit;
+    text-decoration: none;
+    font-family: "Nato Sans", sans-serif;
+    text-align: center;
+  }
+    
+
+  /* SECOND MAIN SECTION: ABOUT / SKILLS / TESTIMONIALS / CONTACT */
+  .aboutContactTest {
+    display: grid;
+    width: 100%;
+    grid-gap: 2em;
+    grid-template-areas:
+      "about skills"
+      "quoteBox contact";
+    align-items: center;
+    /* margin: 0 0 4em; */
+    height: auto;
+  }
+
+/*----- ??? -------*/  /*----- ??? -------*/
+
+/* ABOUT / SKILLS / CONTACT / TESTIMONIALS WRAPPER */
+#about { grid-area: "about"; height: 25em }
+#skills { grid-area: "skills"; height: 25em }
+#quoteBox { grid-area: "quoteBox"; height: 25em }
+#contact { grid-area: "contact"; height: 25em}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px #393f4d solid;
+  transition: border-top 0.5s ease;
+  padding: 2em;
+  margin: 2em 2em 5rem;
+  color: rgba(1, 255, 230, 0.763);
+}
+
+.about, .test {  
+  width: 100%;
+  text-align: left;
+}
+
+.skills, .contact { 
+  width: 100%;
+  text-align: center;
+  font-style: regular;
+}
+
+/* ABOUT/SKILLS CONTACT/TESTIMONIALS STYLING  */
+
+.ref {
+  text-align: right;
+  height: 2em;
+  padding-top: 2rem;
+}
+
+/* ---------------SLIDESHOW / CAROUSEL---------- */
+/* ---------------SLIDESHOW / CAROUSEL---------- */
+/* ---------------SLIDESHOW / CAROUSEL---------- */
+
+#skills, .about {
+    height: 35rem;
+}
+
+ /* HIDE THE IMAGES BY DEFAULT */
+
+/* ABOUT SECTION */
+.social a {
+    color: #d4d4dc;
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 0 2rem;
+}
+.social a:hover {
+    color: rgba(1, 255, 230, 0.763);
+}
+.mySlides img {
+    width: 15rem;
+    min-height: 10rem;
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+}
+.fade {
+    display: none;
+}
+
+ /* CONTAINER */
+.carouselWrap {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    position: relative;
+    overflow: hidden;
+    background-position: cover;
+    max-width: 15rem;
+    margin: auto;
+ }
+
+
+/* HIDE THE IMAGES BY DEFAULT */
+.myslides {
+    display: none;
+ }
+
+/* Next & previous buttons */
+/* .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -6rem;
+    padding: 5rem;
+    color: #d4d4dc;
+    font-weight: bold;
+    font-size: 5rem;
+    transition: 0.6s ease;
+    border-radius: 0 2rem 2rem 0;
+    user-select: none;
+} */
+/* Position "next button" to the right */
+/* .next {
+    right: 0;
+    border-radius: 2rem 0 0 2rem;
+} */
+
+/* On hover add black bg color for a bit see thru */
+.text {
+    color: #d4d4dc;
+    font-size: 5rem;
+    padding: 2rem 4rem;
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+.slideText, .numbertext {
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    color: #d4d4dc;
+    font-size: 1rem;
+}
+
+/* NUMBER TEXT (1/4 etc) */
+/* .numbertext {
+    color: #d4d4dc;
+    font-size: 4rem;
+    padding: 2rem 4rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+} */
+
+ /* DOTS AND BULLETS INDICATORS */
+ .dot {
+     cursor: pointer;
+     height: .5rem;
+     width: .5rem;
+     margin: 1rem 1rem;
+     background-color: #d4d4dc;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
+
+ .active  {
+     background-color: rgba(1, 255, 230, 0.763);
+ }
+ .dot:hover {
+     background-color: teal;
+ }
+
+ /* FADING ANIMATION */
+ .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 2s;
+     animation-name: fade;
+     animation-duration: 2s;
+ }
+
+ @-webkit-keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+ }
+
+ @keyframes fade {
+     from {opacity: .4}
+     to {opacity: 1}
+ }
+
+/* QUOTE POSITIONING FOR FADES IN AND OUT */
+/* #quote1, #quote2, #quote3 {
+    display: none;
+} */
+.qFade p, .qFade h4 {
+    width: 100%;
+    min-height: 12rem;
+}
+.qFade p {
+    padding: 3rem 0;
+    font-family: "Nato Sans", sans-serif;
+    font-size: 1.25rem;
+    color:  #d4d4dc;
+    min-height: 12rem;
+    line-height: 3rem;
+}
+.qFade h4{
+    color:rgba(1, 255, 230, 0.763);
+    font-size: .75rem;
+}
+
+#quoteBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 30rem;
+}
+
+#quoteBox > section {
+    position: absolute;
+    padding: 2rem;
+}
+
+
+
+/* LEAVE A COMMENT (SECTION) */
+/* FORM CONTAINER */
+
+        .userForm h3 {
+            text-align: center;
+            color: rgba(1, 255, 230, 0.763);
+        }
+        /* FORM STYLES */
+        input[name="name"] {
+            grid-area: name;
+        }
+
+        input[name="emailUser"] {
+            grid-area: emailUser;
+        }
+
+        textarea {
+            grid-area: comment;
+            height: 5em;
+            resize: none;
+        }
+
+        input[name="submit"] {
+            grid-area: submit;
+        }
+
+        .formGrid {
+            display: grid;
+            width: auto;
+            grid-template-areas:
+                'name emailUser'
+                'comment comment'
+                'submit submit';
+            grid-gap: 1em;
+            padding: 3em;
+            display: -ms-grid; /* IE 10 */
+        }
+
+        .formGrid input, .formGrid textarea {
+            border: rgba(1, 255, 230, 0.763) .15em solid;
+            font-family: "Nato Sans", sans-serif;
+            color: grey;
+            font-size: .75em;
+            padding: 1em;
+        }
+        .formGrid::placeholder {
+            font-weight: 900;
+        }
+
+
+/* MEDIA QUERIES / RESPOSINVE STYLES */
+@media only screen and (max-width: 800px) {
+    /* ---HEADER IMAGE--- */
+    h1 {
+        font-size: .5rem;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        line-height: 3.5rem;
+    }    
+
+    .Joy {
+        margin: 20rem 0 0 2rem;
+        font-size: 6rem;
+        font-family: "Permanent Marker", cursive;
+    }
+    
+    .defOfJoy {
+        font-size: 1rem;
+        margin: 0 0 0 2rem;
+        padding: 0;
+        line-height: 2rem;
+    }
+    .definition {
+        line-height: 1.5rem;
+        font-size: .75rem;
+        margin: 0 0 0 4rem;
+    }
+
+    /* --- MOBILE NAVBAR / BURGER TOGGLE--- */
+    label {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        margin: 0 2rem;
+    }
+
+    .checkbox {
+        display: none;
+    }
+
+    #toggle:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: last baseline;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+        margin: 0 0 20rem 0;
+        padding: 0;
+        box-shadow: 0px 1px 1px rgba(1, 255, 230, 0.2);
+        position: absolute;
+        background: rgba(0, 0, 0, .75);
+        display: none; /*should appear upon burger click*/
+      }
+      
+    .menu a {
+        margin: 0;
+    }
+
+    .burger {
+      color: #d4d4dc;
+      font-size: 2.5rem;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .burger:hover, .menu a:hover {
+        cursor: pointer;
+        color: rgba(1, 255, 230, 0.763);
+        transition: color 0.5s ease;
+        border-top: none;
+    }
+    
+    .logo {
+        font-size: .5em;
+        margin: 0 4em;
+    }
+
+    /* MAKE ALL SIDE BY SIDE SECTIONS STACK ON TOP OF EACH OTHER FLEX/GRID */
+    
+    /* PORTFOLIO / SECTION 1 */
+    .portfolio {
+        display: grid;
+        width: 100%;
+        grid-gap: 2em;
+        grid-template-areas:
+          "proj0" 
+          "proj1"
+          "proj2" 
+          "proj3";
+        align-items: center;
+      }
+    .blurb {
+        font-family:"Noto-Sans", sans-serif;
+        color: #d4d4dc;
+        margin: 1rem;
+    }
+    /* ABOUT - SKILLS - QUOTES - CONTACT / SECTION 2 */
+    .aboutContactTest {
+        display: grid;
+        width: 100%;
+        grid-gap: 2em;
+        grid-template-areas:
+          "about" 
+          "skills"
+          "quoteBox" 
+          "contact";
+        align-items: center;
+        height: auto;
+      }
+    .social a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: #d4d4dc;
+        margin: 0 2rem;
+    }
+    .social a:hover {
+        cursor: pointer;
+        color: rgba(1, 255, 230, 0.763);
+    }
+    #quoteBox {
+        height: 50rem;
+    }
+
+    #quoteBox p, #quoteBox h4 {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    /* CONTACT FORM SUBMISSION */
+    .formGrid {
+        display: grid;
+        width: auto;
+        grid-template-areas:
+            "name name"
+            "emailUser emailUser"
+            "comment comment"
+            "submit submit";
+        grid-gap: 1em;
+        padding: 3em;
+        display: -ms-grid; /* IE 10 */
+    }
+
+}

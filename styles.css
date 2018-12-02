@@ -10,7 +10,6 @@ html {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     margin: 0;
     letter-spacing: .02em;
@@ -58,7 +57,7 @@ a:hover {
 /*----- OVERALL DESIGN -------*/ /*----- OVERALL DESIGN -------*/
 
 
-img, h3, h5, a {
+img, h5, a {
     margin: 1em;  
     width: 50em;
     text-align: center;
@@ -302,8 +301,6 @@ p {
 }
 
 /* ABOUT/SKILLS CONTACT/TESTIMONIALS STYLING  */
-
-
 ul {
   list-style: none;
   font-size: 1.5em;
@@ -318,6 +315,7 @@ ul {
 h2 {
   padding: 1.5em 0 0;
 }
+
 /* QUOTE POSITIONING FOR FADES IN AND OUT */
 #q1, #r1 {
     background: pink;
@@ -325,7 +323,7 @@ h2 {
 #q2, #r2 {
     background: yellow;
 }
-#q3, r3 {
+#q3, #r3 {
     background: red;
 }
 #quoteBox {
@@ -394,6 +392,7 @@ h2 {
 
 /* FOOTER NAV BAR */
 
+<<<<<<< HEAD
 .nav {
     display: flex;
     flex-direction: row;
@@ -424,11 +423,24 @@ h2 {
 .fas, .menu a {
     font-size: 1em;
     font-weight: bold;
+=======
+nav {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: rgba(3, 125, 238, 1);
     color: white;
-    text-align: right;
+    align-items: center;
+    height: 100px;
+}
+
+nav a {
+>>>>>>> master
+    color: white;
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 .toggle {
     width: 10%;
     padding: 1em;
@@ -478,3 +490,34 @@ nav a:hover {
         display:block;
     }
 }; */
+=======
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#burger {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* MEDIA QUERIES / RESPOSINVE STYLES */
+@media only screen and (max-width: 900px) {
+    #burger {
+      display: initial;
+    }
+    
+    .menu {
+      justify-content: flex-end;
+    }
+    
+    .menu a {
+      display: none;
+    }
+}
+>>>>>>> master
