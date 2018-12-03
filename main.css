@@ -482,6 +482,42 @@ nav {
     flex: 1;
     height: 35rem;
 }
+.quote { grid-area: "quote"};
+.ref { grid-area: "ref"};
+.test { grid-area: "test"};
+
+/* #quoteBox {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    height: 35rem;
+} */
+
+
+
+/* .qFade p {
+    /* padding: 10rem 0 0; */
+    /* font-size: 1.25rem;
+    color:  #d4d4dc;
+    height: 8rem;
+    margin: 4rem;
+    line-height: 3rem;
+} */ 
+
+/* #quoteBox h4{
+    color:rgba(1, 255, 230, 0.763);
+    font-size: .75rem;
+    margin: 0 4rem;
+    line-height: 3rem;
+} */
+/* #quoteBox h2{
+    color:rgba(1, 255, 230, 0.763);
+    font-size: 1.25rem;
+    padding: 0 4rem 30rem;
+    line-height: 3rem;
+} */
+
+
 
 
 #quoteBox > section {
