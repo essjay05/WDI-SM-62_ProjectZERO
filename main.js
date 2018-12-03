@@ -145,7 +145,7 @@ function rotQte() {
 rotQte();
 setInterval(rotQte, 6000)
 
-var refs =["--Geri Carillo", "- Willy Wonka (Willy Wonka & the Chocolate Factory)", "-- Flynn (TRON)"];
+var refs =["-- Flynn (TRON)","--Geri Carillo","- Willy Wonka (Willy Wonka & the Chocolate Factory)"];
 
     // Authors fade in/out function (similar to quotes)
 var insRef = $(".ref")
