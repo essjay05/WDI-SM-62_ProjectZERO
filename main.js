@@ -79,46 +79,46 @@ var slides, dots;
 //         setInterval(function swapSlide(i){
 //             swapSlide = heroBG.css({bgImg: newSlideUrl});
 // }
-// // }
+// }
 
 // DEFINING VARIABLES FOR CAROUSEL //
-    // var heroBG = document.getElementsByTagName("slide");
-    //     console.log(heroBG);
+//     var heroBG = document.getElementsByTagName("slide");
+//         console.log(heroBG);
 
-    // var heroSlides = ["https://i.imgur.com/k5aEq1W.png", "https://i.imgur.com/CP1dNow.jpg", "https://i.imgur.com/DOQpTGX.jpg"];
-    //     console.log(heroSlides);
-    //     console.log(heroSlides[0]);
+//     var heroSlides = ["https://i.imgur.com/k5aEq1W.png", "https://i.imgur.com/CP1dNow.jpg", "https://i.imgur.com/DOQpTGX.jpg"];
+//         console.log(heroSlides);
+//         console.log(heroSlides[0]);
 
-    // var bgImg = "background-image";
-    //     console.log(bgImg);
+//     var bgImg = "background-image";
+//         console.log(bgImg);
 
-    // var i = 0;
-    //     console.log(i);
+//     var i = 0;
+//         console.log(i);
 
-    // var newSlideUrl = ("url(" + heroSlides[i]+")");
-    //     console.log(newSlideUrl);
+//     var newSlideUrl = ("url(" + heroSlides[i]+")");
+//         console.log(newSlideUrl);
 
-        // function showSlides(n) {
-        //     var i;
-        //     var slides = document.getElementsByClassName("tagLine");
-        //     var slides = ["https://i.imgur.com/k5aEq1W.png", "https://i.imgur.com/CP1dNow.jpg", "https://i.imgur.com/DOQpTGX.jpg"];
-        //     $("h1").css({"background-image": "url( + heroImages[index])"});
-        //     if (n > slides.length) {slideIndex = 1}
-        //     if (n < 1) {slideIndex = slides.length}
-        //     for (var i = 0; i < slides.length; i++) {
-        //         dots[i].click(function swapSlide(i) {
-        //             setInterval(function swapSlide(i){
-        //                 swapSlide = heroBG.css({bgImg: newSlideUrl[i]});
-        //                 if (i === heroSlides[0]) {
-        //                     heroBG.css(bgImg: newSlideUrl[0])
-        //                 } else if (i === heroSlides[1]) {
-        //                     heroBG.css(bgImg: newSlideUrl[1])
-        //                 } else {
-        //                     heroBG.css(bgImg: newSlideUrl[2]);
-        //             console.log("it's working up to here");
-        //         };
+//         function showSlides(n) {
+//             var i;
+//             var slides = document.getElementsByClassName("tagLine");
+//             var slides = ["https://i.imgur.com/k5aEq1W.png", "https://i.imgur.com/CP1dNow.jpg", "https://i.imgur.com/DOQpTGX.jpg"];
+//             $("h1").css({"background-image": "url( + heroImages[index])"});
+//             if (n > slides.length) {slideIndex = 1}
+//             if (n < 1) {slideIndex = slides.length}
+//             for (var i = 0; i < slides.length; i++) {
+//                 dots[i].click(function swapSlide(i) {
+//                     setInterval(function swapSlide(i){
+//                         swapSlide = heroBG.css({bgImg: newSlideUrl[i]});
+//                         if (i === heroSlides[0]) {
+//                             heroBG.css(bgImg: newSlideUrl[0])
+//                         } else if (i === heroSlides[1]) {
+//                             heroBG.css(bgImg: newSlideUrl[1])
+//                         } else {
+//                             heroBG.css(bgImg: newSlideUrl[2]);
+//                     console.log("it's working up to here");
+//                 };
                 
-        //     }   
+//             }   
 
 
 
