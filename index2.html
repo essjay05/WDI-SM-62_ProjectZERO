@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+
+                                                        
+
+
+                                                        <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,19 +16,47 @@
     <script defer src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 </head>
+
+
 <body>
+
     <!-- LANDING PAGE / HEADER AREA --> <!-- LANDING PAGE / HEADER AREA -->
     <!-- LANDING PAGE / HEADER AREA --> <!-- LANDING PAGE / HEADER AREA -->
 
     <header>
+    <!--    HEADER       --> <!--  HEADER       --><!--     HEADER       -->
+    <!--    HEADER       --> <!--  HEADER       --><!--     HEADER       -->
+    
+    <!-- MOBILE BURGER / NAV BAR-->
+        
+        <nav>
+            <!-- COPYRIGHT/LOGO -->
+            <h4 class="logo"> &copy; Joy S. 2018</h4>
+            
+            <!-- BURGER TOGGLE -->    
+            <input class="checkbox" id="toggle" type="checkbox" for="toggle"> 
+            <label class="burger" for="toggle">&#9776</label>
+            <!-- NAV / MENU -->
+            <div class="menu"> 
+                <a class="" href="index.html#portfolioID">PORTFOLIO</a>
+                <a href="index.html#skills">ABOUT</a>
+                <a href="index.html#quoteBox">QUOTES</a>
+                <a href="index.html#contact">CONTACT</a>
+            </div>    
+                
+        </nav>   
+    
+    
         <!-- HERO / HEADER-->
-            <div class="heroBox">
+            <!-- <div class="heroBox"> -->
                 <h1 class="tagLine" id="heroImg"><span class="Joy">JOY</span>
                     <div class="defOfJoy">
-                    \'joi\ &nbsp &nbsp
+                    \'joi\ &nbsp noun
+                    <br/>
+                    <br/>
                     Definition of 'joy':
                     </div>
-                    <span>
+                    <span class=definition>
                     <br>1: the emotion evoked by well-being
                     <br>&nbsp &nbsp  success, or good fortune or by
                     <br>&nbsp  &nbsp the prospect of possessing what one
@@ -32,67 +64,25 @@
                     <br>2: a source or cause of delight
                     </span> 
                 </h1>
-            </div>
+            <!-- </div> -->
     </header>
-
     <!-- MAIN SECTION --> <!-- MAIN SECTION --><!-- MAIN SECTION -->
-    <!-- MAIN SECTION --> <!-- MAIN SECTION --><!-- MAIN SECTION -->        
-                    
-            <!-- CAROUSEL CONTAINER-->
-                <div class="carouselWrap" id="portfolioID">
-                    <!-- FULL-WIDTH IMAGES WITH NUMBER AND CAPTION TEXT -->
-                    
-                    <!-- SLIDE 1 -->
-                    <div class="mySlides fade">
-                        <div class="numbertext"> 1 / 4</div>
-                        <img class="capture" src="https://i.imgur.com/A10gbbo.png" title="JS_GA-Dash-Personal_Screencapture" />
-                        <div class="slideText">Caption 1 / 4</div>
-                    </div>
-                    <!-- SLIDE 2 -->
-                    <div class="mySlides fade">
-                        <div class="numbertext"> 2 / 4</div>
-                        <img class="capture" src="https://i.imgur.com/tyKQwhp.png" title="JS_GA-Dash-Business_Screencapture" />
-                        <div class="slideText">Caption 2 / 4</div>
-                    </div>
-                    <!-- SLIDE 3 -->
-                    <div class="mySlides fade">
-                        <div class="numbertext"> 3 / 4</div>
-                        <img class="capture" src="https://i.imgur.com/k5aEq1W.png" title="JS_StageManaging" />
-                        <div class="slideText">Caption 3 / 4</div>
-                    </div>
-                    <!-- SLIDE 4 -->
-                    <div class="mySlides fade">
-                        <div class="numbertext"> 4 / 4</div>
-                        <img src="https://i.imgur.com/aPAaso3.png" title="JS_GA-Dash-Blog_Screencapture" />
-                        <div class="slideText">Caption 4 / 4</div>
-                    </div>
-            
-                    <!-- The dots/circles for Carousel -->
-                    <div style="text-align:center">
-                            <span class="dot active" onclick="currentSlide(1)"></span> 
-                            <span class="dot active" onclick="currentSlide(2)"></span> 
-                            <span class="dot active" onclick="currentSlide(3)"></span>
-                            <span class="dot active" onclick="currentSlide(4)"></span> 
-                    </div>
-                </div>  
-     
-    
-
-    
-
+    <!-- MAIN SECTION --> <!-- MAIN SECTION --><!-- MAIN SECTION -->   
     <main class="mainGrid">
         <!-- PORTFOLIO -->
         <div class="container">
-                <section class="portfolio">
+                <section class="portfolio" id="portfolioID">
                     <!-- PORTFOLIO SECTION 1  -->
                     <!--   Project ZERO -->
                     <div class="box" id="proj0">
                         <h3><a href="#">Proj 00. Personal Website</a></h3>
                         <img src="https://i.imgur.com/A10gbbo.png" title="JS_GA-Dash-Personal_Screencapture" />
                         <p>ZERO BLURB: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium condimentum vestibulum. Donec id consequat ante. Curabitur id lacus vel ex elementum egestas ultrices id diam. Morbi eget consectetur nisl. Etiam nec metus ultrices, sodales tellus quis, tristique arcu. Nunc eget suscipit nibh. Proin consequat ex non lacus accumsan tempus. Donec lacinia, turpis eget pulvinar tristique, erat velit commodo nulla.</p>
-                        <h5>Proj 0 Tech: HTML, CSS, JavaScript</h5>
-                        <a class="zeroLink" href="https://dash.generalassemb.ly/essjay05/build-your-own-business-website">Connect with Me</a>
-                        <a class="zeroGit" href="#">Proj 0 GitCode</a> 
+                        <h5>HTML & CSS</h5>
+                        <div class="portLink">
+                            <a class="zeroLink" href="https://dash.generalassemb.ly/essjay05/build-your-own-business-website"><i class="fas fa-external-link-square-alt"></i></a>
+                            <a class="zeroGit" href="#"><i class="fab fa-github"></i></a> 
+                        </div>
                     </div>
                     
                     <!--   Project 1 -->
@@ -100,9 +90,11 @@
                         <h3><a href="#">Proj 01. Business Site</a></h3>
                         <img src="https://i.imgur.com/tyKQwhp.png" title="JS_GA-Dash-Business_Screencapture" />
                         <p>ZERO BLURB: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium condimentum vestibulum. Donec id consequat ante. Curabitur id lacus vel ex elementum egestas ultrices id diam. Morbi eget consectetur nisl. Etiam nec metus ultrices, sodales tellus quis, tristique arcu. Nunc eget suscipit nibh. Proin consequat ex non lacus accumsan tempus. Donec lacinia, turpis eget pulvinar tristique, erat velit commodo nulla.</p>
-                        <h5>Proj 1 Tech: HTML, CSS, JavaScript</h5>
-                        <a class="oneLink" href="https://dash.generalassemb.ly/essjay05/build-your-own-personal-website">Paradise Bar Events</a>
-                        <a class="oneGit" href="#">Proj 1 GitCode</a>
+                        <h5>HTML, CSS, & JavaScript</h5>
+                        <div class="portLink">
+                            <a class="oneLink" href="https://dash.generalassemb.ly/essjay05/build-your-own-personal-website"><i class="fas fa-external-link-square-alt"></i></a>
+                            <a class="oneGit" href="#"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
                 
                     <!-- PORTFOLIO SECTION 2  -->
@@ -112,9 +104,11 @@
                         <h3><a href="#">Proj 03. Creative Site</a></h3>
                         <img src="https://i.imgur.com/k5aEq1W.jpg" title="JS_StageManaging" />
                         <p>TWO BLURB: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium condimentum vestibulum. Donec id consequat ante. Curabitur id lacus vel ex elementum egestas ultrices id diam. Morbi eget consectetur nisl. Etiam nec metus ultrices, sodales tellus quis, tristique arcu. Nunc eget suscipit nibh. Proin consequat ex non lacus accumsan tempus. Donec lacinia, turpis eget pulvinar tristique, erat velit commodo nulla.</p>
-                        <h5>Proj 2 Tech: HTML, CSS, JavaScript</h5>
-                        <a class="twoLink" href="#">Proj 2 ExtLink</a>
-                        <a class="twoGit" href="#">Proj 2 GitCode</a>
+                        <h5>HTML, CSS, & JavaScript</h5>
+                        <div class="portLink">
+                            <a class="twoLink" href="#"><i class="fas fa-external-link-square-alt"></i></a>
+                            <a class="twoGit" href="#"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
                     
                     <!--   Project 3 -->
@@ -122,9 +116,11 @@
                         <h3><a href="#">Proj 04. Blog Site</a></h3>
                         <img src="https://i.imgur.com/aPAaso3.png" title="JS_GA-Dash-Blog_Screencapture" />
                         <p>THREE BLURB: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium condimentum vestibulum. Donec id consequat ante. Curabitur id lacus vel ex elementum egestas ultrices id diam. Morbi eget consectetur nisl. Etiam nec metus ultrices, sodales tellus quis, tristique arcu. Nunc eget suscipit nibh. Proin consequat ex non lacus accumsan tempus. Donec lacinia, turpis eget pulvinar tristique, erat velit commodo nulla.</p>
-                        <h5>Proj 1 Tech: HTML, CSS, JavaScript</h5>
-                        <a class="threeLink" href="https://dash.generalassemb.ly/essjay05/build-your-own-blog-theme">JS Photo Blog</a>
-                        <a class="threeGit" href="#">Proj 3 GitCode</a>
+                        <h5>HTML, CSS, & JavaScript</h5>
+                        <div class="portLink">
+                            <a class="threeLink" href="https://dash.generalassemb.ly/essjay05/build-your-own-blog-theme"><i class="fas fa-external-link-square-alt"></i></a>
+                            <a class="threeGit" href="#"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
                        
                 </section>
@@ -133,25 +129,60 @@
             <section class="aboutContactTest">
                 <!-- ABOUT ME -->
                 <section class="box2" id="about">
-                  <h2 class="aboutSub">Define Joy</h2>
-                  <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis quis ipsum nec porta. Quisque at purus ac tortor scelerisque laoreet et et sapien. Vestibulum commodo, tellus ut bibendum pulvinar, mi mi sollicitudin lectus, a rutrum dolor purus sit amet lectus. Aenean accumsan sit amet urna in ultrices. Duis in commodo massa. Praesent leo quam, commodo in maximus quis, tincidunt eget leo. Phasellus urna lacus, pellentesque et felis ac, malesuada egestas diam. Pellentesque pretium posuere.</p>
+                  <h2 class="aboutSub">Define Joy:</h2>
+                  <p class="blurb">Aligned with definition of the noun, "joy," states (according to Merriam-Webster), I strive to pursue success particularly in fields I am passionate about.  This has led me to become a Joy-of-All-Trades and acquire skills by working in a variety of fields and working with a range of people, in my pursuit of happiness. </p>
                   <!-- Social Media Links -->
                   <p class="social">
-                      <a class="social" href="#linkedin"><i class="fab fa-linkedin"></i></a>
-                      <a class="social" href="#gitHub"><i class="fab fa-github"></i></a>
-                      <a class="social" href="#email"><i class="far fa-envelope-open"></i></a>
-                      <a href="social" href="#instagram"><i class="fab fa-instagram"></i></a>
+                      <a class="icon" href="#linkedin"><i class="fab fa-linkedin"></i></a>
+                      <a class="icon" href="#gitHub"><i class="fab fa-github"></i></a>
+                      <a class="icon" href="#email"><i class="far fa-envelope-open"></i></a>
                   </p>
                 </section>
                 
                 <!-- SKILLS -->
-                <section class="box2" id="skills">
+            <section class="box2" id="skills">
                     <h2 class="subtitle">Skills</h2>
-                    <ul class="skillsList">
-                        <li><i class="fab fa-html5"></i>HTML</li>
-                        <li><i class="fab fa-css3-alt"></i>CSS</li>
-                        <li><i class="fab fa-js-square"></i>JavaScript</li>
-                        <li>jQuery</li>     
+                <!-- SLIDESHOW CONTAINER -->    
+                    <div class="carsouselWrap">
+                        <!-- Image Slides (Divs) with NUMBER AND CAPTION TEXT -->
+                        <div class="mySlides fade">
+                            <div class="numbertext"> 1 / 4</div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmQ9rwWrQPvt0sUS_EXa18kq20ug_gKnQowCRfuwDrAKDwaMwN" title="WDI_HardSkills" />
+                            <div class="slideText"> HTML, CSS, & JavaScript</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext"> 2 / 4</div>
+                            <img src="https://i.imgur.com/CP1dNow.jpg" title="WDI_SoftSkills" />
+                            <div class="slideText">Programatic thinking</div> 
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext"> 3 / 4</div>
+                            <img src="https://i.imgur.com/eGzNPVz.jpg" title="Photography" />
+                            <div class="slideText">Photography</div>    
+                        </div>
+            
+                        <div class="mySlides fade">
+                            <div class="numbertext"> 4 / 4</div>
+                            <img src="https://i.imgur.com/k5aEq1W.jpg" title="Stage Managing" />
+                            <div class="slideText">Combining creative, technical, <br/>management, and interpersonal skills.</div>
+                        </div>
+                    <div class="arrows">
+                        <a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onClick="plusSlides(1)">&#10094;</a>
+                    </div>
+                    <br/>
+                
+                    <div class="ctrlDots">
+                        <span class="dot" onClick="currentSlide(1)"></span> 
+                        <span class="dot" onClick="currentSlide(2)"></span> 
+                        <span class="dot" onClick="currentSlide(3)"></span> 
+                        <span class="dot" onClick="currentSlide(4)"></span> 
+                    </div>
+        
+        </div>          
+                    
                 </section>
                 
 
@@ -159,19 +190,20 @@
                 
                 
                 <!-- TESTIMONIALS SECTION  -->
+                
                 <section class="box2" id="quoteBox">
-                    <h2>Testimonials</h2>
+                        <h2>Testimonials</h2>  
                         <section class="qFade" id="quote1">
-                            <p id="q1" class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis quis ipsum nec porta. Quisque at purus ac tortor scelerisque laoreet et et sapien. Vestibulum commodo, tellus ut bibendum pulvinar, mi mi sollicitudin lectus, a rutrum dolor purus sit amet lectus. Aenean accumsan sit amet urna in ultrices. Duis in commodo massa. Praesent leo quam, commodo in maximus quis, tincidunt eget leo. Phasellus urna lacus, pellentesque et felis ac, malesuada egestas diam. Pellentesque pretium posuere.</p>
-                            <h4 id="r1" class="ref">- Name of Paid Friend 1</h4>
+                            <p class="quote"></p>
+                            <h4 class="ref"></h4>
                         </section>
-                        <section class="qFade" id="quote2">
-                                <p id="q2" class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis quis ipsum nec porta. Quisque at purus ac tortor scelerisque laoreet et et sapien. Vestibulum commodo, tellus ut bibendum pulvinar, mi mi sollicitudin lectus, a rutrum dolor purus sit amet lectus. Aenean accumsan sit amet urna in ultrices. Duis in commodo massa. Praesent leo quam, commodo in maximus quis, tincidunt eget leo. Phasellus urna lacus, pellentesque et felis ac, malesuada egestas diam. Pellentesque pretium posuere.</p>
-                                <h4 id="r1" class="ref">- Name of Paid Friend 2</h4>
+                        <section class="qFade">
+                                <p class="quote"></p>
+                                <h4 class="ref"></h4>
                         </section>
-                        <section class="qFade" id="quote3">
-                                <p id="q3" class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis quis ipsum nec porta. Quisque at purus ac tortor scelerisque laoreet et et sapien. Vestibulum commodo, tellus ut bibendum pulvinar, mi mi sollicitudin lectus, a rutrum dolor purus sit amet lectus. Aenean accumsan sit amet urna in ultrices. Duis in commodo massa. Praesent leo quam, commodo in maximus quis, tincidunt eget leo. Phasellus urna lacus, pellentesque et felis ac, malesuada egestas diam. Pellentesque pretium posuere.</p>
-                                <h4 id="r1" class="ref">- Name of Paid Friend 2</h4>
+                        <section class="qFade">
+                                <p class="quote"></p>
+                                <h4 class="ref"></h4>
                         </section>
                 </section>
 
@@ -179,7 +211,7 @@
                 <!-- GENERAL FORM -->
                 <!-- CONTACT FORM -->
                 <section class="box2" id="contact">
-                        <h2> Contact Form </h2>
+                        <h2>Contact Form</h2>
                        
                         <!-- COMMENT FORM SECTION -->
                         <div class="userForm">
@@ -195,42 +227,13 @@
         </div>
         
     </main>
-
     
     <!--    FOOTER      --> <!--  FOOTER      --><!--     FOOTER      -->
     <!--    FOOTER      --> <!--  FOOTER      --><!--     FOOTER      -->
     
-        <!-- MOBILE BURGER / NAV BAR-->
-    <footer>
-        <div id="footerBar"></div>
-        <!-- NAV BAR-->
-            
-            <nav>
-                <h3 class="logo"> &copy; Joy S. 2018</h3>
-                <div class="menu"> 
-                    <a href="index.html#portfolioID">PORTFOLIO</a>
-                    <a href="index.html#about">ABOUT</a>
-                    <a href="index.html#quoteBox">QUOTES</a>
-                    <a href="index.html#contact">CONTACT</a>
-                </div>    
-                <div id="burger">
-                    <label for="toggle"><i class="fas fa-bars"></i></label>
-                    <input type="checkbox" for="toggle">
-                </div>
-            
-        <!-- MOBILE MENU & HEADER -->
-                <div class="mobile-menu">
-                    <a href="index.html#portfolioID">PORTFOLIO</a>
-                    <a href="index.html#about">ABOUT</a>
-                    <a href="index.html#quoteBox">QUOTES</a>
-                    <a href="index.html#contact">CONTACT</a>    
-                </div>
-            </nav>  
-        <!-- MONUMENT NAV BAR REFERENCE -->
 
-    
-    </footer>
+        <footer>
+        </footer>
 
-     
-</body>
+    </body>
 </html>
