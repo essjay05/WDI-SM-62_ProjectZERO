@@ -299,7 +299,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   border: 1px #393f4d solid;
   transition: border-top 0.5s ease;
   padding: 2em;
@@ -473,41 +473,15 @@ nav {
 /* #quote1, #quote2, #quote3 {
     display: none;
 } */
-.quote { grid-area: "quote"};
-.ref { grid-area: "ref"};
-.test { grid-area: "test"};
 
-#quoteBox {
-    display: grid;
-    grid-template-areas:
-    "test"
-    "quote"
-    "ref";
-    grid-template-rows: 1fr 4fr 2fr;
+.bottomBox {
+    display: flex;
+    flex-direction: row;
+}
+.bottom {
+    flex: 1;
     height: 35rem;
 }
-
-
-/* .qFade p, .qFade h4 {
-    width: 100%;
-    min-height: 12rem;
-} */
-#quoteBox p {
-    /* padding: 10rem 0 0; */
-    font-family: "Nato Sans", sans-serif;
-    font-size: 1.25rem;
-    color:  #d4d4dc;
-    height: 8rem;
-    line-height: 3rem;
-    text-align: justify;
-}
-
-.qFade h4{
-    color:rgba(1, 255, 230, 0.763);
-    font-size: .75rem;
-}
-
-
 
 
 #quoteBox > section {
