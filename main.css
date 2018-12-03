@@ -5,9 +5,37 @@
 html {
     background: #1d1e22;
 }
+/* FONT FAMILIES / SIZES: 
+font-family: "Permanent Marker", cursive;
+    h1 {font-size: 20rem};
+
+font-family: "Rock Salt", cursive;
+    h2, h3, h4, h5, h6, a {
+        letter-spacing: .75rem;
+        color: #d4d4dc; /* NORMAL FONT COLOR 
+        color: rgba(1, 255, 230, 0.763); a href color/hover
+    }
+    
+font-family: "Noto Sans", sans-serif;
+    p {
+        color: color: #d4d4dc; /* NORMAL FONT COLOR
+    }
+
+SPACING:
+    margins: 0;
+    padding: 2rem;
+    width: 100%;
+    height: depends...
+*/
+
 
 /*------------- TYPOGRAPHY ---------------------- */
-h1, h2, h4 {
+h1 {
+    font-family: "Permanent Marker", cursive;
+    letter-spacing: .75rem;
+}
+
+h2, h4, h3, h5, .subtitle {
     font-family: "Rock Salt", cursive;
     letter-spacing: .75rem;
 }
@@ -20,7 +48,7 @@ h1, h2, h4 {
     margin: 0 0 10rem;
 }
 
-p, ul, li, h5 {
+p, .blurb {
     font-family: "Noto Sans", sans-serif;
     text-transform: none;
     line-height: 1.5rem;
@@ -39,7 +67,7 @@ a {
 }
 
 /* ---------- HERO IMAGE -------------- */
-#heroImg {
+.heroImg {
     /* BACKGROUND INFO / PARAMETERS */
     background: url("https://i.imgur.com/k5aEq1W.png") no-repeat top;
     background-size: cover;
@@ -55,6 +83,7 @@ a {
     /* font-family: "Noto Sans", sans-serif;
     font-family: "Rock Salt", cursive; */
     /* font-family: "Rock Salt", cursive; */  
+    
 }
 .Joy {
     font-size: 8rem;
@@ -195,10 +224,10 @@ nav {
     margin: 0;
 }
   /* PORTFOLIO WRAPPER */
-  #proj0 { grid-area: "proj0"}
-  #proj1 { grid-area: "proj1"}
-  #proj2 { grid-area: "proj2"}
-  #proj3 { grid-area: "proj3"}
+  .proj0 { grid-area: "proj0"}
+  .proj1 { grid-area: "proj1"}
+  .proj2 { grid-area: "proj2"}
+  .proj3 { grid-area: "proj3"}
  
   .portfolio {
     display: grid;
@@ -529,30 +558,41 @@ nav {
 
 /* MEDIA QUERIES / RESPOSINVE STYLES */
 @media only screen and (max-width: 800px) {
+    /* TYPOGRAPHY */
+    font-family: "Rock Salt", cursive;
+    h2, h3, h4, h5, h6, a, .subtitle {
+        letter-spacing: .1rem;
+        color: #d4d4dc; 
+    }
+    p, .blurb {
+        font-family: "Noto Sans", sans-serif;
+        color: #d4d4dc;
+    }
+
+
     /* ---HEADER IMAGE--- */
     h1 {
-        font-size: .5rem;
         background-size: cover;
         width: 100%;
         height: 100vh;
         display: block;
-        line-height: 3.5rem;
+        line-height: 2.5rem;
     }    
 
     .Joy {
-        margin: 20rem 0 0 2rem;
-        font-size: 6rem;
+        /* margin: 10rem 0 0 2rem; */
+        font-size: 4rem;
         font-family: "Permanent Marker", cursive;
     }
     
     .defOfJoy {
-        font-size: 1rem;
-        margin: 0 0 0 2rem;
-        padding: 0;
-        line-height: 2rem;
+        font-size: .5rem;
+        /* margin: 0 0 0 2rem;
+        padding: 0; */
+        /* line-height: 2rem; */
     }
     .definition {
-        line-height: 1.5rem;
+        line-height: 1rem;
         font-size: .75rem;
         margin: 0 0 0 4rem;
     }
@@ -682,3 +722,4 @@ nav {
     }
 
 }
+
