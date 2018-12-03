@@ -20,6 +20,9 @@ var slides, dots;
         setTimeout(showSlides, 3000); //Change image every 3 seconds
     }
 
+
+    // ============= DOES NOT WORK  :( ================== //
+    // ============= DOES NOT WORK  :( ================== //
         // Next/previous controls
         function plusSlides(position) {
             slideIndex += position;
@@ -138,12 +141,12 @@ var i = 0;
 var insQte = $(".quote")
 
 function rotQte() {
-    insQte.text(quotes[i % 3]).fadeIn(1000).delay(4000).fadeOut(1000)
+    insQte.text(quotes[i % 3]).fadeIn(3000).delay(3000).fadeOut(3000)
     i++
 };
 
 rotQte();
-setInterval(rotQte, 6000)
+setInterval(rotQte, 9000)
 
 var refs =["-- Flynn (TRON)","--Geri Carillo","- Willy Wonka (Willy Wonka & the Chocolate Factory)"];
 
