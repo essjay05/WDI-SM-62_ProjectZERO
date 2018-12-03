@@ -255,7 +255,6 @@ nav {
     grid-template-areas:
       "about skills"
       "quoteBox contact";
-    align-items: center;
     /* margin: 0 0 4em; */
     height: auto;
   }

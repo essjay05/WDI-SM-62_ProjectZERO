@@ -128,6 +128,7 @@ var slides, dots;
 
 // $(document).ready(function() WORKING!!! DO NOT TOUCH!! {
 
+// Testimonial/Quotes function
 var quotes = ["Multi-talented creative with top-notch organization skills! Joy exhibits a strong drive to produce top-level work and a diverse skill set that would benefit any employer.",
 "Invention, my dear friends, is 93% perspiration, 6% electricity, 4% evaporation, and 2% butterscotch ripple.",
 "Greetings, programs!"];
@@ -137,12 +138,24 @@ var i = 0;
 var insQte = $(".quote")
 
 function rotQte() {
-    insQte.text(quotes[i % 3]).fadeIn(1000).delay(2000).fadeOut(1000)
+    insQte.text(quotes[i % 3]).fadeIn(1000).delay(4000).fadeOut(1000)
     i++
 };
 
 rotQte();
-setInterval(rotQte, 4000)
+setInterval(rotQte, 6000)
+
+var refs =["--Geri Carillo", "- Willy Wonka (Willy Wonka & the Chocolate Factory)", "-- Flynn (TRON)"];
+
+    // Authors fade in/out function (similar to quotes)
+var insRef = $(".ref")
+
+function rotRef() {
+    insRef.text(refs[i % 3]).fadeIn(1000).delay(4000).fadeOut(1000)
+    i++
+};
+rotRef();
+setInterval(rotRef, 6000)
 
 // setInterval(function() { 
 //     debugger        // console.log($('#slideshow > div:first')[0])
