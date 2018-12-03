@@ -58,6 +58,7 @@ p, .blurb {
     font-weight: regular;
     margin: .5rem 0;
     color: #d4d4dc;
+    text-align: center;
 };
 
 a {
@@ -299,7 +300,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   border: 1px #393f4d solid;
   transition: border-top 0.5s ease;
   padding: 2em;
@@ -307,26 +308,14 @@ nav {
   color: rgba(1, 255, 230, 0.763);
 }
 
-/* .about, .test {
-    display: grid;
-    "about"
-    justify-content: space-evenly;
-    text-align: left;
-}
 
-.skills, .contact { 
-  width: 100%;
-  text-align: center;
-  font-style: regular;
-} */
 
 /* ABOUT/SKILLS CONTACT/TESTIMONIALS STYLING  */
 
 .ref {
   text-align: right;
   height: 2em;
-  font-size: 1rem;
-  /* padding-top: 2rem; */
+  padding-top: 2rem;
 }
 
 /* ---------------SLIDESHOW / CAROUSEL---------- */
@@ -351,8 +340,8 @@ nav {
     transition: all .5s ease-in-out;
 }
 .mySlides img {
-    width: 100%;
-    height: auto;
+    width: 15rem;
+    min-height: 10rem;
     background-repeat: none;
     background-position: center;
     background-size: cover;
@@ -374,9 +363,9 @@ nav {
     margin: auto;
  }
 
-#skils {
+#skills {
     display: flex;
-    flex-direction: ;
+    flex-direction: column;
 }
 
 /* HIDE THE IMAGES BY DEFAULT */
@@ -384,36 +373,9 @@ nav {
     display: none;
  }
 
-/* Next & previous buttons */
-/* .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -6rem;
-    padding: 5rem;
-    color: #d4d4dc;
-    font-weight: bold;
-    font-size: 5rem;
-    transition: 0.6s ease;
-    border-radius: 0 2rem 2rem 0;
-    user-select: none;
-} */
-/* Position "next button" to the right */
-/* .next {
-    right: 0;
-    border-radius: 2rem 0 0 2rem;
-} */
 
-/* On hover add black bg color for a bit see thru */
-.text {
-    color: #d4d4dc;
-    font-size: 5rem;
-    padding: 2rem 4rem;
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-}
+
+
 .slideText, .numbertext {
     text-align: center;
     font-family: "Noto Sans", sans-serif;
@@ -421,15 +383,6 @@ nav {
     font-size: 1rem;
 }
 
-/* NUMBER TEXT (1/4 etc) */
-/* .numbertext {
-    color: #d4d4dc;
-    font-size: 4rem;
-    padding: 2rem 4rem;
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-} */
 
  /* DOTS AND BULLETS INDICATORS */
  .dot {
@@ -470,10 +423,12 @@ nav {
  }
 
 /* QUOTE POSITIONING FOR FADES IN AND OUT */
-/* #quote1, #quote2, #quote3 {
-    display: none;
-} */
 
+
+#quoteBox > section {
+    position: absolute;
+    /* padding: 2rem; */
+}
 .bottomBox {
     display: flex;
     flex-direction: row;
@@ -481,48 +436,6 @@ nav {
 .bottom {
     flex: 1;
     height: 35rem;
-}
-.quote { grid-area: "quote"};
-.ref { grid-area: "ref"};
-.test { grid-area: "test"};
-
-/* #quoteBox {
-    display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
-    height: 35rem;
-} */
-
-
-
-/* .qFade p {
-    /* padding: 10rem 0 0; */
-    /* font-size: 1.25rem;
-    color:  #d4d4dc;
-    height: 8rem;
-    margin: 4rem;
-    line-height: 3rem;
-} */ 
-
-/* #quoteBox h4{
-    color:rgba(1, 255, 230, 0.763);
-    font-size: .75rem;
-    margin: 0 4rem;
-    line-height: 3rem;
-} */
-/* #quoteBox h2{
-    color:rgba(1, 255, 230, 0.763);
-    font-size: 1.25rem;
-    padding: 0 4rem 30rem;
-    line-height: 3rem;
-} */
-
-
-
-
-#quoteBox > section {
-    position: absolute;
-    
 }
 
 
