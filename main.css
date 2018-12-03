@@ -1,19 +1,15 @@
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 html {
-    font-size: 16px;
     background: #1d1e22;
 }
-/* -------- TYPOGRAPHY --------- */
+
 /*------------- TYPOGRAPHY ---------------------- */
 h1, h2, h4 {
     font-family: "Rock Salt", cursive;
     letter-spacing: .75rem;
-    /* font-family: "Permanent Marker", cursive; */
 }
 .box h3 a {
     font-family: "Rock Salt", cursive;
@@ -662,9 +658,7 @@ nav {
     #quoteBox {
         height: 50rem;
     }
-    #quoteBox h2{
-        margin: -2rem 0 18rem;
-    }
+    
     #quoteBox p {
         margin-top: 15rem;
     }

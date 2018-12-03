@@ -128,18 +128,33 @@ var slides, dots;
 
 // $(document).ready(function() WORKING!!! DO NOT TOUCH!! {
 
+var quotes = ["Multi-talented creative with top-notch organization skills! Joy exhibits a strong drive to produce top-level work and a diverse skill set that would benefit any employer.",
+"Invention, my dear friends, is 93% perspiration, 6% electricity, 4% evaporation, and 2% butterscotch ripple.",
+"Greetings, programs!"];
 
-setInterval(function() { 
-        // console.log($('#slideshow > div:first')[0])
-        var $quoteBox = $('#quoteBox > section')
-        console.log($quoteBox[0])
-        $('#quoteBox > section:first')
-        .fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo('#quoteBox');
-},  8000);
+var i = 0;
+
+var insQte = $(".quote")
+
+function rotQte() {
+    insQte.text(quotes[i % 3]).fadeIn(1000).delay(2000).fadeOut(1000)
+    i++
+};
+
+rotQte();
+setInterval(rotQte, 4000)
+
+// setInterval(function() { 
+//     debugger        // console.log($('#slideshow > div:first')[0])
+//         var $quoteBox = $('#quoteBox > section')
+//         console.log($quoteBox[0])
+//         $('#quoteBox > section:first')
+//         .fadeOut(1000)
+//         .next()
+//         .fadeIn(1000)
+//         .end()
+//         .appendTo('#quoteBox');
+// },  8000);
 
 
 
