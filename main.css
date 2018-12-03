@@ -5,6 +5,7 @@
 html {
     background: #1d1e22;
     line-height: 1.5rem;
+
 }
 /* FONT FAMILIES / SIZES: 
 font-family: "Permanent Marker", cursive;
@@ -53,7 +54,7 @@ p, .blurb {
     font-family: "Noto Sans", sans-serif;
     text-transform: none;
     line-height: 1.5rem;
-    letter-spacing: .025rem;
+    letter-spacing: .0rem;
     font-weight: regular;
     margin: .5rem 0;
     color: #d4d4dc;
@@ -89,29 +90,26 @@ a {
 .Joy {
     font-size: 8rem;
     font-family: "Permanent Marker", cursive;
-    margin: 8rem 4rem;
+    padding: 4rem 0 0 4rem ;
     color: #d4d4dc;
     opacity: .8;
     /* font-family: "Rock Salt", cursive; */
 }
-.noun {
-    font-size: 3rem;
-}
 .defOfJoy {
     font-family: "Rock Salt", cursive;
     color: #d4d4dc;
-    font-size: 2rem;
-    margin: 0 4rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    margin: 3rem 0 0 3rem;
+    line-height: 3rem;
     opacity: .8;
 }
 .definition {
     font-family: "Rock Salt", cursive;
     color: #d4d4dc;
-    font-size: 1rem;
+    font-size: .75rem;
     margin: 0 4rem;
     display: inline-block;
-    line-height: 2.5rem;
+    line-height: 2rem;
     opacity: .8;
 }
 
@@ -309,30 +307,33 @@ nav {
   color: rgba(1, 255, 230, 0.763);
 }
 
-.about, .test {  
-  width: 100%;
-  text-align: left;
+/* .about, .test {
+    display: grid;
+    "about"
+    justify-content: space-evenly;
+    text-align: left;
 }
 
 .skills, .contact { 
   width: 100%;
   text-align: center;
   font-style: regular;
-}
+} */
 
 /* ABOUT/SKILLS CONTACT/TESTIMONIALS STYLING  */
 
 .ref {
   text-align: right;
   height: 2em;
-  padding-top: 2rem;
+  font-size: 1rem;
+  /* padding-top: 2rem; */
 }
 
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 /* ---------------SLIDESHOW / CAROUSEL---------- */
 
-#skills, .about {
+#skills, #about, #quoteBox, #contact {
     height: 35rem;
 }
 
@@ -350,8 +351,8 @@ nav {
     transition: all .5s ease-in-out;
 }
 .mySlides img {
-    width: 15rem;
-    min-height: 10rem;
+    width: 100%;
+    height: auto;
     background-repeat: none;
     background-position: center;
     background-size: cover;
@@ -373,7 +374,10 @@ nav {
     margin: auto;
  }
 
-
+#skils {
+    display: flex;
+    flex-direction: ;
+}
 
 /* HIDE THE IMAGES BY DEFAULT */
 .myslides, .arrows {
@@ -469,40 +473,46 @@ nav {
 /* #quote1, #quote2, #quote3 {
     display: none;
 } */
-.qFade p, .qFade h4 {
+.quote { grid-area: "quote"};
+.ref { grid-area: "ref"};
+.test { grid-area: "test"};
+
+#quoteBox {
+    display: grid;
+    grid-template-areas:
+    "test"
+    "quote"
+    "ref";
+    grid-template-rows: 1fr 4fr 2fr;
+    height: 35rem;
+}
+
+
+/* .qFade p, .qFade h4 {
     width: 100%;
     min-height: 12rem;
-}
-.qFade p {
-    padding: 10rem 0 0;
+} */
+#quoteBox p {
+    /* padding: 10rem 0 0; */
     font-family: "Nato Sans", sans-serif;
     font-size: 1.25rem;
     color:  #d4d4dc;
-    min-height: 8rem;
+    height: 8rem;
     line-height: 3rem;
+    text-align: justify;
 }
+
 .qFade h4{
     color:rgba(1, 255, 230, 0.763);
     font-size: .75rem;
 }
-#quoteBox h2{
-    position: absolute;
-}
 
-#quoteBox {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
-    height: 25rem;
-}
-#quoteBox h2 {
-    margin: 2rem 0 18rem;
-}
+
+
 
 #quoteBox > section {
     position: absolute;
-    padding: 2rem;
+    
 }
 
 
@@ -550,7 +560,6 @@ nav {
             font-family: "Nato Sans", sans-serif;
             color: grey;
             font-size: .75em;
-            padding: 1em;
         }
         .formGrid::placeholder {
             font-weight: 900;
@@ -564,7 +573,8 @@ nav {
     h2, h3, h4, h5, h6, a, .subtitle {
         letter-spacing: .1rem;
         color: #d4d4dc;
-        font-size: 2.5rem;
+        font-size: .5rem;
+        text-align: justify;
     }
     p, .blurb {
         font-family: "Noto Sans", sans-serif;
@@ -584,20 +594,20 @@ nav {
 
     .Joy {
         /* margin: 10rem 0 0 2rem; */
-        font-size: 4rem;
+        font-size: 6rem;
+        padding: 3rem 0 0 3rem;
         font-family: "Permanent Marker", cursive;
     }
     
     .defOfJoy {
-        font-size: .5rem;
-        /* margin: 0 0 0 2rem;
-        padding: 0; */
-        /* line-height: 2rem; */
+        font-size: 1rem;
+        margin: 3rem 0 0 2rem;
+        line-height: 2rem;
     }
     .definition {
-        line-height: 1rem;
-        font-size: .75rem;
-        margin: 0 0 0 4rem;
+        line-height: 1.5rem;
+        font-size: .5rem;
+        margin: 0 0 0 2rem;
     }
 
     /* --- MOBILE NAVBAR / BURGER TOGGLE--- */
@@ -676,22 +686,24 @@ nav {
     }
     /* ABOUT - SKILLS - QUOTES - CONTACT / SECTION 2 */
     .aboutContactTest {
-        display: grid;
-        width: 100%;
-        grid-gap: 2em;
-        grid-template-areas:
-            "about" 
-            "skills"
-            "quoteBox" 
-            "contact";
-        align-items: center;
-        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: center; 
     }
+    /* .box2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px #393f4d solid;
+        transition: border-top 0.5s ease;
+        color: rgba(1, 255, 230, 0.763);
+      } */
     .social a {
         font-size: 2rem;
         text-decoration: none;
         color: #d4d4dc;
-        margin: 0 2rem;
+        margin: 0;
     }
     .social a:hover {
         cursor: pointer;
@@ -701,26 +713,26 @@ nav {
         height: 50rem;
     }
     
-    #quoteBox p {
+    /* #quoteBox p {
         margin-top: 15rem;
-    }
+    } */
 
-    #quoteBox p, #quoteBox h4 {
+    /* #quoteBox p, #quoteBox h4 {
         font-size: 1.5rem;
         line-height: 3rem;
-    }
+    } */
 
     /* CONTACT FORM SUBMISSION */
     .formGrid {
         display: grid;
-        width: auto;
+        width: 100%;
         grid-template-areas:
-            "name name"
-            "emailUser emailUser"
-            "comment comment"
-            "submit submit";
-        grid-gap: 1em;
-        padding: 3em;
+            "name"
+            "emailUser"
+            "comment"
+            "submit";
+        grid-gap: .25rem;
+        padding: .25rem;
         display: -ms-grid; /* IE 10 */
     }
 
