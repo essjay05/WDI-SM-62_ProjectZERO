@@ -61,18 +61,4 @@ I've created a portfolio site where I can easily update any future/upcoming proj
 
 
 
-### Features
-
-* Carousel with background images built with JQuery
- ![carousel code](https://i.imgur.com/RmSsUI2.png)
-* Fading in qoutes in JQuery
- ![qoute code](https://i.imgur.com/zQLUuoe.png)
-* 100% mobile-friendly
-* Use of both flex and grid templates
- ![flex and grid example](https://i.imgur.com/a2S3aaN.png)
-* CSS animations on links
- ![css animation example](https://i.imgur.com/VeGlINS.png)
-* Sticky nav bar built in JQuery
- ![sticky nav bar example](https://i.imgur.com/Rn2UfsR.png)
-
 
