@@ -28,7 +28,7 @@ font-family: "Rock Salt", cursive;
         color: rgba(1, 255, 230, 0.763); a href color/hover
     }
     
-font-family: "Noto Sans", sans-serif;
+font-family: "Raleway", sans-serif;
     p {
         color: color: #d4d4dc; /* NORMAL FONT COLOR
     }
@@ -61,7 +61,7 @@ SPACING:
         }
 
         p, .blurb {
-            font-family: "Noto Sans", sans-serif;
+            font-family: "Raleway", sans-serif;
             text-transform: none;
             line-height: 1.5rem;
             letter-spacing: .05rem;
@@ -355,7 +355,7 @@ SPACING:
 
         .slideText, .numbertext {
             text-align: center;
-            font-family: "Noto Sans", sans-serif;
+            font-family: "Raleway", sans-serif;
             color: #d4d4dc;
             font-size: 1rem;
         }
@@ -478,7 +478,7 @@ SPACING:
 
         .formGrid input, .formGrid textarea {
             border: rgba(1, 255, 230, 0.763) .15em solid;
-            font-family: "Nato Sans", sans-serif;
+            font-family: "Raleway", sans-serif;
             color: grey;
             font-size: .75em;
         }
@@ -587,7 +587,7 @@ SPACING:
         align-items: center;
       }
     .blurb {
-        font-family:"Noto-Sans", sans-serif;
+        font-family:"Raleway", sans-serif;
         color: #d4d4dc;
         margin: 1rem;
     }
