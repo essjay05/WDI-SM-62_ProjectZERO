@@ -238,6 +238,7 @@ SPACING:
             padding: 2em;
             margin: 2em;
             border: 1px #1d1e22 solid;
+            height: 500px;
             transition: border-top 0.5s ease;
             color: rgba(1, 255, 230, 0.763);
         }
