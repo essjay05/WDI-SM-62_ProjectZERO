@@ -28,7 +28,7 @@ font-family: "Rock Salt", cursive;
         color: rgba(1, 255, 230, 0.763); a href color/hover
     }
     
-font-family: "Raleway", sans-serif;
+font-family: "Open Sans", sans-serif;
     p {
         color: color: #d4d4dc; /* NORMAL FONT COLOR
     }
@@ -61,7 +61,7 @@ SPACING:
         }
 
         p, .blurb {
-            font-family: "Raleway", sans-serif;
+            font-family: "Open Sans", sans-serif;
             text-transform: none;
             line-height: 1.5rem;
             letter-spacing: .05rem;
@@ -356,7 +356,7 @@ SPACING:
 
         .slideText, .numbertext {
             text-align: center;
-            font-family: "Raleway", sans-serif;
+            font-family: "Open Sans", sans-serif;
             color: #d4d4dc;
             font-size: 1rem;
         }
@@ -441,13 +441,13 @@ SPACING:
 /*------------- CONTACT FORM ------- */
 /*------------- CONTACT FORM ------- */
         /* FORM CONTAINER */
-
+/* 
         .userForm h3 {
             text-align: center;
             color: rgba(1, 255, 230, 0.763);
-        }
+        } */
         /* FORM STYLES */
-        input[name="name"] {
+        /* input[name="name"] {
             grid-area: name;
         }
 
@@ -479,13 +479,13 @@ SPACING:
 
         .formGrid input, .formGrid textarea {
             border: rgba(1, 255, 230, 0.763) .15em solid;
-            font-family: "Raleway", sans-serif;
+            font-family: "Open Sans", sans-serif;
             color: grey;
             font-size: .75em;
         }
         .formGrid::placeholder {
             font-weight: 900;
-        }
+        } */
 
 
 /* MEDIA QUERIES / RESPOSINVE STYLES */
@@ -588,7 +588,7 @@ SPACING:
         align-items: center;
       }
     .blurb {
-        font-family:"Raleway", sans-serif;
+        font-family:"Open Sans", sans-serif;
         color: #d4d4dc;
         margin: 1rem;
     }
