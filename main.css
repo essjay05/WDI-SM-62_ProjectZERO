@@ -230,6 +230,12 @@ SPACING:
             align-items: center;
         }
 
+        .proj-img {
+            height: 50px;
+            width: auto;
+            margin: 0;
+        }
+
         .box {
             display: flex;
             flex-direction: column;
@@ -238,7 +244,7 @@ SPACING:
             padding: 2em;
             margin: 2em;
             border: 1px #1d1e22 solid;
-            height: 500px;
+            height: 600px;
             transition: border-top 0.5s ease;
             color: rgba(1, 255, 230, 0.763);
         }
@@ -492,13 +498,14 @@ SPACING:
 /* MEDIA QUERIES / RESPOSINVE STYLES */
 @media only screen and (max-width: 800px) {
     /* TYPOGRAPHY */
-    font-family: "Rock Salt", cursive;
+
     h2, h3, h4, h5, h6, a, .subtitle {
         letter-spacing: .1rem;
         font-size: .5rem;
     }
+
     p, .blurb {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     
 
