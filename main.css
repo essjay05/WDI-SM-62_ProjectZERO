@@ -475,17 +475,17 @@ SPACING:
             grid-gap: 1em;
             padding: 3em;
             display: -ms-grid; /* IE 10 */
-        }
+        /* } */
 
-        .formGrid input, .formGrid textarea {
+        /* .formGrid input, .formGrid textarea {
             border: rgba(1, 255, 230, 0.763) .15em solid;
             font-family: "Open Sans", sans-serif;
             color: grey;
             font-size: .75em;
         }
         .formGrid::placeholder {
-            font-weight: 900;
-        } */
+            font-weight: 900; */
+        /* }  */
 
 
 /* MEDIA QUERIES / RESPOSINVE STYLES */
@@ -598,7 +598,7 @@ SPACING:
         flex-direction: column;
         justify-items: center; 
     }
-    #about p {
+    #about p, #skills p {
         padding: 0 .25rem;
         font-size: .75rem;
         line-height: 1.5rem;
