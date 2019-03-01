@@ -279,7 +279,7 @@ SPACING:
             
             /* BOTTOM HALF WRAPPER */
                     #skills, #about, #quoteBox, #contact {
-                        height: 35rem;
+                        height: 40rem;
                     }
                     .aboutContactTest {
                         display: grid;
@@ -340,8 +340,8 @@ SPACING:
             /* max-width: 50rem; */
         }
         .mySlides img {
-            width: 30rem;
-            height:auto;
+            width: auto;
+            height: 20rem;
             background-repeat: none;
             background-position: center;
             background-size: cover;
@@ -627,8 +627,8 @@ SPACING:
 
     /* CAROUSEL IMAGES */
     .mySlides img {
-        max-height: 15rem;
-        width:auto;
+        max-height: 10rem;
+        width: auto;
         background-repeat: none;
         background-position: center;
         background-size: cover;
