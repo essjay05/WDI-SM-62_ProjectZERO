@@ -337,7 +337,7 @@ SPACING:
             position: relative;
             overflow: hidden;
             background-position: cover;
-            max-width: 50rem;
+            /* max-width: 50rem; */
         }
         .mySlides img {
             width: 30rem;
@@ -627,8 +627,8 @@ SPACING:
 
     /* CAROUSEL IMAGES */
     .mySlides img {
-        max-width: 10rem;
-        height:auto;
+        max-height: 15rem;
+        width:auto;
         background-repeat: none;
         background-position: center;
         background-size: cover;
