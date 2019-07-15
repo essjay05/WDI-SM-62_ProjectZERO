@@ -20,7 +20,6 @@ html {
 /* FONT FAMILIES / SIZES: 
 font-family: "Permanent Marker", cursive;
     h1 {font-size: 20rem};
-
 font-family: "Rock Salt", cursive;
     h2, h3, h4, h5, h6, a {
         letter-spacing: .75rem;
@@ -32,7 +31,6 @@ font-family: "Open Sans", sans-serif;
     p {
         color: color: #d4d4dc; /* NORMAL FONT COLOR
     }
-
 SPACING:
     margins: 0;
     padding: 2rem;
@@ -82,7 +80,7 @@ SPACING:
 /*----- HEADER-------*//*----- HEADER-------*/
         .heroImg {
             /* BACKGROUND INFO / PARAMETERS */
-            background: url("https://i.imgur.com/k5aEq1W.png") no-repeat top;
+            background: url("./images/joy-stage-managing.jpg") no-repeat top;
             background-size: cover;
             background-position: center;
             color: #d4d4dc;
@@ -90,7 +88,7 @@ SPACING:
             width: 100%;
             height: 100vh;
             margin: 0;
-            opacity: 1;
+            opacity: .65;
         }
         .Joy {
             font-size: 8rem;
@@ -131,7 +129,7 @@ SPACING:
             position: fixed;
             bottom: 0;
             width: 100%;
-            line-height: 2rem;
+            line-height: 1rem;
             font-family: "Rock Salt", cursive;
             padding: 0;
             margin: 0;
@@ -456,21 +454,17 @@ SPACING:
         /* input[name="name"] {
             grid-area: name;
         }
-
         input[name="emailUser"] {
             grid-area: emailUser;
         }
-
         textarea {
             grid-area: comment;
             height: 5rem;
             resize: none;
         }
-
         input[name="submit"] {
             grid-area: submit;
         }
-
         .formGrid {
             display: grid;
             width: 30rem;
@@ -551,7 +545,7 @@ SPACING:
         text-align: center;
         width: 100%;
         z-index: 1;
-        margin: 0 0 26rem 0;
+        margin: 0 0 28rem 0;
         padding: 0;
         box-shadow: 0px 1px 1px rgba(1, 255, 230, 0.2);
         position: absolute;
@@ -666,4 +660,3 @@ SPACING:
     }
 
 }
-
