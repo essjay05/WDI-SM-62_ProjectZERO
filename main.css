@@ -5,7 +5,7 @@
 html {
     background: #1d1e22;
     line-height: 1.5rem;
-
+    scroll-behavior: smooth;
 }
 
 /* ----------------- SETTING THE VIEWPORT ---------------- */
