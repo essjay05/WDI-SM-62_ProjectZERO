@@ -14,13 +14,13 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <script defer src="main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-
+    
 </head>
 
 <body>
   <header>
     <nav>
-      <h4 class="logo"> &copy; Joy S. 2019</h4>
+      <h4 class="logo"> &copy; Joy S. 2018</h4>
       <input class="checkbox" id="toggle" type="checkbox" for="toggle">
       <label class="burger" for="toggle">&#9776</label>
       <div class="menu">
@@ -28,27 +28,28 @@
         <a class="" href="index.html#portfolioID">PORTFOLIO</a>
         <a href="index.html#about">ABOUT</a>
         <a href="index.html#skills">SKILLS</a>
-        <a href="index.html#quoteBox">TESTIMONIALS</a>
         <a href="index.html#contact">CONTACT</a>
       </div>
     </nav>
-    <h1 class="heroImg" id="home">
-        <div class="Joy">
-          JOY
-        </div>
-        <div class="defOfJoy">
-            \'joi\ &nbsp noun <br/>
-            Definition of 'joy':
-        </div>
-        <span class=definition>
-            <br>1: the emotion evoked by well-being,
-            <br>&nbsp &nbsp  success, or good fortune or by
-            <br>&nbsp  &nbsp the prospect of possessing what one
-            <br>&nbsp &nbsp  desires.
-            <br>2: a source or cause of delight.
-        </span>
-    </h1>
   </header>
+  <section class="heroWrapper" role="image" aria-label="Image of Joy Serquina stage managing in a theatre booth.">
+    <div class="heroText" id="home">
+      <h1 class="Joy">
+        JOY
+      </h1>
+      <h2 class="defOfJoy">
+        \'joi\ &nbsp noun <br/>
+        Definition of 'joy':
+      </h2>
+      <span class=definition>
+        <br>1: the emotion evoked by well-being,
+        <br>&nbsp &nbsp  success, or good fortune or by
+        <br>&nbsp  &nbsp the prospect of possessing what one
+        <br>&nbsp &nbsp  desires.
+        <br>2: a source or cause of delight.
+      </span>
+    </h1>
+  </section>
   <main class="mainGrid">
     <!-- PORTFOLIO --> <!-- PORTFOLIO --> <!-- PORTFOLIO -->
     <div class="container">
@@ -57,16 +58,16 @@
           <!--   Project FOUR -->
           <div class="box proj0">
             <h3>
-              <a class ="subtitle" target="_blank" href="http://port-f0710.herokuapp.com">Project 04. "PORT=f0710"</a>
+              <a class ="subtitle" target="_blank" href="https://essjay05.github.io/food-wheel-selector-react/">JK's Food Wheel</a>
             </h3>
-            <img class="projImg" src="https://i.imgur.com/4qlY0OT.png" title="PORT=f0710 Screen Capture" />
-            <p class="blurb">A full-stack MERN portfolio/resume web app for developers and creatives to showcase their projects.</p>
-            <h5>MERN Stack, HTML5, CSS3, JavaScript, Semantic UI</h5>
+            <img class="projImg" alt="Screencapture of JK's Food Wheel app" src="/images/project-images/food-wheel-selector-react_v1.png" title="Screencapture of JK's Food Wheel app" />
+            <p class="blurb">A food wheel to help you decide what to eat.</p>
+            <h4 class="techUsed">React.js, HTML5, CSS3, JavaScript</h4>
             <div class="portLink">
-              <a target="_blank" href="http://port-f0710.herokuapp.com">
+              <a target="_blank" name="Link to JK's Food Wheel app" href="https://essjay05.github.io/food-wheel-selector-react/">
                 <i class="fas fa-external-link-square-alt"></i>
               </a>
-              <a target="_blank" href="https://github.com/essjay05/WDI-SM-62_P4-Capstone">
+              <a target="_blank" name="Link to github repo for JK's Food Wheel app" href="https://github.com/essjay05/food-wheel-selector-react">
                 <i class="fab fa-github"></i>
               </a>
             </div>
@@ -78,7 +79,7 @@
             </h3>
             <img class="projImg" src="https://i.imgur.com/8nBPqbQ.jpg" title="Hop-To-It BrewIndex ScreenCapture" />
             <p class="blurb">A full-stack MERN app built through paired programming for people to locate Los Angeles breweries.</p>
-            <h5>MERN Stack, HTML5, CSS3, JavaScript, Milligram</h5>
+            <h4 class="techUsed">MERN Stack, HTML5, CSS3, JavaScript, Milligram</h4>
             <div class="portLink">
               <a target="_blank" href="https://afternoon-falls-29291.herokuapp.com/">
                 <i class="fas fa-external-link-square-alt"></i>
@@ -97,7 +98,7 @@
             </h3>
             <img class="projImg" src="https://i.imgur.com/R1eEWPT.png" title="Haute_Food13: A Food-stagram App" />
             <p class="blurb">A full-stack "food-stagram" for foodies to discover trending foods via posted food images as well as upload their own photos.</p>
-            <h5>HTML5, CSS3, Bootstrap, Javascript, Ruby on Rails, Amazon Web Services (AWS), SQL, Active Storage</h5>
+            <h4 class="techUsed">HTML5, CSS3, Bootstrap, Javascript, Ruby on Rails, Amazon Web Services (AWS), SQL, Active Storage</h4>
             <div class="portLink">
               <a target="_blank" href="https://nameless-eyrie-14279.herokuapp.com/">
                 <i class="fas fa-external-link-square-alt"></i>
@@ -115,7 +116,7 @@
             </h3>
             <img class="projImg" src="https://i.imgur.com/SW8UrKT.png" title="GWHLA: City Slicker Challenge Tracker" />
             <p class="blurb">A full-stack app created to track the completion of the Girls Who Hike LA City Slicker Hike Challenge.</p>
-            <h5>HTML5, CSS3, JavaScript, Bootstrap, Node.js, Postman, MongoDB, mLab</h5>
+            <h4 class="techUsed">HTML5, CSS3, JavaScript, Bootstrap, Node.js, Postman, MongoDB, mLab</h5>
             <div class="portLink">
               <a target="_blank" href="https://stormy-savannah-66566.herokuapp.com/">
                 <i class="fas fa-external-link-square-alt"></i>
@@ -138,8 +139,9 @@
         <section class="box2" id="skills">
             <h2 class="subtitle">Skills</h2>
             <div class="skillsList">
-                <p> HTML5, CSS3, JavaScript, jQuery, Ruby Sinatra, Ruby on Rails, Bootstrap, Semantic UI, Milligram, MongoDB, Mongoose, Node.js, React.js, Git, GitHub, RESTful API, Heroku, Postman, PostgreSQL, SQL, Amazon Web Services (AWS), Active Storage, Visual Studio Code, JSON, JSON Web Token, Authentication, Quickbooks Online / Quickbooks Pro, Google Suite / Google Apps, Microsoft Office Suite, iWork, Adobe Lightroom, Adobe Photoshop, Final Cut Pro X, photography, and piano.
-                </p>
+              <p>
+                React.js, Vue.js, React-Native, Python, Django, Node.js, MongoDB, Express.js, PostgreSQL, SQL, TSQL, HTML5, CSS3, JavaScript, jQuery, Typescript, Mongoose, RESTful API, Docker, Heroku, Bootstrap, JSON, JSON Web Token, Git, GitHub, Angular, Jira, Miro, Amazon Web Services (AWS), Visual Studio Code, XCode, Figma, Adobe XD, Quickbooks, Adobe Lightroom, Adobe Photoshop, Final Cut Pro X, photography, & piano.
+              </p>
             </div>
             <!-- SLIDESHOW CONTAINER -->
             <div class="carouselWrap">
@@ -180,40 +182,20 @@
         </section>
     </section>   
         <!-- CONTACT / TESTIMONIALS -->
-            <!-- TESTIMONIALS SECTION  -->
+        <!-- TESTIMONIALS SECTION  -->
     <div class="bottomBox">
-        <div class="box2 bottom" id="quoteBox">
-            <h2 class="test">Testimonials</h2>
-            <section class="qFade">
-                <p class="quote">"Multi-talented creative with top-notch organization skills! Joy exhibits a strong drive to produce top-level work and a diverse skill set that would benefit any employer."</p>
-                <h4 class="ref">"--Geri Carillo"</h4>
-            </section>
-
-        </div>
-        <!-- GENERAL FORM -->
-        <!-- CONTACT FORM -->
         <div class="box2 bottom" id="contact">
-            <!-- <h2>Contact Form</h2> -->
-            <!-- COMMENT FORM SECTION -->
-            <!-- <div class="userForm">
-                <form class="formGrid" action="" >
-                    <input name="name" type="text" placeholder="NAME" />
-                    <input name="emailUser" type="email" placeholder="EMAIL" />
-                    <textarea name="comment" type="email" placeholder="COMMENT"></textarea>
-                    <input name="submit" type="submit" value="SUBMIT"/>
-                </form>
-            </div> -->
             <!-- Social Media Links -->
             <p class="social">
-                <a class="icon" target="_blank" href="https://www.linkedin.com/in/joy-serquina">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a class="icon" target="_blank" href="https://github.com/essjay05">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a class="icon" target="_blank" href="mailto:joy.serquina@gmail.com">
-                    <i class="far fa-envelope-open"></i>
-                </a>
+              <a class="icon" target="_blank" name="Joy Serquina LinkedIn Profile" href="https://www.linkedin.com/in/joy-serquina">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a class="icon" target="_blank" name="Joy Serquina Github Profile" href="https://github.com/essjay05">
+                <i class="fab fa-github"></i>
+              </a>
+              <a class="icon" target="_blank" name="Joy Serquina Resume" href="/resume/JoySerquina_Resume_2023-SE.pdf">
+                <i class="far fa-file"></i>
+              </a>
             </p>
             <p class="disclaimer">
                 *Disclaimer: This portfolio site is Project ZERO: "Find-Your-Joy". My first GA project and first website. It was built from scratch using HTML5, CSS3, and JavaScript. 
