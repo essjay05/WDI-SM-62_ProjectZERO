@@ -80,6 +80,7 @@ a {
   text-decoration: none;
   color: inherit;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 /*----- HERO -------*/ /*----- HERO -------*/
@@ -96,7 +97,7 @@ a {
 .heroWrapper::after {
   content: '';
   position: absolute;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.75);
   z-index: 10;
   width: 100%;
   height: 100vh;
@@ -113,14 +114,14 @@ a {
   width: 100%;
   height: 100vh;
   margin: 0;
-  padding-top: 15%;
+  padding-top: 6%;
 }
 .Joy {
   font-size: 8rem;
   font-family: 'Permanent Marker', cursive;
   padding: 4rem 0 0 4rem;
   color: #d4d4dc;
-  opacity: 0.65;
+  opacity: 0.5;
   position: relative;
   z-index: 11;
 }
@@ -130,7 +131,7 @@ a {
   font-size: 1.5rem;
   margin: 3rem 0 0 3rem;
   line-height: 3rem;
-  opacity: 0.65;
+  opacity: 0.5;
   position: relative;
   z-index: 12;
 }
@@ -141,7 +142,7 @@ a {
   margin: 0 4rem;
   display: inline-block;
   line-height: 2;
-  opacity: 0.65;
+  opacity: 0.5;
   position: relative;
   letter-spacing: 0.5rem;
   z-index: 13;
@@ -571,12 +572,17 @@ nav {
   a,
   .subtitle {
     letter-spacing: 0.1rem;
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
   p,
   .blurb {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  br {
+    display: none;
   }
 
   /* ---HEADER IMAGE--- */
@@ -585,20 +591,25 @@ nav {
     line-height: 2.5rem;
   }
 
+  .heroText {
+    padding: 3rem 0;
+  }
+
   .Joy {
-    font-size: 6rem;
+    font-size: 8rem;
     padding: 3rem 0 0 3rem;
   }
 
   .defOfJoy {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 3rem 0 0 2rem;
-    line-height: 2rem;
+    line-height: 1.6;
   }
   .definition {
-    line-height: 1.5rem;
-    font-size: 0.5rem;
-    margin: 0 0 0 2rem;
+    line-height: 1.8;
+    font-size: 1.15rem;
+    margin: 2rem;
+    text-align: left;
   }
 
   /* --- MOBILE NAVBAR / BURGER TOGGLE--- */
@@ -679,8 +690,8 @@ nav {
   #about p,
   #skills p {
     padding: 0 0.25rem;
-    font-size: 0.75rem;
-    line-height: 1.5rem;
+    font-size: 1.15rem;
+    line-height: 1.8;
   }
   .social a {
     font-size: 2rem;
