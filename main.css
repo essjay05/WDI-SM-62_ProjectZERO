@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  max-width: 100%;
 }
 
 html {
@@ -122,6 +123,7 @@ a {
   padding: 4rem 0 0 4rem;
   color: #d4d4dc;
   opacity: 0.5;
+  text-align: left;
   position: relative;
   z-index: 11;
 }
@@ -132,6 +134,7 @@ a {
   margin: 3rem 0 0 3rem;
   line-height: 3rem;
   opacity: 0.5;
+  text-align: left;
   position: relative;
   z-index: 12;
 }
@@ -143,6 +146,7 @@ a {
   display: inline-block;
   line-height: 2;
   opacity: 0.5;
+  text-align: left;
   position: relative;
   letter-spacing: 0.5rem;
   z-index: 13;
@@ -222,6 +226,10 @@ nav {
   grid-area: 'portfolio';
   background: #393f4d;
 }
+
+.portfolio .box {
+  width: 90%;
+}
 .aboutContactTest {
   grid-area: 'aboutContactTest';
   background: #1d1e22;
@@ -229,6 +237,11 @@ nav {
 .midBox {
   background: #1d1e22;
 }
+
+.midBox .subtitle {
+  text-align: center;
+}
+
 .bottomBox {
   background: #393f4d;
 }
@@ -337,7 +350,7 @@ nav {
 #about,
 #quoteBox,
 #contact {
-  height: 40rem;
+  height: auto;
 }
 .aboutContactTest {
   display: grid;
@@ -365,10 +378,11 @@ nav {
 }
 
 /* ABOUT SECTION */ /* ABOUT SECTION */ /* ABOUT SECTION */
-#about p {
-  padding: 0 10rem;
-  line-height: 3rem;
-  font-size: 1rem;
+#about p,
+.skillsList p {
+  padding: 0 8rem;
+  line-height: 1.8;
+  font-size: 1.15rem;
 }
 .social a,
 .portLink a {
@@ -588,12 +602,23 @@ nav {
   /* ---HEADER IMAGE--- */
   .heroWrapper {
     position: relative;
-    width: 125%;
-    height: 100vh;
+    width: auto;
+    height: auto;
     background: url('./images/joy-stage-managing.jpg') no-repeat top;
     background-size: cover;
     background-position: center;
     z-index: 0;
+  }
+
+  .heroWrapper::after {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
 
   h1 {
@@ -602,7 +627,7 @@ nav {
   }
 
   .heroText {
-    padding: 3rem 0;
+    padding-top: 25%;
   }
 
   .Joy {
@@ -617,7 +642,7 @@ nav {
   }
   .definition {
     line-height: 1.8;
-    font-size: 1.15rem;
+    font-size: 1rem;
     margin: 2rem;
     text-align: left;
   }
@@ -691,6 +716,10 @@ nav {
     color: #d4d4dc;
     margin: 1rem;
   }
+
+  .portfolio .box {
+    max-width: 75%;
+  }
   /* ABOUT - SKILLS - QUOTES - CONTACT / SECTION 2 */
   .aboutContactTest {
     display: flex;
@@ -698,10 +727,10 @@ nav {
     justify-items: center;
   }
   #about p,
-  #skills p {
+  .skillsList p {
     padding: 0 0.25rem;
     font-size: 1.15rem;
-    line-height: 1.8;
+    line-height: 1.6;
   }
   .social a {
     font-size: 2rem;
