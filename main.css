@@ -586,6 +586,16 @@ nav {
   }
 
   /* ---HEADER IMAGE--- */
+  .heroWrapper {
+    position: relative;
+    width: 125%;
+    height: 100vh;
+    background: url('./images/joy-stage-managing.jpg') no-repeat top;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+
   h1 {
     display: block;
     line-height: 2.5rem;
