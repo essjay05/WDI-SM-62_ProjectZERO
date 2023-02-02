@@ -228,7 +228,8 @@ nav {
 }
 
 .portfolio .box {
-  width: 90%;
+  max-width: 44%;
+  width: 40%;
 }
 .aboutContactTest {
   grid-area: 'aboutContactTest';
@@ -257,38 +258,14 @@ nav {
   align-items: center;
 }
 
-.container {
-  display: block;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
 /* PORTFOLIO WRAPPER */ /* PORTFOLIO WRAPPER */ /* PORTFOLIO WRAPPER */
 /* PORTFOLIO WRAPPER */ /* PORTFOLIO WRAPPER */ /* PORTFOLIO WRAPPER */
-.proj0 {
-  grid-area: 'proj0';
-}
-.proj1 {
-  grid-area: 'proj1';
-}
-.proj2 {
-  grid-area: 'proj2';
-}
-.proj3 {
-  grid-area: 'proj3';
-}
-
 .portfolio {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  grid-gap: 2em;
-  grid-template-areas:
-    'proj0 proj1'
-    'proj2 proj3';
   align-items: center;
+  justify-content: space-between;
 }
 
 .projImg {
@@ -305,9 +282,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 2em;
-  margin: 2em;
+  margin: 1rem;
   border: 1px #1d1e22 solid;
   height: 600px;
+  width: 100%;
   transition: border-top 0.5s ease;
   color: rgba(1, 255, 230, 0.763);
 }
@@ -575,7 +553,14 @@ nav {
 
 /* MEDIA QUERIES / RESPOSINVE STYLES */
 /* MEDIA QUERIES / RESPOSINVE STYLES */
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
+  .portfolio .box {
+    max-width: 45%;
+    width: 39%;
+  }
+}
+
+@media screen and (max-width: 800px) {
   /* TYPOGRAPHY */
 
   h2,
@@ -701,15 +686,9 @@ nav {
 
   /* PORTFOLIO / SECTION 1 */
   .portfolio {
-    display: grid;
+    display: flex;
     width: 100%;
-    grid-gap: 2em;
-    grid-template-areas:
-      'proj0'
-      'proj1'
-      'proj2'
-      'proj3';
-    align-items: center;
+    flex-direction: column;
   }
   .blurb {
     font-family: 'Open Sans', sans-serif;
@@ -719,6 +698,7 @@ nav {
 
   .portfolio .box {
     max-width: 75%;
+    width: 100%;
   }
   /* ABOUT - SKILLS - QUOTES - CONTACT / SECTION 2 */
   .aboutContactTest {
