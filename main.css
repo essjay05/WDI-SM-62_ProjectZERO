@@ -228,11 +228,6 @@ nav {
 /* MAIN CONTENT CSS GRIDS */ /* MAIN CONTENT CSS GRIDS */
 /* MAIN CONTENT CSS GRIDS */ /* MAIN CONTENT CSS GRIDS */
 
-.portfolio {
-  grid-area: 'portfolio';
-  background: #393f4d;
-}
-
 .portfolio .box {
   max-width: 44%;
   width: 40%;
@@ -255,13 +250,8 @@ nav {
 
 .mainGrid {
   /* MAIN DOCUMENT WRAPPER */
-  display: grid;
+  display: block;
   width: 100%;
-  grid-gap: 2em;
-  grid-template-areas:
-    'portfolio'
-    'aboutContactTest';
-  align-items: center;
 }
 
 /* PORTFOLIO WRAPPER */ /* PORTFOLIO WRAPPER */ /* PORTFOLIO WRAPPER */
@@ -271,14 +261,16 @@ nav {
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  background: #393f4d;
+  padding: 2rem 0;
 }
 
 .projImg {
-  height: auto;
-  width: 28rem;
-  object-fit: contain;
-  object-position: top;
+  height: 16rem;
+  width: 24rem;
+  object-fit: cover;
+  object-position: top middle;
   margin: 0;
 }
 
