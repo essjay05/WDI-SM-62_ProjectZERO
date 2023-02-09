@@ -148,8 +148,8 @@ a {
   font-family: 'Rock Salt', cursive;
   color: #d4d4dc;
   font-size: 1.15rem;
-  margin: 0 4rem;
-  display: inline-block;
+  margin: 0.5rem 3rem;
+  display: block;
   line-height: 2;
   opacity: 0.5;
   text-align: left;
