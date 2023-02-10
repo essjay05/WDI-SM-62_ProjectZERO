@@ -104,7 +104,7 @@ a {
 .heroWrapper::after {
   content: '';
   position: absolute;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 10;
   width: 100%;
   height: 100vh;
@@ -112,10 +112,6 @@ a {
   left: 0;
 }
 .heroText {
-  /* BACKGROUND INFO / PARAMETERS */
-  /* background: url('./images/joy-stage-managing.jpg') no-repeat top;
-  background-size: cover;
-  background-position: center; */
   color: #d4d4dc;
   text-align: left;
   width: 100%;
@@ -128,7 +124,7 @@ a {
   font-family: 'Permanent Marker', cursive;
   padding: 4rem 0 0 4rem;
   color: #d4d4dc;
-  opacity: 0.5;
+  opacity: 0.65;
   text-align: left;
   position: relative;
   z-index: 11;
@@ -139,7 +135,7 @@ a {
   font-size: 1.5rem;
   margin: 3rem 0 0 3rem;
   line-height: 3rem;
-  opacity: 0.5;
+  opacity: 0.65;
   text-align: left;
   position: relative;
   z-index: 12;
@@ -151,7 +147,7 @@ a {
   margin: 0.5rem 3rem;
   display: block;
   line-height: 2;
-  opacity: 0.5;
+  opacity: 0.65;
   text-align: left;
   position: relative;
   letter-spacing: 0.5rem;
@@ -518,51 +514,6 @@ nav {
 .bottom {
   border: 1px solid #1d1e22;
 }
-
-/*------------- CONTACT FORM ------- */
-/*------------- CONTACT FORM ------- */
-/* FORM CONTAINER */
-/* 
-        .userForm h3 {
-            text-align: center;
-            color: rgba(1, 255, 230, 0.763);
-        } */
-/* FORM STYLES */
-/* input[name="name"] {
-            grid-area: name;
-        }
-        input[name="emailUser"] {
-            grid-area: emailUser;
-        }
-        textarea {
-            grid-area: comment;
-            height: 5rem;
-            resize: none;
-        }
-        input[name="submit"] {
-            grid-area: submit;
-        }
-        .formGrid {
-            display: grid;
-            width: 30rem;
-            grid-template-areas:
-                'name name emailUser emailUser'
-                'comment comment comment comment'
-                'submit submit submit submit';
-            grid-gap: 1em;
-            padding: 3em;
-            display: -ms-grid; /* IE 10 */
-/* } */
-
-/* .formGrid input, .formGrid textarea {
-            border: rgba(1, 255, 230, 0.763) .15em solid;
-            font-family: "Open Sans", sans-serif;
-            color: grey;
-            font-size: .75em;
-        }
-        .formGrid::placeholder {
-            font-weight: 900; */
-/* }  */
 
 .disclaimer {
   font-size: 10px;
