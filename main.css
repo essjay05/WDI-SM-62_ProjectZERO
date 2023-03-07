@@ -283,11 +283,6 @@ nav {
   transition: border-top 0.5s ease;
   color: rgba(1, 255, 230, 0.763);
 }
-.portLink {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
 
 .portfolio p,
 .portfolio a,
@@ -362,11 +357,16 @@ nav {
   font-size: 1.5rem;
   text-decoration: none;
   margin: 0 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.social a span,
+.portLink a span {
+  font-size: 1rem;
 }
 .social a:hover,
 .portLink a:hover {
   color: rgba(1, 255, 230, 0.763);
-  transition: all 0.5s ease-in-out;
 }
 
 .skillsList {
