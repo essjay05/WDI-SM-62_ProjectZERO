@@ -345,6 +345,20 @@ nav {
 }
 
 /* ABOUT SECTION */ /* ABOUT SECTION */ /* ABOUT SECTION */
+.skillsListWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1;
+}
+
+.skillsListContainer {
+  width: 50%;
+}
+
+.skillsListContainer h2 {
+  text-align: center;
+}
+
 #about p,
 .skillsList p {
   padding: 0 8rem;
@@ -386,7 +400,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto 1rem 15%;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .skillsList li {
@@ -395,6 +409,14 @@ nav {
   text-align: left;
   align-items: center;
   justify-content: space-between;
+}
+
+.skillsListContainer.other {
+  width: 100%;
+}
+
+.skillsListContainer.other .skillsList {
+  margin: 0 auto 1rem 20%;
 }
 
 /* ---------------SLIDESHOW / CAROUSEL---------- */
@@ -534,6 +556,10 @@ nav {
   .portfolio .box {
     max-width: 45%;
     width: 39%;
+  }
+
+  .skillsListContainer.other .skillsList {
+    margin: 0 auto 1rem 30%;
   }
 }
 
@@ -755,5 +781,17 @@ nav {
 
   .social a {
     margin: 0.5rem auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .skillsListContainer.frontend,
+  .skillsListContainer.backend,
+  .skillsListContainer.other {
+    width: 95%;
+  }
+
+  .skillsListContainer.other .skillsList {
+    margin: 0 auto 1rem 15%;
   }
 }
