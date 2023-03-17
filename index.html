@@ -73,37 +73,19 @@
   <main class="mainGrid">
     <!-- PORTFOLIO --> <!-- PORTFOLIO --> <!-- PORTFOLIO -->
     <div class="container">
-      <section class="portfolio" id="portfolioID">
-        <!-- PORTFOLIO SECTION 1  -->
-        <!--   Project FOUR -->
-        <div class="box proj4">
-          <h3>
-            <a class="subtitle" target="_blank" href="https://joy-oat-react-eshop-2023.web.app">J@S React eShop</a>
-          </h3>
-          <a target="_blank" name="Link to deployed J@S React eShop demo" href="https://joy-oat-react-eshop-2023.web.app">
-            <img class="projImg" alt="Screenshot of J@S React eShop site" src="/images/project-images/joy-oat_react-eshop-2023.png" title="J@S React eShop 2023" />
-          </a>
-          <p class="blurb">A basic eshop demo site with hard coded products. Has user sign up/log in/log out using Firebase. Used react-router-dom to create page routes. Used React's useContext to provide global state for the basket items and user's logged in status. </p>
-          <h4 class="techUsed">React.js, React Hooks, JavaScript, Firebase</h5>
-          <div class="portLink">
-            <a target="_blank" name="Link to deployed J@S React eShop" href="https://joy-oat-react-eshop-2023.web.app">
-              <span>Demo</span>&nbsp;<i class="fas fa-external-link-square-alt"></i>
-            </a>
-            <a target="_blank" name="Link to github repository for J@S React eShop" href="https://github.com/essjay05/100daysOfCode_02-15-2023_eShop">
-              <span>Code</span>&nbsp;<i class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
-        <!--   Project THREE -->
-        <div class="box proj3">
-          <h3>
+      <section class="portfolio-wrapper" id="portfolioID">
+        <!-- Project 1 -->
+        <div class="project-box">
+          <h3 class="title">
             <a class="subtitle" target="_blank" href="https://essjay05.github.io/jk-meal-wheel-2023/">JK's Food Wheel</a>
           </h3>
-          <a target="_blank" name="Link to JK's Food Wheel app" href="https://essjay05.github.io/jk-meal-wheel-2023/">
-            <img class="projImg" alt="Screencapture of JK's Food Wheel app" src="/images/project-images/food-wheel-selector-react_v2.png" title="Screencapture of JK's Food Wheel app" />
-          </a>
-          <p class="blurb">A food wheel to help you decide what to eat.</p>
-          <h4 class="techUsed">React.js, HTML5, CSS3, JavaScript, Material UI</h4>
+          <figure class="img-container">
+            <a target="_blank" name="Link to JK's Food Wheel app" href="https://essjay05.github.io/jk-meal-wheel-2023/">
+              <img class="projImg" alt="Screencapture of JK's Food Wheel app" src="/images/project-images/food-wheel-selector-react_v2.png" title="Screencapture of JK's Food Wheel app" />
+            </a>
+            <figcaption>A "Wheel of Fortune" styled food selector built with React.js to help you decide what to eat.</figcaption>
+            <h4 class="techUsed">React.js, HTML5, CSS3, JavaScript, Material UI</h4>
+          </figure>
           <div class="portLink">
             <a target="_blank" name="Link to JK's Food Wheel app" href="https://essjay05.github.io/jk-meal-wheel-2023/">
               <span>Demo</span>&nbsp;<i class="fas fa-external-link-square-alt"></i>
@@ -113,17 +95,63 @@
             </a>
           </div>
         </div>
-        <!-- PORTFOLIO SECTION 2  -->
-        <!--   Project TWO -->
-        <div class="box proj2">
-          <h3>
+        <!-- Project 2 -->
+        <div class="project-box">
+          <h3 class="title">
+            <a class="subtitle" target="_blank" href="https://joy-oat-react-eshop-2023.web.app">J@S React eShop</a>
+          </h3>
+          <figure class="img-container">
+            <a target="_blank" name="Link to deployed J@S React eShop demo" href="https://joy-oat-react-eshop-2023.web.app">
+              <img class="projImg" alt="Screenshot of J@S React eShop site" src="/images/project-images/joy-oat_react-eshop-2023.png" title="J@S React eShop 2023" />
+            </a>
+            <figcaption>
+              A basic eshop demo site with hard coded products. Has user sign up/log in/log out using Firebase. Used react-router-dom to create page routes. Used React's useContext to provide global state for the basket items and user's logged in status.
+            </figcaption>
+            <h4 class="techUsed">React.js, React Hooks, JavaScript, Firebase</h4>
+          </figure>
+          
+          <div class="portLink">
+            <a target="_blank" name="Link to deployed J@S React eShop" href="https://joy-oat-react-eshop-2023.web.app">
+              <span>Demo</span>&nbsp;<i class="fas fa-external-link-square-alt"></i>
+            </a>
+            <a target="_blank" name="Link to github repository for J@S React eShop" href="https://github.com/essjay05/100daysOfCode_02-15-2023_eShop">
+              <span>Code</span>&nbsp;<i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-box">
+          <h3 class="title">
+            <a class="subtitle" target="_blank" href="https://essjay05.github.io/100DaysOfCode_03-15-2023_nextjs-canvas-react-app/">Joy-OAT Whiteboard</a>
+          </h3>
+          <figure class="img-container">
+            <a target="_blank" href="https://essjay05.github.io/100DaysOfCode_03-15-2023_nextjs-canvas-react-app/" name="Link to Joy-OAT Whiteboard app">
+              <img class="projImg" src="/images/project-images/Joy-OAT_Whiteboard_screenshot.png" title="Joy-OAT Whiteboard Screencapture" />
+            </a>
+            <figcaption>A whiteboard app built using Next.js and React.js where you can change the size of your stylus, choose different colors for your pen, and download your drawing.</figcaption>
+            <h4 class="techUsed">Next.js, React.js, Tailwind CSS</h4>
+          </figure>
+          <div class="portLink">
+            <a target="_blank" href="https://essjay05.github.io/100DaysOfCode_03-15-2023_nextjs-canvas-react-app/" name="Link to Joy-OAT Whiteboard app">
+              <span>Demo</span>&nbsp;<i class="fas fa-external-link-square-alt"></i>
+            </a>
+            <a target="_blank" name="Link to github repo for Joy-OAT Whiteboard app" href="https://github.com/essjay05/100DaysOfCode_03-15-2023_nextjs-canvas-react-app">
+              <span>Code</span>&nbsp;<i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="project-box">
+          <h3 class="title">
             <a class="subtitle" target="_blank" href="https://starclicker.joyserquina.com/">Star Clicker</a>
           </h3>
-          <a target="_blank" href="https://starclicker.joyserquina.com/" name="Link to Star Clicker app">
-            <img class="projImg" src="/images/project-images/essjay05_project-screenshot_starClicker.png" title="Star Clicker Screencapture" />
-          </a>
-          <p class="blurb">A Super Mario inspired Cookie Clicker game.</p>
-          <h4 class="techUsed">HTML5, CSS3, JavaScript, jQuery</h4>
+          <figure class="img-container">
+            <a target="_blank" href="https://starclicker.joyserquina.com/" name="Link to Star Clicker app">
+              <img class="projImg" src="/images/project-images/essjay05_project-screenshot_starClicker.png" title="Star Clicker Screencapture" />
+            </a>
+            <figcaption>A Super Mario inspired Cookie Clicker game. Click on the star to earn more stars. Use those star points to purchase a Mushroom Multiplier to add auto-click points and earn faster!</figcaption>
+            <h4 class="techUsed">HTML5, CSS3, JavaScript, jQuery</h4>
+          </figure>
           <div class="portLink">
             <a target="_blank" href="https://starclicker.joyserquina.com/" name="Link to Star Clicker app">
               <span>Demo</span>&nbsp;<i class="fas fa-external-link-square-alt"></i>
@@ -133,16 +161,18 @@
             </a>
           </div>
         </div>
-        <!--   Project ONE -->
-        <div class="box proj1">
-          <h3>
+        <!-- Project 5 -->
+        <div class="project-box">
+          <h3 class="title">
             <a class="subtitle" target="_blank" href="https://t3game.joyserquina.com/">T3 Game</a>
           </h3>
-          <a target="_blank" name="Link to playable T3 game" href="https://t3game.joyserquina.com/">
-            <img class="projImg" alt="T3 Game Screencapture" src="/images/project-images/essjay05_project_t3game.png" title="T3 Game Screencapture" />
-          </a>
-          <p class="blurb">A tic-tac-toe street-art styled web game.</p>
-          <h4 class="techUsed">HTML5, CSS3, JavaScript</h4>
+          <figure class="img-container">
+            <a target="_blank" name="Link to playable T3 game" href="https://t3game.joyserquina.com/">
+              <img class="projImg" alt="T3 Game Screencapture" src="/images/project-images/essjay05_project_t3game.png" title="T3 Game Screencapture" />
+            </a>
+            <figcaption>A tic-tac-toe street-art styled web game. Compete with another player to be the first to get three of your symbol in a row. Keep track of your scores and/or clear the scoreboard.</figcaption>
+            <h4 class="techUsed">HTML5, CSS3, JavaScript</h4>
+          </figure>
           <div class="portLink">
             <a target="_blank" name="Link to playable T3 game" href="https://t3game.joyserquina.com/">
               <span>Demo</span>&nbsp;<i class="fas fa-external-link-square-alt"></i>

@@ -1,10 +1,21 @@
+:root {
+  --white-color: #d4d4dc;
+  --black-color: #1d1e22;
+  --md-grey-color: #393f4d;
+  --teal-color: rgba(1, 255, 230, 0.763);
+
+  --marker-font: 'Permanent Marker', cursive;
+  --graffiti-font: 'Rock Salt', cursive;
+  --sans-serif-font: 'Nato Sans', sans-serif;
+}
+
 * {
   margin: 0;
   max-width: 100%;
 }
 
 html {
-  background: #1d1e22;
+  background: var(--black-color);
   line-height: 1.5rem;
   scroll-behavior: smooth;
 }
@@ -25,7 +36,7 @@ font-family: "Rock Salt", cursive;
     h2, h3, h4, h5, h6, a {
         letter-spacing: .75rem;
         color: #d4d4dc; /* NORMAL FONT COLOR 
-        color: rgba(1, 255, 230, 0.763); a href color/hover
+        color: var(--teal-color); a href color/hover
     }
     
 font-family: "Open Sans", sans-serif;
@@ -64,7 +75,7 @@ h5,
 a {
   font-family: 'Rock Salt', cursive;
   font-size: 1rem;
-  color: #d4d4dc;
+  color: var(--white-color);
   text-decoration: none;
   letter-spacing: 0.25rem;
   margin-bottom: 25rem;
@@ -78,7 +89,7 @@ p,
   letter-spacing: 0.05rem;
   font-weight: regular;
   margin: 1rem;
-  color: #d4d4dc;
+  color: var(--white-color);
   text-align: center;
 }
 
@@ -112,7 +123,7 @@ a {
   left: 0;
 }
 .heroText {
-  color: #d4d4dc;
+  color: var(--white-color);
   text-align: left;
   width: 100%;
   height: 100vh;
@@ -123,7 +134,7 @@ a {
   font-size: 8rem;
   font-family: 'Permanent Marker', cursive;
   padding: 4rem 0 0 4rem;
-  color: #d4d4dc;
+  color: var(--white-color);
   opacity: 0.65;
   text-align: left;
   position: relative;
@@ -131,7 +142,7 @@ a {
 }
 .defOfJoy {
   font-family: 'Rock Salt', cursive;
-  color: #d4d4dc;
+  color: var(--white-color);
   font-size: 1.5rem;
   margin: 3rem 0 0 3rem;
   line-height: 3rem;
@@ -142,7 +153,7 @@ a {
 }
 .definition {
   font-family: 'Rock Salt', cursive;
-  color: #d4d4dc;
+  color: var(--white-color);
   font-size: 1.15rem;
   margin: 0.5rem 3rem;
   display: block;
@@ -161,8 +172,8 @@ a {
 nav {
   display: grid;
   grid-template-columns: 4fr 0.25fr 2fr;
-  background: #1d1e22;
-  color: #d4d4dc;
+  background: var(--black-color);
+  color: var(--white-color);
   align-items: center;
   height: 4rem;
   position: fixed;
@@ -185,16 +196,16 @@ nav {
 }
 .menu a {
   text-decoration: none;
-  color: #d4d4dc;
+  color: var(--white-color);
   margin: 0 2rem;
   line-height: 4rem;
   font-size: 0.5rem;
 }
 .menu a:hover {
   cursor: pointer;
-  border-top: 3px solid rgba(1, 255, 230, 0.763);
+  border-top: 3px solid var(--teal-color);
   transition: border-top 0.5s ease;
-  color: rgba(1, 255, 230, 0.763);
+  color: var(--teal-color);
 }
 .menu .current {
   background-color: rgba(1, 255, 230, 0.2);
@@ -230,10 +241,10 @@ nav {
 }
 .aboutContactTest {
   grid-area: 'aboutContactTest';
-  background: #1d1e22;
+  background: var(--black-color);
 }
 .midBox {
-  background: #1d1e22;
+  background: var(--black-color);
 }
 
 .midBox .subtitle {
@@ -241,7 +252,7 @@ nav {
 }
 
 .bottomBox {
-  background: #393f4d;
+  background: var(--md-grey-color);
 }
 
 .mainGrid {
@@ -258,7 +269,7 @@ nav {
   width: 100%;
   align-items: center;
   justify-content: space-around;
-  background: #393f4d;
+  background: var(--md-grey-color);
   padding: 2rem 0;
 }
 
@@ -277,11 +288,11 @@ nav {
   align-items: center;
   padding: 2em;
   margin: 1rem;
-  border: 1px #1d1e22 solid;
+  border: 1px var(--black-color) solid;
   height: 600px;
   width: 100%;
   transition: border-top 0.5s ease;
-  color: rgba(1, 255, 230, 0.763);
+  color: var(--teal-color);
 }
 
 .portfolio p,
@@ -307,6 +318,64 @@ nav {
   letter-spacing: 2px;
   font-family: 'Nato Sans', sans-serif;
   text-align: center;
+}
+
+/* UPDATED PORTOLIO SECTION 03/16/2023 */
+.portfolio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.5rem;
+  background: var(--md-grey-color);
+  color: var(--white-color);
+}
+
+.project-box {
+  width: 42%;
+  text-align: left;
+  padding: 2.5rem;
+  border: 1px solid var(--black-color);
+  margin: 1.5rem auto;
+}
+
+.project-box h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.project-box figure {
+  width: 80%;
+  margin: 0.5rem auto;
+}
+
+.project-box figure a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.project-box figcaption {
+  font-family: var(--sans-serif-font);
+  margin: 1.5rem auto;
+}
+
+.project-box h4 {
+  text-align: center;
+  color: var(--teal-color);
+}
+
+.project-box a:hover,
+.project-box a:focus {
+  color: var(--teal-color);
+}
+
+.project-box .portLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 1.5rem auto 0;
 }
 
 /*----------------- SECOND MAIN SECTION: ABOUT ------------------ */
@@ -337,11 +406,11 @@ nav {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px #393f4d solid;
+  border: 1px var(--md-grey-color) solid;
   transition: border-top 0.5s ease;
   padding: 2em;
   margin: 2em;
-  color: rgba(1, 255, 230, 0.763);
+  color: var(--teal-color);
 }
 
 /* ABOUT SECTION */ /* ABOUT SECTION */ /* ABOUT SECTION */
@@ -374,7 +443,7 @@ nav {
 
 .social a,
 .portLink a {
-  color: #d4d4dc;
+  color: var(--white-color);
   font-size: 1.5rem;
   font-family: 'Rock Salt', cursive;
   text-decoration: none;
@@ -389,12 +458,12 @@ nav {
 
 .social a:hover,
 .portLink a:hover {
-  color: rgba(1, 255, 230, 0.763);
+  color: var(--teal-color);
 }
 
 .skillsList {
   font-family: 'Open Sans', sans-serif;
-  color: #d4d4dc;
+  color: var(--white-color);
   line-height: 1.8;
   padding: 0.5rem 0.5rem 1rem;
   display: flex;
@@ -460,7 +529,7 @@ nav {
 .numbertext {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #d4d4dc;
+  color: var(--white-color);
   font-size: 1rem;
 }
 
@@ -470,7 +539,7 @@ nav {
   height: 0.5rem;
   width: 0.5rem;
   margin: 1rem 1rem;
-  background-color: #d4d4dc;
+  background-color: var(--white-color);
   border-radius: 50%;
   display: inline-block;
   text-align: center;
@@ -478,7 +547,7 @@ nav {
 }
 
 .active {
-  background-color: rgba(1, 255, 230, 0.763);
+  background-color: var(--teal-color);
 }
 .dot:hover {
   background-color: teal;
@@ -543,7 +612,7 @@ nav {
   padding-top: 3.5rem;
 }
 .bottom {
-  border: 1px solid #1d1e22;
+  border: 1px solid var(--black-color);
 }
 
 .disclaimer {
@@ -664,7 +733,7 @@ nav {
   }
 
   .burger {
-    color: #d4d4dc;
+    color: var(--white-color);
     font-size: 2.5rem;
     display: block;
     position: absolute;
@@ -675,7 +744,7 @@ nav {
   .burger:hover,
   .menu a:hover {
     cursor: pointer;
-    color: rgba(1, 255, 230, 0.763);
+    color: var(--teal-color);
     transition: color 0.5s ease;
     border-top: none;
   }
@@ -695,7 +764,7 @@ nav {
   }
   .blurb {
     font-family: 'Open Sans', sans-serif;
-    color: #d4d4dc;
+    color: var(--white-color);
     margin: 1rem;
   }
 
@@ -718,12 +787,12 @@ nav {
   .social a {
     font-size: 2rem;
     text-decoration: none;
-    color: #d4d4dc;
+    color: var(--white-color);
     margin: 0;
   }
   .social a:hover {
     cursor: pointer;
-    color: rgba(1, 255, 230, 0.763);
+    color: var(--teal-color);
   }
 
   .skillsList {
