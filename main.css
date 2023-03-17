@@ -772,6 +772,10 @@ nav {
     max-width: 75%;
     width: 100%;
   }
+
+  .project-box {
+    width: 90%;
+  }
   /* ABOUT - SKILLS - QUOTES - CONTACT / SECTION 2 */
   .aboutContactTest {
     display: flex;
