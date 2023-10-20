@@ -1,12 +1,16 @@
 :root {
   --white-color: #d4d4dc;
   --black-color: #1d1e22;
+  --pure-black-color: #000000;
+  --dark-grey-color: #636e72;
   --md-grey-color: #393f4d;
   --teal-color: rgba(1, 255, 230, 0.763);
 
   --marker-font: 'Permanent Marker', sans-serif;
+  --pen-font: 'Nothing You Could Do', sans-serif;
   --graffiti-font: 'Shadows Into Light', sans-serif;
-  --text-font: 'Noto Sans JP', sans-serif;
+  --coding-font: ;
+  --text-font: 'Noto Sans', sans-serif;
 }
 
 * {
@@ -39,7 +43,7 @@ font-family: "Rock Salt", cursive;
         color: var(--teal-color); a href color/hover
     }
     
-font-family: "Noto Sans JP", sans-serif;
+font-family: "Noto Sans", sans-serif;
     p {
         color: color: #d4d4dc; /* NORMAL FONT COLOR
     }
@@ -62,8 +66,8 @@ h4,
 h3,
 h5,
 .subtitle {
-  font-family: var(--graffiti-font),
-  text-transform: uppercase; cursive;
+  font-family: var(--graffiti-font);
+  text-transform: uppercase;
   letter-spacing: 0.75rem;
 }
 
@@ -85,7 +89,7 @@ a {
 
 p,
 .blurb {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: var(--text-font);
   text-transform: none;
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
@@ -104,6 +108,79 @@ a {
   cursor: pointer;
 }
 
+.handwritten-style {
+  font-family: var(--pen-font);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* NEW HERO */
+.hero-img-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./images/joy-oat-hero-img.JPG');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  margin: 0 0 2rem;
+  padding: 5rem 0 0;
+}
+
+.hero-img-container:after {
+  content: '';
+  width: 100vw;
+  height: 113vh;
+  background: var(--black-color);
+  opacity: 0.75;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-img-text {
+  position: relative;
+  z-index: 2;
+  top: 6%;
+  margin-left: 6%;
+  text-shadow: 3px 3px 5px rgba(52, 78, 92, 0.85);
+  opacity: 0.9;
+  width: 50vw;
+}
+
+.hero-img-text > *,
+.hero-img-text ul,
+.hero-img-text li {
+  width: auto;
+}
+
+.hero-img-text h1 {
+  font-size: 15rem;
+  color: var(--teal-color);
+  /* font-family: var(--handwritten-font-4); */
+  line-height: 9rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-img-text h2 {
+  color: var(--teal-color);
+  font-size: 3rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.hero-img-text p,
+.hero-img-text ul {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+.hero-img-text li span {
+  position: relative;
+  left: 2.65rem;
+}
+
 /*----- HERO -------*/ /*----- HERO -------*/
 /*----- HERO -------*/ /*----- HERO -------*/
 .heroWrapper {
@@ -113,7 +190,7 @@ a {
   background: url('./images/joy-oat-hero-img.JPG') no-repeat top;
   background-size: cover;
   background-position: center;
-  z-index: 0;
+  z-index: -1;
 }
 
 .heroWrapper::after {
@@ -137,32 +214,38 @@ a {
 }
 
 .Joy {
-  font-size: 8rem;
-  font-family: var(--marker-font);
-  padding: 4rem 0 0 4rem;
+  font-size: 15rem;
+  color: var(--teal-color);
+  font-family: var(--pen-font);
+  line-height: 9rem;
+  margin: 1.5rem 0 0 3rem;
+  z-index: 50;
+}
+
+.soundOfJoy {
+  font-family: var(--text-font);
+  text-transform: unset;
   color: var(--white-color);
-  opacity: 0.65;
-  text-align: left;
-  position: relative;
-  z-index: 11;
+  z-index: 49;
+  margin: 1.5rem 0 0 3rem;
 }
 
 .defOfJoy {
-  font-family: var(--graffiti-font);
+  font-family: var(--pen-font);
   text-transform: uppercase;
-  color: var(--white-color);
+  color: var(--teal-color);
   font-size: 1.75rem;
-  margin: 3rem 0 0 3rem;
+  margin: 3rem 0 0 0;
   line-height: 3rem;
   opacity: 0.65;
   text-align: left;
   position: relative;
-  z-index: 12;
+  z-index: 48;
 }
 
 .definition {
-  font-family: var(--graffiti-font);
-  text-transform: uppercase;
+  font-family: var(--text-font);
+  /* text-transform: uppercase; */
   color: var(--white-color);
   font-size: 1.5rem;
   margin: 0.5rem 3rem;
@@ -172,7 +255,7 @@ a {
   text-align: left;
   position: relative;
   letter-spacing: 0.5rem;
-  z-index: 13;
+  z-index: 47;
 }
 
 /* ------------FOOTER NAV BAR--------------- */
@@ -183,14 +266,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--black-color);
+  background: var(--pure-black-color);
   color: var(--white-color);
   height: 4rem;
   position: fixed;
   bottom: 0;
   width: 100%;
   line-height: 1rem;
-  font-family: var(--graffiti-font);
+  font-family: var(--pen-font);
   padding: 0;
   margin: 0;
   z-index: 100;
@@ -418,7 +501,6 @@ nav {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px var(--md-grey-color) solid;
   transition: border-top 0.5s ease;
   padding: 2em;
   margin: 2em;
@@ -475,7 +557,7 @@ nav {
 }
 
 .skillsList {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: var(--text-font);
   color: var(--white-color);
   line-height: 1.8;
   padding: 0.5rem 0.5rem 1rem;
@@ -541,7 +623,7 @@ nav {
 .slideText,
 .numbertext {
   text-align: center;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: var(--text-font);
   color: var(--white-color);
   font-size: 1rem;
 }
@@ -781,7 +863,7 @@ nav {
     flex-direction: column;
   }
   .blurb {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--text-font);
     color: var(--white-color);
     margin: 1rem;
   }
