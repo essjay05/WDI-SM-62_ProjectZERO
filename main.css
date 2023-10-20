@@ -91,12 +91,11 @@ p,
 .blurb {
   font-family: var(--text-font);
   text-transform: none;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   letter-spacing: 0.05rem;
-  font-weight: regular;
+  font-weight: 300;
   margin: 1rem;
   color: var(--white-color);
-  text-align: center;
 }
 
 a {
@@ -114,73 +113,6 @@ a {
   letter-spacing: 2px;
 }
 
-/* NEW HERO */
-.hero-img-container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-image: url('./images/joy-oat-hero-img.JPG');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  z-index: 0;
-  margin: 0 0 2rem;
-  padding: 5rem 0 0;
-}
-
-.hero-img-container:after {
-  content: '';
-  width: 100vw;
-  height: 113vh;
-  background: var(--black-color);
-  opacity: 0.75;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.hero-img-text {
-  position: relative;
-  z-index: 2;
-  top: 6%;
-  margin-left: 6%;
-  text-shadow: 3px 3px 5px rgba(52, 78, 92, 0.85);
-  opacity: 0.9;
-  width: 50vw;
-}
-
-.hero-img-text > *,
-.hero-img-text ul,
-.hero-img-text li {
-  width: auto;
-}
-
-.hero-img-text h1 {
-  font-size: 15rem;
-  color: var(--teal-color);
-  /* font-family: var(--handwritten-font-4); */
-  line-height: 9rem;
-  margin-bottom: 1.5rem;
-}
-
-.hero-img-text h2 {
-  color: var(--teal-color);
-  font-size: 3rem;
-  margin: 1rem 0 0.5rem;
-}
-
-.hero-img-text p,
-.hero-img-text ul {
-  list-style: none;
-  font-size: 1.6rem;
-}
-
-.hero-img-text li span {
-  position: relative;
-  left: 2.65rem;
-}
-
 /*----- HERO -------*/ /*----- HERO -------*/
 /*----- HERO -------*/ /*----- HERO -------*/
 .heroWrapper {
@@ -193,11 +125,16 @@ a {
   z-index: -1;
 }
 
+.heroWrapper > * {
+  opacity: 0.95;
+}
+
 .heroWrapper::after {
   content: '';
   position: absolute;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 10;
+  background: var(--black-color);
+  opacity: 80%;
+  z-index: -1;
   width: 100%;
   height: 100vh;
   top: 0;
@@ -220,6 +157,7 @@ a {
   line-height: 9rem;
   margin: 1.5rem 0 0 3rem;
   z-index: 50;
+  opacity: 0.8;
 }
 
 .soundOfJoy {
@@ -235,9 +173,8 @@ a {
   text-transform: uppercase;
   color: var(--teal-color);
   font-size: 1.75rem;
-  margin: 3rem 0 0 0;
+  margin: 0.5rem 0 0 3rem;
   line-height: 3rem;
-  opacity: 0.65;
   text-align: left;
   position: relative;
   z-index: 48;
@@ -247,11 +184,11 @@ a {
   font-family: var(--text-font);
   /* text-transform: uppercase; */
   color: var(--white-color);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin: 0.5rem 3rem;
   display: block;
   line-height: 2;
-  opacity: 0.65;
+  opacity: 1;
   text-align: left;
   position: relative;
   letter-spacing: 0.5rem;
@@ -735,16 +672,19 @@ nav {
   h4,
   h5,
   h6,
-  a,
-  .subtitle {
+  a {
     letter-spacing: 0.1rem;
     font-size: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
   }
 
   p,
   .blurb {
     font-size: 1.25rem;
-    line-height: 1.6;
+    line-height: 1.8;
   }
 
   br {
@@ -755,14 +695,14 @@ nav {
   .heroWrapper {
     position: relative;
     width: auto;
-    height: auto;
+    height: 100vh;
     background: url('./images/joy-oat-hero-img.JPG') no-repeat top;
     background-size: cover;
     background-position: center;
     z-index: 0;
   }
 
-  .heroWrapper::after {
+  /* .heroWrapper::after {
     content: '';
     position: absolute;
     background: rgba(0, 0, 0, 0.75);
@@ -771,7 +711,7 @@ nav {
     height: 100%;
     top: 0;
     left: 0;
-  }
+  } */
 
   h1 {
     display: block;
@@ -779,19 +719,23 @@ nav {
   }
 
   .heroText {
-    padding-top: 25%;
+    padding-top: 0.5rem;
   }
 
   .Joy {
     font-size: 8rem;
-    padding: 3rem 0 0 3rem;
+  }
+
+  .soundOfJoy {
+    margin: 0 2.5rem;
   }
 
   .defOfJoy {
     font-size: 1.5rem;
-    margin: 3rem 0 0 2rem;
+    margin: 1rem 0 0 2.5rem;
     line-height: 1.6;
   }
+
   .definition {
     line-height: 1.8;
     font-size: 1.25rem;
