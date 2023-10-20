@@ -208,13 +208,14 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--white-color);
+  border-top: 2px solid transparent;
   margin: 0 2rem;
-  line-height: 4rem;
-  font-size: 1rem;
+  padding: 1.45rem 0;
+  font-size: 1.15rem;
 }
 .menu a:hover {
   cursor: pointer;
-  border-top: 3px solid var(--teal-color);
+  border-top: 2px solid var(--teal-color);
   transition: border-top 0.5s ease;
   color: var(--teal-color);
 }
@@ -238,7 +239,7 @@ nav {
   text-align: left;
   font-family: var(--graffiti-font);
   text-transform: uppercase;
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin: 0 0 0 3rem;
   letter-spacing: 0.25rem;
 }
@@ -711,7 +712,7 @@ nav {
   }
   .definition {
     line-height: 1.8;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin: 2rem;
     text-align: left;
   }
@@ -758,7 +759,12 @@ nav {
     cursor: pointer;
     color: var(--teal-color);
     transition: color 0.5s ease;
-    border-top: none;
+    border-top-color: transparent;
+  }
+
+  .menu a:hover {
+    text-decoration-color: var(--teal-color);
+    text-decoration: underline;
   }
 
   .logo {
