@@ -107,7 +107,7 @@ a {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url('./images/joy-stage-managing.jpg') no-repeat top;
+  background: url('./images/joy-oat-hero-img.JPG') no-repeat top;
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -661,7 +661,7 @@ nav {
     position: relative;
     width: auto;
     height: auto;
-    background: url('./images/joy-stage-managing.jpg') no-repeat top;
+    background: url('./images/joy-oat-hero-img.JPG') no-repeat top;
     background-size: cover;
     background-position: center;
     z-index: 0;
