@@ -4,9 +4,9 @@
   --md-grey-color: #393f4d;
   --teal-color: rgba(1, 255, 230, 0.763);
 
-  --marker-font: 'Permanent Marker', cursive;
-  --graffiti-font: 'Rock Salt', cursive;
-  --sans-serif-font: 'Nato Sans', sans-serif;
+  --marker-font: 'Permanent Marker', sans-serif;
+  --graffiti-font: 'Shadows Into Light', sans-serif;
+  --text-font: 'Noto Sans JP', sans-serif;
 }
 
 * {
@@ -39,7 +39,7 @@ font-family: "Rock Salt", cursive;
         color: var(--teal-color); a href color/hover
     }
     
-font-family: "Open Sans", sans-serif;
+font-family: "Noto Sans JP", sans-serif;
     p {
         color: color: #d4d4dc; /* NORMAL FONT COLOR
     }
@@ -53,7 +53,7 @@ SPACING:
 /*------------- TYPOGRAPHY ---------------------- */
 /*------------- TYPOGRAPHY ---------------------- */
 h1 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: var(--marker-font);
   letter-spacing: 0.75rem;
 }
 
@@ -62,7 +62,8 @@ h4,
 h3,
 h5,
 .subtitle {
-  font-family: 'Rock Salt', cursive;
+  font-family: var(--graffiti-font),
+  text-transform: uppercase; cursive;
   letter-spacing: 0.75rem;
 }
 
@@ -73,7 +74,8 @@ h5,
 
 .box h3 a,
 a {
-  font-family: 'Rock Salt', cursive;
+  font-family: var(--graffiti-font);
+  text-transform: uppercase;
   font-size: 1rem;
   color: var(--white-color);
   text-decoration: none;
@@ -83,7 +85,7 @@ a {
 
 p,
 .blurb {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   text-transform: none;
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
@@ -94,7 +96,8 @@ p,
 }
 
 a {
-  font-family: 'Rock Salt', cursive;
+  font-family: var(--graffiti-font);
+  text-transform: uppercase;
   text-decoration: none;
   color: inherit;
   transition: all 0.5s ease-in-out;
@@ -132,7 +135,7 @@ a {
 }
 .Joy {
   font-size: 8rem;
-  font-family: 'Permanent Marker', cursive;
+  font-family: var(--marker-font);
   padding: 4rem 0 0 4rem;
   color: var(--white-color);
   opacity: 0.65;
@@ -141,7 +144,8 @@ a {
   z-index: 11;
 }
 .defOfJoy {
-  font-family: 'Rock Salt', cursive;
+  font-family: var(--graffiti-font);
+  text-transform: uppercase;
   color: var(--white-color);
   font-size: 1.5rem;
   margin: 3rem 0 0 3rem;
@@ -152,7 +156,8 @@ a {
   z-index: 12;
 }
 .definition {
-  font-family: 'Rock Salt', cursive;
+  font-family: var(--graffiti-font);
+  text-transform: uppercase;
   color: var(--white-color);
   font-size: 1.15rem;
   margin: 0.5rem 3rem;
@@ -180,7 +185,8 @@ nav {
   bottom: 0;
   width: 100%;
   line-height: 1rem;
-  font-family: 'Rock Salt', cursive;
+  font-family: var(--graffiti-font);
+  text-transform: uppercase;
   padding: 0;
   margin: 0;
   z-index: 100;
@@ -225,7 +231,8 @@ nav {
 
 .logo {
   text-align: left;
-  font-family: 'Rock Salt', cursive;
+  font-family: var(--graffiti-font);
+  text-transform: uppercase;
   /* font-family: "Permanent Marker", cursive; */
   font-size: 0.5rem;
   margin: 0 0 0 5em;
@@ -309,14 +316,14 @@ nav {
 .portfolio h5 {
   color: inherit;
   text-decoration: none;
-  font-family: 'Nato Sans', sans-serif;
+  font-family: var(--text-font);
   text-align: center;
 }
 
 .techUsed {
   color: inherit;
   letter-spacing: 2px;
-  font-family: 'Nato Sans', sans-serif;
+  font-family: var(--text-font);
   text-align: center;
 }
 
@@ -445,7 +452,8 @@ nav {
 .portLink a {
   color: var(--white-color);
   font-size: 1.5rem;
-  font-family: 'Rock Salt', cursive;
+  font-family: var(--graffiti-font);
+  text-transform: uppercase;
   text-decoration: none;
   margin: 0 2rem;
   transition: all 0.5s ease-in-out;
@@ -462,7 +470,7 @@ nav {
 }
 
 .skillsList {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   color: var(--white-color);
   line-height: 1.8;
   padding: 0.5rem 0.5rem 1rem;
@@ -528,7 +536,7 @@ nav {
 .slideText,
 .numbertext {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   color: var(--white-color);
   font-size: 1rem;
 }
@@ -763,7 +771,7 @@ nav {
     flex-direction: column;
   }
   .blurb {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     color: var(--white-color);
     margin: 1rem;
   }
