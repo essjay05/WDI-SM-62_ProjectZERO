@@ -292,6 +292,7 @@ nav {
   /* MAIN DOCUMENT WRAPPER */
   display: block;
   width: 100%;
+  padding-bottom: 5rem;
 }
 
 /* PORTFOLIO WRAPPER */ /* PORTFOLIO WRAPPER */ /* PORTFOLIO WRAPPER */
@@ -440,8 +441,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   transition: border-top 0.5s ease;
-  padding: 2em;
-  margin: 2em;
+  padding: 1rem;
+  margin: 2rem;
   color: var(--teal-color);
 }
 
@@ -800,6 +801,13 @@ nav {
   }
 
   /* MAKE ALL SIDE BY SIDE SECTIONS STACK ON TOP OF EACH OTHER FLEX/GRID */
+  .mainGrid {
+    padding-bottom: 3rem;
+  }
+
+  .box2 {
+    padding: 0;
+  }
 
   /* PORTFOLIO / SECTION 1 */
   .portfolio {
