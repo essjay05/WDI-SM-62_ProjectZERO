@@ -292,7 +292,7 @@ nav {
   /* MAIN DOCUMENT WRAPPER */
   display: block;
   width: 100%;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
 /* PORTFOLIO WRAPPER */ /* PORTFOLIO WRAPPER */ /* PORTFOLIO WRAPPER */
@@ -656,12 +656,13 @@ nav {
 /* Footer */
 footer {
   padding-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 footer .subtitle {
   text-align: center;
   color: var(--teal-color);
-  margin-bottom: 1.25rem;
+  margin-bottom: 2.25rem;
 }
 footer ul.menu{
   display: flex;
@@ -670,6 +671,7 @@ footer ul.menu{
   padding: 0;
   margin: 0;
 }
+
 
 footer li {
   list-style: none;
@@ -699,6 +701,12 @@ footer #projects {
   justify-content: space-between;
 }
 
+footer .external-links,
+footer .social-links,
+footer .other-links {
+  position: relative;
+}
+
 /* MEDIA QUERIES / RESPOSINVE STYLES */
 /* MEDIA QUERIES / RESPOSINVE STYLES */
 @media screen and (max-width: 1024px) {
@@ -714,6 +722,17 @@ footer #projects {
   footer ul.menu.social-links {
     justify-content: space-around;
     align-items: center;
+  }
+
+  footer .social-links i {
+    font-size: 2.5rem;
+  }
+
+  footer ul.other-links {
+    margin-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -808,11 +827,11 @@ footer #projects {
     justify-content: justify;
   }
 
-  .menu {
+  nav .menu {
     text-align: center;
     width: 100%;
     z-index: 1;
-    margin: 0 0 24rem 0;
+    margin: 0 0 20rem 0;
     padding: 0;
     box-shadow: 0px 1px 1px rgba(1, 255, 230, 0.2);
     position: absolute;
@@ -859,10 +878,6 @@ footer #projects {
   }
 
   /* MAKE ALL SIDE BY SIDE SECTIONS STACK ON TOP OF EACH OTHER FLEX/GRID */
-  .mainGrid {
-    padding-bottom: 3rem;
-  }
-
   .box2 {
     padding: 0;
   }
@@ -968,12 +983,17 @@ footer #projects {
   }
 
   footer {
-    padding-bottom: 20rem;
+    padding-bottom: 5rem;
+  }
+
+  footer .external-links {
+    flex-direction: column;
+    display: flex;
   }
 
   footer .social-links {
-    flex-direction: column;
     align-items: center;
+    margin-bottom: 3rem;
   }
 }
 
