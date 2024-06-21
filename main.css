@@ -681,7 +681,7 @@ footer li a {
 }
 
 footer li i {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 footer ul.menu.social-links {
@@ -710,23 +710,10 @@ footer #projects {
   .skillsListContainer.other .skillsList {
     margin: 0 auto 1rem 30%;
   }
-  footer li i {
-    font-size: 2rem;
-  }
-  
+
   footer ul.menu.social-links {
-    justify-content: center;
-  }
-  
-  footer #projects {
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-  
-  .social-links {
-    display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -831,6 +818,13 @@ footer #projects {
     position: absolute;
     background: rgba(0, 0, 0, 0.85);
     display: none; /*should appear upon burger click*/
+  }
+
+  footer .menu {
+    background: none;
+    flex-direction: row;
+    border: none;
+    align-items: space-between;
   }
 
   .menu a {
@@ -974,10 +968,10 @@ footer #projects {
   }
 
   footer {
-    padding-bottom: 10rem;
+    padding-bottom: 20rem;
   }
 
-  .social-links {
+  footer .social-links {
     flex-direction: column;
     align-items: center;
   }
@@ -993,5 +987,4 @@ footer #projects {
   .skillsListContainer.other .skillsList {
     margin: 0 auto 1rem 15%;
   }
-
 }
